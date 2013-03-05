@@ -9,9 +9,9 @@ Walter's Office is east of The Main Office.
 WoodChuck's Office is north of The Main Office.
 
 [Main Street Rooms]
-Main Street is a room. "The Main Street of Littleburg, USA. There has never been a more beautiful town than this one. "
-West Main Street is a room. "West Main Street, where Good Clover Market Store is located"
-East Main Street is a room. "East Main Street, home to the Shiny Rock Park"
+Main Street is a room.  "The Main Street of Littleburg. USA. There has never been a more beautiful town than this one. ".
+West Main Street is a room. "West Main Street, where Good Clover Market Store is located.".
+East Main Street is a room. "East Main Street, home to the Shiny Rock Park."
 [Room Connections]
 Main Street is south of The Main Office. 
 West Main Street is west of Main Street. 
@@ -22,8 +22,8 @@ East Main Street is east of Main Street.
 [W. Main Street Rooms]
 
 [Second Street Rooms]
-Second Street is a room. "Second Street is where the industrious little town works"
-West Second Street is a room. "West Second Street leads out into the hills of rolling grass, away from Littleburg's hustle and bustle"
+Second Street is a room. "Second Street is where the industrious little town works".
+West Second Street is a room. "West Second Street leads out into the hills of rolling grass, away from Littleburg's hustle and bustle".
 East Second Street is a room. "East Second Street holds most of the homes where the good people Littleburg live."
 [Room Connections]
 Second Street is south of Main Street.
