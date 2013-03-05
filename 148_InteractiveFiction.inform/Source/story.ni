@@ -1,44 +1,105 @@
-"148_InteractiveFiction" by Adam Magleby, Drew Facchiano, Jason Roth
+"148_InteractiveFiction" by Adam Magleby, Drew Facchiano, Jason Judd Roth
 
-[News Office Rooms]
+[Scenes]
+The mute is a scene.
+The invasion is a scene.
+
+[mute scene rules]
+
+[invasion scene rules]
+
+[News Office Rooms of the Daily Babler]
 Walter's Office is a room. "Walter's office. It is covered in photograhps that he has taken from around the town."
-The Main Office is a room. "The Main Office of the Daily Babbler. Hot tips come in and hard hitting news goes out."
-Woodchuck's Office is a room. "Mr. Woodchuck's office. Any good journalist will try to avoid it as much as possible."
+The Break Room is a room. "A place where employee's converse on the latest gossip around the town."
+The Office Supply Room is a room. "A room filled with random office supplies."
+The Daily Babler Foyer is a room. "The foyer to the Daily Babler."
 [Room Connections]
-Walter's Office is east of The Main Office.
-WoodChuck's Office is north of The Main Office.
+Walter's Office is west of the Break Room.
+The Office Supply Room is east of the Break Room.
+The Daily Babler Foyer is south of the Break Room.
+
+[Office Room Characters]
+
+[Walter's Office things]
+
+[Break Room things]
+
+[Office Supply Room things]
+
+[Daily Babler Foyer things]
+
+[First Street Rooms]
+First Street is a room.  "First St. of Littleburg, USA. There has never been a more beautiful town than this one. ".
+The Police Station is a room. "The fine men in blue of Littleburg, USA."
+The Mayors Office is a room. "The office of Mayor Calahan."
+[Room Connections]
+First Street is south of the Daily Babler Foyer. 
+The Police Station is west of First Street.
+The Mayors Office is east of First Street.
+
+[First Street Characters]
+
+[First Street things]
+
+[Police Station things]
+
+[Mayors Office things]
 
 [Main Street Rooms]
-Main Street is a room.  "The Main Street of Littleburg. USA. There has never been a more beautiful town than this one. ".
-West Main Street is a room. "West Main Street, where Good Clover Market Store is located.".
-East Main Street is a room. "East Main Street, home to the Shiny Rock Park."
+Main Street is a room. "The main street of Littleburg, USA."
+The Malt Shop is a room. "A local hang out for all hip kids in Littleburg."
+Jims Bar is a room. "Serving libations since 1912."
 [Room Connections]
-Main Street is south of The Main Office. 
-West Main Street is west of Main Street. 
-East Main Street is east of Main Street. 
+Main Street is south of First Street.
+The Malt Shop is west of Main Street.
+Jims Bar is east of Main Street.
 
-[E. Main Street Rooms]
+[Main Street Characters]
 
-[W. Main Street Rooms]
+[Main Street things]
 
-[Second Street Rooms]
-Second Street is a room. "Second Street is where the industrious little town works".
-West Second Street is a room. "West Second Street leads out into the hills of rolling grass, away from Littleburg's hustle and bustle".
-East Second Street is a room. "East Second Street holds most of the homes where the good people Littleburg live."
+[Malt Shop things]
+
+[Jims Bar things]
+
+[Whistlebarry Ave Rooms]
+Whistlebarry Ave is a room. "A quiet neighborhood of Littleburg, USA."
+Walter's House is a room. "Walter's house."
+The Bomb Shelter is a room. "Can never be too careful."
+Littleburg High is a room. "Littleburg High, home of the Crushing Scottish Warriors."
 [Room Connections]
-Second Street is south of Main Street.
-West Second Street is west of Second Street.
-East Second Street is east of Second Street.
+Whistlebarry Ave is south of Main Street.
+Walter's House is west of Whistlebarry Ave.
+The Bomb Shelter is below Walter's House.
+Littleburg High is south of Whistlebarry Ave.
 
-[E. Second Street Roooms]
+[Whistlebarry Ave Characters]
 
-[W. Second Street Rooms]
+[Whistlebarry Ave things]
+
+[Walter's House things]
+
+[Bomb Shelter things]
+
+[Littleburg High things]
 
 [Farm Rooms]
 Betty's Farm is a room. "Old Betty's farm. Supplying the finest products to this fine little town."
 Farm Field is a room. "A wide open field filled with the smells of livestock."
 Alien Ship is a room. "The ship of the alien invaders. What horrors must they conduct in here?"
+Alien Ship Interior is a room. "The inside of the alien ship."
 [Room Connections]
-Betty's Farm is west of West Second Street.
-Farm Field is west of Betty's Farm.
-Alien Ship is south of Farm Field.
+Betty's Farm is east of Whistlebarry Ave.
+Farm Field is north of Betty's Farm.
+Alien Ship is east of Farm Field.
+Inside from the Alien Ship is the Alien Ship Interior.
+
+[Farm and Alien Ship Characters]
+
+[Betty's Farm things]
+
+[Farm Field things]
+
+[Alien Ship things]
+
+[Alien Ship Interior things]
