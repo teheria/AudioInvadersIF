@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Skein rootNode="node-0x035AE0B0" xmlns="http://www.logicalshift.org.uk/IF/Skein">
+  <generator>Inform 7 for Windows</generator>
+  <activeNode nodeId="node-0x035AE0B0"/>
+  <item nodeId="node-0x035AE0B0">
+    <command xml:space="preserve">- start -</command>
+    <result xml:space="preserve">148_InteractiveFiction&#x000A;An Interactive Fiction by Adam Magleby, Drew Facchiano, Jason Roth&#x000A;Release 1 / Serial number 130304 / Inform 7 build 6G60 (I6/v6.32 lib 6/12N) SD&#x000A;&#x000A;Walter's Office&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">NO</temporary>
+  </item>
+</Skein>

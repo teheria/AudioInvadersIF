@@ -1,0 +1,9 @@
+# The follownig is a list of files and extensions that will be ignored
+# by Git. DO NOT alter or move this file.
+
+# Ignore the following directories
+
+# Ignore the following file extensions
+
+#Ignore VIM files
+*~
