@@ -1,28 +1,55 @@
 "148_InteractiveFiction" by Adam Magleby, Drew Facchiano, Jason Judd Roth
 
-[Scenes]
-The mute is a scene.
-The invasion is a scene.
-
-[mute scene rules]
-
-[invasion scene rules]
+[Custom Actions]
+[Drinking]
+A thing can be drinkable.
+Check drinking when the noun is not drinkable: instead say "Walter knows he can't drink the [noun]."
 
 [News Office Rooms of the Daily Babler]
-Walter's Office is a room. "Walter's office. It is covered in photograhps that he has taken from around the town."
-The Break Room is a room. "A place where employee's converse on the latest gossip around the town."
-The Office Supply Room is a room. "A room filled with random office supplies."
-The Daily Babler Foyer is a room. "The foyer to the Daily Babler."
+Walter's Office is a room. "Walter's office. It is covered in photograhps that he has taken from around the town. 
+
+To the east is the break room."
+The Break Room is a room. "A place where employee's converse on the latest gossip around the town. There is a water cooler with a small refridgerator next to it.
+
+Walter's office is to the west, the office supply room is to the east, and the Daily Babler foyer is to the south."
+The Office Supply Room is a room. "A room filled with random office supplies. There is a table near the far wal with an old typewriter and a camera on it.
+
+The break room is to the west."
+The Daily Babler Foyer is a room. "The foyer to the Daily Babler.
+
+The break room is to the north, and First street is to the south."
 [Room Connections]
 Walter's Office is west of the Break Room.
 The Office Supply Room is east of the Break Room.
 The Daily Babler Foyer is south of the Break Room.
 
 [Office Room Characters]
+Frank Woodchuck is a man in Walter's Office. The description of Frank Woodchuck is "Walter's boss, a man with a stare that would crush the heart of any journalist. He is very hard to convince about even the simplest of things."
 
-[Walter's Office things]
+[Walter's Office things and rules]
+Before listing nondescript items:
+	change Frank Woodchuck to not marked for listing.
+Check someone drinking: 
+	if the object is not drinkable, stop the action.
+
+Photographs are scenery in Walter's Office. Understand "photos" as photographs.  Understand "photo" as photographs. The description is "A collection of photographs that Walter has taken over the years; the source of his income."
+
+A cup of coffee is drinkable and in Walter's Office. The cup of coffee can be full, three fourths full, half full, a quarter full, or empty. The cup of coffee is full. Understand "coffee" as the cup of coffee.
+The description of the cup of coffee is "Nothing like a fresh cup of joe in the morning."
+Instead of drinking the cup of coffee when the cup of coffee is empty, say "The cup of coffee is empty."
+Before drinking the cup of coffee:
+	if the cup of coffee is a quarter full, now the cup of coffee is empty;
+	if the cup of coffee is half full, now the cup of coffee is a quarter full;
+	if the cup of coffee is three fourths full, now the cup of coffee is half full;
+	if the cup of coffee is full, now the cup of coffee is three fourths full;
+	say "Walter takes a long drink of coffee. The coffee is now [cup of coffee condition].".
+After drinking the cup of coffee, say "'Are you just going to drink coffee all day? Or get me an actually story to run?' Woodchuck yells at Walter."
+After printing the name of the cup of coffee, say " ([cup of coffee condition])."
 
 [Break Room things]
+A water cooler is scenery in the Break Room. The water cooler is drinkable. The description is "A cooler that dispenses water."
+Instead of eating the water cooler: say "Walter knows he can't eat this, maybe try drinking from it instead?"
+Instead of drinking the water cooler, say "Walter takes a small paper cup, and poors himself a drink of water. Ah refreshing!"
 
 [Office Supply Room things]
 
@@ -103,3 +130,24 @@ Inside from the Alien Ship is the Alien Ship Interior.
 [Alien Ship things]
 
 [Alien Ship Interior things]
+
+[Scenes]
+The introduction is a scene. "Frank Woodchuck burst into Walter's Office, 'It's almost printing time and you still don't have a story Walter! I don't pay you to sit around your office all day. Give me one reason why shouldn't fire you?'"
+The mute is a scene.
+The invasion is a scene.
+
+[introduction scene rules]
+The introduction begins when play begins.
+The introduction ends when Frank Woodchuck is in the Daily Babler Foyer.
+When the introduction begins:
+	now the description of Frank Woodchuck is "Walter's boss stares him down with a menecing stare.";
+	now the description of the Walter's Office is "Walter's office. There are some photographs laying about, and a cup of coffee on Walter's desk. Woodchuck, Walter's boss is blocking the doorway to the east, staring Walter down.
+	
+	The break room is to the east."
+	Instead of going east, say "Woodchuck blocks Walter from leaving the room. Walter better think of something to get him to leave."
+When the introduction ends:
+	say "Walter's boss leaves the room, slaming the door shut behind him. That's Walter's cue to get to work on the next big scoope."
+
+[mute scene rules]
+
+[invasion scene rules]
