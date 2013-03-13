@@ -10,7 +10,7 @@ release to "C:\Users\Jason Roth\GitHub\AudioInvadersIF\148_InteractiveFiction Ma
 
 ! Blorb instructions
 
-storyfile leafname "148_InteractiveFiction.zblorb"
+storyfile leafname "Audio Invaders.zblorb"
 storyfile "C:\Users\Jason Roth\GitHub\AudioInvadersIF\148_InteractiveFiction.inform\Build\output.z5" include
 ifiction "C:\Users\Jason Roth\GitHub\AudioInvadersIF\148_InteractiveFiction.inform\Metadata.iFiction" include
 cover "C:\Program Files (x86)\Inform 7\Inform7\Extensions\Reserved\DefaultCover.jpg"
@@ -21,7 +21,7 @@ picture 1 "C:\Program Files (x86)\Inform 7\Inform7\Extensions\Reserved\DefaultCo
 placeholder [IFID] = "BF848D81-506C-454F-BCAC-0D483DD44803"
 placeholder [RELEASE] = "1"
 placeholder [YEAR] = "2013"
-placeholder [TITLE] = "148_InteractiveFiction"
+placeholder [TITLE] = "Audio Invaders"
 placeholder [AUTHOR] = "Adam Magleby, Drew Facchiano, Jason Judd Roth"
 placeholder [BLURB] = "A work of interactive fiction."
 
