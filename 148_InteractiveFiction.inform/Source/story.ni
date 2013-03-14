@@ -1,7 +1,7 @@
 "Audio Invaders" by Adam Magleby, Drew Facchiano, Jason Judd Roth
 
 [Scenes]
-The introduction is a scene. "Frank Woodchuck burst into Walter Flintlock's Office, 'It's almost printing time and you still don't have a story Walter! I don't pay you to sit around your office all day. Give me one reason why shouldn't fire you?'"
+The introduction is a scene. "It's a bright and sunny day in Littleburg, USA. The town is quiet, but the local news paper, The Daily Babler would like to see that changed, hoping to catch a big story to run. Walter Flintlock is a jorunalist at the Babler, but he's been struggling to find a good story to run. Maybe today will change all of that.[paragraph break]Frank Woodchuck burst into Walter Flintlock's Office, 'It's almost printing time and you still don't have a story Walter! I don't pay you to sit around your office all day. Give me one reason why shouldn't fire you?'"
 The mute is a scene.
 The invasion is a scene.
 
@@ -22,6 +22,7 @@ After drinking something when something is drinkable:
 	if the noun is three fourths full, now the noun is half full;
 	if the noun is full, now the noun is three fourths full;
 	say "Walter takes a long drink of [the noun]. ([drink condition])".
+
 [Photographing]
 photographing is an action applying to one visible thing.
 Understand "photograph [something]" as photographing.
@@ -31,12 +32,23 @@ Check photographing:
 		say "Walter probably needs his camera to take a photograph." instead.
 Report Photographing:
 	say "Click! Walter takes a photograph of [the noun]."
+	
+[Typing]
+typing is an action applying to one visible thing.
+Understand "type on [something]" as typing.
+A thing can be type-able.
+Check typing:
+	if the noun is not type-able:
+		say "Walter taps his fingers against [the noun].";
+		rule fails.
+Report typing:
+	say "Walter types on [the noun].".
 
 [News Office Rooms of the Daily Babler]
 Walter's Office is a room. "[If Introduction has not ended]Walter's office. His desk is seen here, with [a list of things on Walter's desk] on it. Woodchuck, Walter's boss, is blocking the doorway to the east, staring Walter down.[otherwise] Walter's office. It is covered in photograhps that he has taken from around the town. There is a cup of coffee on his desk.[end if][paragraph break]To the east is the break room."
 The Break Room is a room. "A place where employee's converse on the latest gossip around the town. There is a water cooler with a small refridgerator next to it. [paragraph break]Walter's office is to the west, the office supply room is to the east, and the Daily Babler foyer is to the south."
 The Office Supply Room is a room. "A room filled with random office supplies. There is a table near the far wall with an old typewriter on it. [paragraph break]The break room is to the west."
-The Daily Babler Foyer is a room. "The foyer to the Daily Babler. Frank Woodchuck sitting down behind the main desk. [paragraph break]The break room is to the north, and First street is to the south."
+The Daily Babler Foyer is a room. "The foyer to the Daily Babler, where the new of Littleburg USA happens.[paragraph break]The break room is to the north, and First street is to the south."
 [Room Connections]
 Walter's Office is west of the Break Room.
 The Office Supply Room is east of the Break Room.
@@ -58,7 +70,7 @@ Walter's desk is a supporter in Walter's Office. The description is "Walter's de
 
 [Photos]
 Photographs are on Walter's desk. Understand "photos" as photographs. The description is "A collection of photographs that Walter has taken over the years; the source of his income."
-After showing Frank Woodchuck the photographs, say "'Those photos are from last week Walter, get me something fresh,' Frank says to Walter.".
+After showing the photographs to Frank Woodchuck, say "'Those photos are from last week Walter, get me something fresh,' Frank says to Walter.".
 
 [Walter's Camera]
 Walter's Camera is a camera on Walter's desk. The description of Walter's Camera is "A 35mm Baldina, Walter should never leave the office without his trusty camera, never know when he'll be able to snap the big scope."
@@ -99,12 +111,18 @@ Instead of drinking the water cooler, say "Walter takes a small paper cup, and p
 A refrigerator is a closed openable container in the Break Room. The refrigerator is fixed in place. Understand "fridge" as refrigerator.
 The description is "[If the noun is closed] A small white refrigerator, Wonder what's inside?[otherwise]A small white refrigerator. Inside is [list of things in the noun][end if].".
 
-Inside the refrigerator is a drinkable drink called Orange Juice. Understand "oj" as Orange Juice. The description of orange juice is "A small caraffe of orange juice. ([drink condition])".
+Inside the refrigerator is a drinkable drink called orange juice. Understand "oj" as orange juice. The description of orange juice is "A small caraffe of orange juice. ([drink condition])".
 Instead of drinking a quarter full orange juice:
 	if the noun is a quarter full, now the noun is empty;
 	say "[line break] Charles Hickerson enters the room and suddenly throw his hands in the air, 'Walter! Why are you drinking my orange juice!'";
 	now Charles Hickerson is in the Break Room.
-
+After asking Charles Hickerson about something:
+	if the orange juice is empty, say "'I can't believe you just drank it all. Didn't your mother teach you not to take what's not yours?' Charles says to Walter.";
+	otherwise say "'Oh I love [the topic understood]! Especially on a fine day like today. Good day for a big story, eh Walter?' Charles happily says to Walter.".
+After telling Charles Hickerson about something:
+	if the orange juice is empty, say "I don't really care about [the topic understood] Walter. I'm still upset with you for drinking the last of my orange juice.";
+	otherwise say "'Oh that's interesting Walter,' says Charles".
+	
 [Break Room rules]
 Rule for listing nondescript items of the Break Room:
 	change refrigerator to not marked for listing;
@@ -114,6 +132,7 @@ Rule for listing nondescript items of the Break Room:
 A old wooden table is a supporter in the Office Supply Room. The description is "An old wooden table.".
 
 An old typewriter is a fixed in place thing on the old wooden table. The description is "A Royal typewriter. It looks like it hasn't been used in quite some time.".
+The old typewriter is type-able.
 Instead of taking the old typewriter, say "The [noun] is a little too heavy to carry.".
 
 [Office Supply Room rules]
