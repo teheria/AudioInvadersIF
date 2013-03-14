@@ -1,7 +1,7 @@
 "Audio Invaders" by Adam Magleby, Drew Facchiano, Jason Judd Roth
 
 [Scenes]
-The introduction is a scene. "Frank Woodchuck burst into Walter's Office, 'It's almost printing time and you still don't have a story Walter! I don't pay you to sit around your office all day. Give me one reason why shouldn't fire you?'"
+The introduction is a scene. "Frank Woodchuck burst into Walter Flintlock's Office, 'It's almost printing time and you still don't have a story Walter! I don't pay you to sit around your office all day. Give me one reason why shouldn't fire you?'"
 The mute is a scene.
 The invasion is a scene.
 
@@ -44,29 +44,36 @@ The Daily Babler Foyer is south of the Break Room.
 
 [Office Room Characters]
 Frank Woodchuck is a man in Walter's Office. The description of Frank Woodchuck is "[If Introduction has not ended]Walter's boss stares him down with a menecing stare. Walter better think of a way to get Woodchuck off his case.[otherwise]Walter's boss, a man with a stare that would crush the heart of any journalist. He is very hard to convince about even the simplest of things.[end if]".
-After photographing Frank Woodchuck, say "'God damnit Walter, stop wasting film!' shouts Walter's boss".
+After asking Frank Woodchuck about something during the Introduction, say "'[the topic understood] is not of concern right now Walter, get me a dang story!' Frank sternly says to Walter."
+After telling Frank Woodchuck about something during the Introduction, say "Frank Woodchuck replies angerly to Walter, '[the topic understood] won't write me a story Walter. So get your camera and get me a story!'".
+
+[Wlater's Office Puzzle Solve Condition]
+After photographing Frank Woodchuck:
+	say "'God damnit Walter, stop wasting film! If you don't get me a good story to run, you'll be looking for a new job buddy' shouts Walter's boss";
+	now Frank Woodchuck is in the Daily Babler Foyer;
+	rule succeeds.
 
 [Walter's Office Things]
 Walter's desk is a supporter in Walter's Office. The description is "Walter's desk.".
 
+[Photos]
 Photographs are on Walter's desk. Understand "photos" as photographs. The description is "A collection of photographs that Walter has taken over the years; the source of his income."
+After showing Frank Woodchuck the photographs, say "'Those photos are from last week Walter, get me something fresh,' Frank says to Walter.".
 
+[Walter's Camera]
 Walter's Camera is a camera on Walter's desk. The description of Walter's Camera is "A 35mm Baldina, Walter should never leave the office without his trusty camera, never know when he'll be able to snap the big scope."
 After taking Walter's Camera, say "Walter picks up his camera ready for action.".
 After dropping Walter's Camera, say "Walter drops his camera. He better pick it up otherwise he won't be able to get any good shots."
-Check showing Walter's camera to:
-	if the second noun is Frank Woodchuck:
-		say "Walter waves around his camera and says, 'Fine, fine, I'll go get you a story.' Woodchuck gives Walter a sharp eyed look and says, 'If you don't get me a good story to run, you'll be looking for a new job buddy.'";
-		now Woodchuck is in the Daily Babler Foyer;
-		rule succeeds.
 
+[Coffee]
 A cup of coffee is a drinkable drink and on Walter's desk. The cup of coffee is full. Understand "coffee" as the cup of coffee.
 The description of the cup of coffee is "Nothing like a fresh cup of joe in the morning. (The coffee is [drink condition])."
 After drinking a full cup of coffee during the Introduction:
 	if the noun is full, now the noun is three fourths full;
 	say "[line break]'Are you just going to drink coffee all day? Or get me an actually story to run?' Woodchuck yells at Walter.";
 	rule succeeds.
-	
+
+[Dropping coffee]
 After dropping the cup of coffee:
 	if the noun is not empty, say "The [noun] falls to the floor, shattering and spilling coffee everywhere.";
 	otherwise say "The [noun] falls to the floor, and shatters.";
