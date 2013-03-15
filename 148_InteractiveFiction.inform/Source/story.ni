@@ -2,10 +2,15 @@
 
 [Scenes]
 The introduction is a scene. "It's a bright and sunny day in Littleburg, USA. The town is quiet, but the local news paper, The Daily Babler would like to see that changed, hoping to catch a big story to run. Walter Flintlock is a jorunalist at the Babler, but he's been struggling to find a good story to run. Maybe today will change all of that.[paragraph break]Frank Woodchuck burst into Walter Flintlock's Office, 'It's almost printing time and you still don't have a story Walter! I don't pay you to sit around your office all day. Give me one reason why shouldn't fire you?'"
-The mute is a scene.
 The invasion is a scene.
 
+[General Rules]
+After asking someone about something during the invasion, say "Walter tries to speak, but no words come out. [the topic understood] gives Walter a puzzling look.".
+After telling someone about something during the invasion, say "Walter tries to explain [the noun] to [the topic understood], but no words come out. [the topic understood] gives Walter a funny look.".
+A person can be convinced or unconvinced.
+
 [Things]
+A subject is a kind of thing.
 A camera is a kind of thing.
 A photo is a kind of thing.
 A drink is a kind of thing. A drink can be full, empty, half full, three fourths full or a quarter full.
@@ -55,7 +60,7 @@ The Office Supply Room is east of the Break Room.
 The Daily Babler Foyer is south of the Break Room.
 
 [Office Room Characters]
-Frank Woodchuck is a man in Walter's Office. The description of Frank Woodchuck is "[If Introduction has not ended]Walter's boss stares him down with a menecing stare. Walter better think of a way to get Woodchuck off his case.[otherwise]Walter's boss, a man with a stare that would crush the heart of any journalist. He is very hard to convince about even the simplest of things.[end if]".
+Frank Woodchuck is a unconvinced man in Walter's Office. The description of Frank Woodchuck is "[If Introduction has not ended]Walter's boss stares him down with a menecing stare. Walter better think of a way to get Woodchuck off his case.[otherwise]Walter's boss, a man with a stare that would crush the heart of any journalist. He is very hard to convince about even the simplest of things.[end if]".
 After asking Frank Woodchuck about something during the Introduction, say "'[the topic understood] is not of concern right now Walter, get me a dang story!' Frank sternly says to Walter."
 After telling Frank Woodchuck about something during the Introduction, say "Frank Woodchuck replies angerly to Walter, '[the topic understood] won't write me a story Walter. So get your camera and get me a story!'".
 
@@ -100,7 +105,7 @@ Rule for listing nondescript items of the Walter's Office:
 	change Walter's Camera to not marked for listing.
 	
 [Break Room Characters]
-Charles Hickerson is a man in the Daily Babler Foyer. The description of Charles Hickerson is "Charles Hickerson, a journalist at the Daily Babler.".
+Charles Hickerson is a unconvinced man in the Daily Babler Foyer. The description of Charles Hickerson is "Charles Hickerson, a journalist at the Daily Babler.".
 After photographing Charles Hickerson, say "'Say cheese!' Walter says to Charles. Charles is not amused.".
 
 [Break Room things]
@@ -151,9 +156,9 @@ The Police Station is west of First Street.
 The Mayors Office is east of First Street.
 
 [First Street Characters] [inlcudes Police Station and Mayor's Office]
-Roger the Milkman is a man in First Street."A delightful and helpful fellow who can brighten any day with a healthy dose of calcium."
-Mayor Calahan is a man in Mayor's Office. "A greedy politician. He is known to take forever to do anything."
-Officer Smith is a man in Police Station. "A grizzled cop who doesn't play by the rules... not even his own."
+Roger the Milkman is a unconvinced man in First Street."A delightful and helpful fellow who can brighten any day with a healthy dose of calcium."
+Mayor Calahan is a unconvinced man. He is in Mayor's Office. "A greedy politician. He is known to take forever to do anything."
+Officer Smith is a unconvinced man in Police Station. "A grizzled cop who doesn't play by the rules... not even his own."
 
 [First Street things]
 
@@ -171,10 +176,10 @@ The Malt Shop is west of Main Street.
 Jims Bar is east of Main Street.
 
 [Main Street Characters] [includes Malt Shop and Jim's Bar]
-Suzy is a woman in Malt Shop. "Deeply in love with Jake. Loves chocolate shakes."
-Jake is a man in Malt Shop. "Deeply in love with Suzy. Loves listening to the Beach Boys."
-Jim Magee is a man in Jim's Bar. "Runs the local bar, where everybody knows your name."
-Mary Sue is a woman in Main Street. "A perky young dame with a relatively flat personality."
+Suzy is a unconvinced woman in Malt Shop. "Deeply in love with Jake. Loves chocolate shakes."
+Jake is a unconvinced man in Malt Shop. "Deeply in love with Suzy. Loves listening to the Beach Boys."
+Jim Magee is a unconvinced man. He is in Jim's Bar. "Runs the local bar, where everybody knows your name."
+Mary Sue is a unconvinced woman in Main Street. "A perky young dame with a relatively flat personality."
 [Main Street things]
 
 [Malt Shop things]
@@ -193,9 +198,22 @@ The Bomb Shelter is below Walter's House.
 Littleburg High is south of Whistlebarry Ave.
 
 [Whistlebarry Ave Characters] [includes Walter's House, Littleburg High, Betty's Farm]
-Jimmy is a man in Littleburg High. "A young lad. A fan of baseball and comic books."
-Old Man Magoo is a man in Whistlebarry Ave. "An elderly man. Easily startled and impressionable."
-Chuck Rogers is a man in Littleburg High. "Captain of the Littleburg High Football team. Go Kiwi's! Very protective of the school mascot."
+Jimmy is a unconvinced man in Littleburg High. "A young lad. A fan of baseball and comic books. He looks upset.".
+
+Table of Jimmy's Replies
+Topic			Matter
+"what's the matter"			"'My mom threw out my latest issue of Bucky Rogers!' says Jimmy."
+"whats the matter"			"'My mom threw out my latest issue of Bucky Rogers!' says Jimmy."
+"what's wrong"			"'My mom threw out my latest issue of Bucky Rogers!' says Jimmy."
+"whats wrong"			"'My mom threw out my latest issue of Bucky Rogers!' says Jimmy."
+"what's troubling you"			"'My mom threw out my latest issue of Bucky Rogers!' says Jimmy."
+"whats troubling you"			"'My mom threw out my latest issue of Bucky Rogers!' says Jimmy."
+"comic books"			"Jimmy looks up at Walter and says, 'Bucky Rogers is my favorite! But my mom threw away my latest issue.'"
+
+After asking Jimmy about a topic listed in the Table of Jimmy's Replies, say "[matter entry]".
+
+Old Man Magoo is a unconvinced man in Whistlebarry Ave. "An elderly man. Easily startled and impressionable."
+Chuck Rogers is a unconvinced man in Littleburg High. "Captain of the Littleburg High Football team. Go Kiwi's! Very protective of the school mascot."
 
 [Whistlebarry Ave things]
 
@@ -217,7 +235,7 @@ Alien Ship is east of Farm Field.
 Inside from the Alien Ship is the Alien Ship Interior.
 
 [Farm and Alien Ship Characters]
-Farmer Zeke is a man in Betty's Farm. "A strange and nervous fellow. Believes that something is going on in his field but too afraid to take a look."
+Farmer Zeke is a unconvinced man in Betty's Farm. "A strange and nervous fellow. Believes that something is going on in his field but too afraid to take a look."
 Arbit is a man in Alien Ship. "The Audio Invaders commander. A mean chap who plans to take over the world."
 Zig is a man in Farm Field. "Heavily armed guard of the Audio Invader's ship."
 Zag is a man in Farm Field. "Heavily armed guard of the Audio Invader's ship."
@@ -236,7 +254,5 @@ Instead of going east during Introduction, say "Woodchuck blocks Walter from lea
 [When the introduction begins:]
 When the introduction ends:
 	say "Walter's boss leaves the room, slaming the door shut behind him. That's Walter's cue to get to work on the next big scoop.".
-
-[mute scene rules]
 
 [invasion scene rules]
