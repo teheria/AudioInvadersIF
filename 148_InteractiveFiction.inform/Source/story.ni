@@ -19,7 +19,7 @@ After telling someone about something during the invasion, say "Walter tries to 
 A person can be convinced or unconvinced.
 A person can be tense or  not tense. A person is usually not tense.
 A person can be mute. A person is usually not mute.
-The player is mute.
+[The player is mute.]
 
 
 [Things]
@@ -208,8 +208,17 @@ After telling Roger the Milkman about "aliens" during the invasion:
 		say "Walter tries to tell Roger about the aliens, but he can't speak. How can he convince him? Maybe something can be found at the farm.";
 	otherwise:
 		say "Walter points to the sky, and Roger nods. Walter has no need to convince Roger.".
-		
-[Mayor Calahan Rules]
+
+[Roger Puzzle Solve Conditions]
+Before showing the bottle of alien-milk to Roger the Milkman:
+	if Roger the Milkman is unconvinced:
+		increase goal counter by 1;
+		now Roger the Milkman is convinced;
+		say "'Holy cow! This milk does not look right. Where did this milk come from?' ask Roger. Walter throws his arms around and points up at the sky. Roger thinks for a moment, then says, 'Oh jeez! Aliens are taking our cows! We need to warn someone Walter![paragraph break]Walter has now convinced [goal counter] people about the alien invasion. He must convince [5 - goal counter] more.";
+	otherwise:
+		say "'I know Walter! Those aliens are taking our cows!' says Roger.";
+	rule succeeds.
+	
 Mayor Calahan is a unconvinced man. He is in Mayor's Office. "A greedy politician. He is known to take forever to do anything."
 
 [Officer Smith Rules]
@@ -385,7 +394,7 @@ Rule for listing nondescript items of the Littleburg High:
 	change Jimmy to not marked for listing.
 
 [Farm Rooms]
-Betty's Farm is a room. "Old Betty's farm. Supplying the finest products to this fine little town. There is a barn here, [if invasion has not happened]with a happy looking cow by it.[otherwise]with an odd looking cow by it. It tries to moo but can't. Was it taken by the aliens too?[end if] Walter see's a bucket and a bottle near the cow, guess that's for milking."
+Betty's Farm is a room. "Old Betty's farm. Supplying the finest products to this fine little town. There is a barn here, [if invasion has not happened]with a happy looking cow by it.[otherwise]with an odd looking cow by it.[end if] Walter see's a bottle near the cow, guess that's for milking."
 Farm Field is a room. "A wide open field filled with the smells of livestock."
 Alien Ship is a room. "The ship of the alien invaders. What horrors must they conduct in here?"
 Alien Ship Interior is a room. "The inside of the alien ship."
@@ -400,13 +409,27 @@ Farmer Zeke is a unconvinced man in Betty's Farm. "A strange and nervous fellow.
 Arbit is a man in Alien Ship. "The Audio Invaders commander. A mean chap who plans to take over the world."
 Zig is a man in Farm Field. "Heavily armed guard of the Audio Invader's ship."
 Zag is a man in Farm Field. "Heavily armed guard of the Audio Invader's ship."
+
 [Betty's Farm things]
 The barn is a backdrop. The barn is in Betty's Farm. The description is "An old barn. There is a [if invasion has not happened]a cow by it. 'Moo,' exclaims the cow.[otherwise]an odd looking cow by it. It opens it's mouth as if to moo, but no sound is heard.[end if]".
-A bottle is a container in Betty's Farm. The description is "A milk bottle similar to the one's that Roger the Milkman uses.".
-A cow is a milk-able thing in Betty's Farm.
+A milk-bottle is a container in Betty's Farm. The description is "A milk bottle similar to the one's that Roger the Milkman uses.".
+After taking the milk-bottle during the invasion:
+	say "Walter picks up the milk-bottle. It looks rather empty without any milk in it.";
+	rule succeeds.
+A cow is a milk-able thing in Betty's Farm. The description is "[if invasion has not happened]A happy looking cow. A source of milk in Littleburg, USA.[otherwise]A strange looking cow. It tries to moo but can't. Did the aliens take it's voice too?[end if]".
+A bottle of alien-milk is a thing. The description is "A bottle of milk with a strange glow to it. Roger will want to see this.".
+[Roger Puzzle]
+After milking the cow during the invasion:
+	if the player is carrying the milk-bottle:
+		now player holds bottle of alien-milk;
+		remove milk-bottle from play;
+		say "Walter milks the strange looking cow. A liquid substance resembling milk fills the bucket. Roger will want to see this.";
+	otherwise:
+		say "Walter needs something to put the milk in before milking the strange cow.".	
 
 Rule for listing nondescript items of the Betty's Farm:
-	change bottle to not marked for listing.
+	change bottle to not marked for listing;
+	change cow to not marked for listing.
 
 [Farm Field things]
 
