@@ -22,7 +22,7 @@ placeholder [IFID] = "BF848D81-506C-454F-BCAC-0D483DD44803"
 placeholder [RELEASE] = "1"
 placeholder [YEAR] = "2013"
 placeholder [TITLE] = "Audio Invaders"
-placeholder [AUTHOR] = "Adam Magleby, Drew Facchiano, Jason Judd Roth"
+placeholder [AUTHOR] = "Adam Magleby, Drew Facchiano, Jason Judd Roth The block giving rule is not listed in the check giving it to rules"
 placeholder [BLURB] = "A work of interactive fiction."
 
 ! Other material to release

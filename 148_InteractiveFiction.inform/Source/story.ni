@@ -1,4 +1,14 @@
 "Audio Invaders" by Adam Magleby, Drew Facchiano, Jason Judd Roth
+[giving]
+The block giving rule is not listed in the check giving it to rules.
+Instead of giving the Alien Photograph to someone, say "This is priceless evidence! You can't give that away!"
+Alien Photograph is an object.
+
+
+[gaol to win condition]
+The goal counter is a number variable. The goal counter is 0.
+[Carry out adding [or whatever action]: increase goal counter by 1.]
+Every turn when goal counter is at least 5: try jumping [or whatever action].
 
 [Scenes]
 The introduction is a scene. "It's a bright and sunny day in Littleburg, USA. The town is quiet, but the local news paper, The Daily Babler would like to see that changed, hoping to catch a big story to run. Walter Flintlock is a jorunalist at the Babler, but he's been struggling to find a good story to run. Maybe today will change all of that.[paragraph break]Frank Woodchuck burst into Walter Flintlock's Office, 'It's almost printing time and you still don't have a story Walter! I don't pay you to sit around your office all day. Give me one reason why shouldn't fire you?'"
@@ -180,6 +190,12 @@ Suzy is a unconvinced woman in Malt Shop. "Deeply in love with Jake. Loves choco
 Jake is a unconvinced man in Malt Shop. "Deeply in love with Suzy. Loves listening to the Beach Boys."
 Jim Magee is a unconvinced man. He is in Jim's Bar. "Runs the local bar, where everybody knows your name."
 Mary Sue is a unconvinced woman in Main Street. "A perky young dame with a relatively flat personality."
+
+After giving the Diary to Mary Sue:
+	increase goal counter by 1;
+	say "but how?! how can this be!?! It's the commi's! The aliens! The commi-aliens! And now they know my secrets!".
+Persuasion rule for asking people to try doing something: persuasion succeeds.
+
 [Main Street things]
 
 [Malt Shop things]
@@ -188,13 +204,14 @@ Mary Sue is a unconvinced woman in Main Street. "A perky young dame with a relat
 
 [Whistlebarry Ave Rooms]
 Whistlebarry Ave is a room. "A quiet neighborhood of Littleburg, USA."
-Walter's House is a room. "Walter's house."
-The Bomb Shelter is a room. "Can never be too careful."
+Mary Sues' House is a room. "Mary Sue's House. The picture perfect house for the modern family. It doesn't look like anyone is here."
+Mary Sue's Bedroom is a room. "Mary Sue's Bedroom. Walter is overcome from the sight of all the pictures of Chuck Rogers."
+[The Bomb Shelter is a room. "Can never be too careful."]
 Littleburg High is a room. "Littleburg High, home of the Crushing Scottish Warriors."
 [Room Connections]
 Whistlebarry Ave is south of Main Street.
-Walter's House is west of Whistlebarry Ave.
-The Bomb Shelter is below Walter's House.
+Mary Sue's House is west of Whistlebarry Ave.
+Mary Sue's Bedroom is inside of Mary Sue's House.
 Littleburg High is south of Whistlebarry Ave.
 
 [Whistlebarry Ave Characters] [includes Walter's House, Littleburg High, Betty's Farm]
@@ -213,12 +230,26 @@ Topic			Matter
 After asking Jimmy about a topic listed in the Table of Jimmy's Replies, say "[matter entry]".
 
 Old Man Magoo is a unconvinced man in Whistlebarry Ave. "An elderly man. Easily startled and impressionable."
+[Old Man Magoo Rules]
+Old Man Magoo is a man in Whistlebarry Ave. "An elderly man. Easily startled and impressionable."
+After showing Alien Photograph to Old Man Magoo: 
+	increase goal counter by 1;
+	say "What's this! Oh my...AN ALIEN! oh goodness no! I must warn my grandson Gary!".
+	
 Chuck Rogers is a unconvinced man in Littleburg High. "Captain of the Littleburg High Football team. Go Kiwi's! Very protective of the school mascot."
 
 [Whistlebarry Ave things]
 
-[Walter's House things]
+[Mary Sue's Bedroom things]
+Secret Chest is a container in Mary Sue's Bedroom. It is lockable and locked.
+Diary is in Secret Chest.
+Secret Chest Key unlocks Secret Chest.
 
+Poster Board is in Mary Sue's Bedroom. Poster Board is scenery.
+Mary Sue's Bed is in Mary Sue's Bedroom. Mary Sue's Bed is a container.
+
+Mary's Desk is a supporter in Mary Sue's Bedroom. 
+Secret Chest Key is on Mary's Desk.
 [Bomb Shelter things]
 
 [Littleburg High things]
