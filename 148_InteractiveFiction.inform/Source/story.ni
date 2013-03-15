@@ -150,7 +150,10 @@ First Street is south of the Daily Babler Foyer.
 The Police Station is west of First Street.
 The Mayors Office is east of First Street.
 
-[First Street Characters]
+[First Street Characters] [inlcudes Police Station and Mayor's Office]
+Roger the Milkman is a man in First Street."A delightful and helpful fellow who can brighten any day with a healthy dose of calcium."
+Mayor Calahan is a man in Mayor's Office. "A greedy politician. He is known to take forever to do anything."
+Officer Smith is a man in Police Station. "A grizzled cop who doesn't play by the rules... not even his own."
 
 [First Street things]
 
@@ -167,8 +170,11 @@ Main Street is south of First Street.
 The Malt Shop is west of Main Street.
 Jims Bar is east of Main Street.
 
-[Main Street Characters]
-
+[Main Street Characters] [includes Malt Shop and Jim's Bar]
+Suzy is a woman in Malt Shop. "Deeply in love with Jake. Loves chocolate shakes."
+Jake is a man in Malt Shop. "Deeply in love with Suzy. Loves listening to the Beach Boys."
+Jim Magee is a man in Jim's Bar. "Runs the local bar, where everybody knows your name."
+Mary Sue is a woman in Main Street. "A perky young dame with a relatively flat personality."
 [Main Street things]
 
 [Malt Shop things]
@@ -186,7 +192,10 @@ Walter's House is west of Whistlebarry Ave.
 The Bomb Shelter is below Walter's House.
 Littleburg High is south of Whistlebarry Ave.
 
-[Whistlebarry Ave Characters]
+[Whistlebarry Ave Characters] [includes Walter's House, Littleburg High, Betty's Farm]
+Jimmy is a man in Littleburg High. "A young lad. A fan of baseball and comic books."
+Old Man Magoo is a man in Whistlebarry Ave. "An elderly man. Easily startled and impressionable."
+Chuck Rogers is a man in Littleburg High. "Captain of the Littleburg High Football team. Go Kiwi's! Very protective of the school mascot."
 
 [Whistlebarry Ave things]
 
@@ -208,7 +217,10 @@ Alien Ship is east of Farm Field.
 Inside from the Alien Ship is the Alien Ship Interior.
 
 [Farm and Alien Ship Characters]
-
+Farmer Zeke is a man in Betty's Farm. "A strange and nervous fellow. Believes that something is going on in his field but too afraid to take a look."
+Arbit is a man in Alien Ship. "The Audio Invaders commander. A mean chap who plans to take over the world."
+Zig is a man in Farm Field. "Heavily armed guard of the Audio Invader's ship."
+Zag is a man in Farm Field. "Heavily armed guard of the Audio Invader's ship."
 [Betty's Farm things]
 
 [Farm Field things]
