@@ -1,7 +1,7 @@
 "Audio Invaders" by Adam Magleby, Drew Facchiano, Jason Judd Roth
 
 [Scenes]
-The introduction is a scene. "It's a bright and sunny day in Littleburg, USA. The town is quiet, but the local news paper, The Daily Babler would like to see that changed, hoping to catch a big story to run. Walter Flintlock is a jorunalist at the Babler, but he's been struggling to find a good story to run. Maybe today will change all of that.[paragraph break]Frank Woodchuck burst into Walter Flintlock's Office, 'It's almost printing time and you still don't have a story Walter! I don't pay you to sit around your office all day. Give me one reason why shouldn't fire you?'"
+The introduction is a scene. "It's a bright and sunny day in Littleburg, USA. The town is quiet, but the local news paper, The Daily Babler would like to see that changed, hoping to catch athe next big scoop. Walter Flintlock is a journalist at the Babler, but he's been struggling to find a good story to run. Howver, his luck...for better or worse, is about to change...[paragraph break]Frank Woodchuck burst into Walter Flintlock's Office, 'It's almost printing time and you still don't have a story Walter! I don't pay you to sit around your office all day chewin bubble gum! get out there and find me a headline OR YOUR FIRED!'"
 The mute is a scene.
 The invasion is a scene.
 
