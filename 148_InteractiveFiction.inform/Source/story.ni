@@ -16,8 +16,10 @@ The invasion is a scene.
 
 [General Rules]
 After asking someone about something during the invasion, say "Walter tries to speak, but no words come out. [the topic understood] gives Walter a puzzling look.".
-After telling someone about something during the invasion, say "Walter tries to explain [the noun] to [the topic understood], but no words come out. [the topic understood] gives Walter a funny look.".
+After telling someone about something during the invasion, say "Walter tries to explain [the noun] to [the topic understood], but no words come out. [the topic understood] gives Walter a funny look. Walter needs to find a way to tell [the topic understood] about the aliens!".
 A person can be convinced or unconvinced.
+A person can be mute. A person is usually not mute.
+The player is mute.
 
 [Things]
 A subject is a kind of thing.
@@ -58,6 +60,18 @@ Check typing:
 		rule fails.
 Report typing:
 	say "Walter types on [the noun].".
+	
+[Milking]
+milking is an action applying to one visible thing.
+Understand "milk [something]" as milking.
+Understand "milk the [something]" as milking.
+A thing can be milk-able.
+Check milking:
+	if the noun is not milk-able:
+		say "Walter cannot milk such a thing.";
+		rule fails.
+Report milking:
+	say "Walter milks [the noun], ah the joy's of the small town life.".
 
 [News Office Rooms of the Daily Babler]
 Walter's Office is a room. "[If Introduction has not ended]Walter's office. His desk is seen here, with [a list of things on Walter's desk] on it. Woodchuck, Walter's boss, is blocking the doorway to the east, staring Walter down.[otherwise] Walter's office. It is covered in photograhps that he has taken from around the town. There is a cup of coffee on his desk.[end if][paragraph break]To the east is the break room."
@@ -157,7 +171,7 @@ Rule for listing nondescript items of the Office Supply Room:
 [Daily Babler Foyer things]
 
 [First Street Rooms]
-First Street is a room.  "First St. of Littleburg, USA. There has never been a more beautiful town than this one. ".
+First Street is a room.  "First St. of Littleburg, USA. There has never been a more beautiful town than this one. The local milkman is seen making his rounds.[paragraph break]To the north is The Daily Babler, to the south is Main Stree, to the west is the local Police Station and to the east is the Mayor's Office".
 The Police Station is a room. "The fine men in blue of Littleburg, USA."
 The Mayors Office is a room. "The office of Mayor Calahan."
 [Room Connections]
@@ -166,11 +180,31 @@ The Police Station is west of First Street.
 The Mayors Office is east of First Street.
 
 [First Street Characters] [inlcudes Police Station and Mayor's Office]
-Roger the Milkman is a unconvinced man in First Street."A delightful and helpful fellow who can brighten any day with a healthy dose of calcium."
+Roger the Milkman is a unconvinced man in First Street. The description is "A delightful and helpful fellow who can brighten any day with a healthy dose of calcium."
+Understand "milkman" as Roger the Milkman.
+
+Table of Roger's Replies
+Topic			Reply
+"milk"			"'The finiest in all of Littleburg! Straight from Betty's farm,' exclaims Roger"
+"Littleburg"			"'The home of the Kiwi's and my delicious milk of course!' says Roger"
+
+After asking Roger the Milkman about a topic listed in the Table of Roger's Replies, say "[reply entry]".
+
+[invasion]
+After telling Roger the Milkman about "aliens" during the invasion:
+	if Roger the Milkman is unconvinced:
+		say "Walter tries to tell Roger about the aliens, but he can't speak. How can he convince him? Maybe something can be found at the farm.";
+	otherwise:
+		say "Walter points to the sky, and Roger nods. Walter has no need to convince Roger.".
+
 Mayor Calahan is a unconvinced man. He is in Mayor's Office. "A greedy politician. He is known to take forever to do anything."
 Officer Smith is a unconvinced man in Police Station. "A grizzled cop who doesn't play by the rules... not even his own."
 
 [First Street things]
+
+[Break Room rules]
+Rule for listing nondescript items of the First Street:
+	change Roger the Milkman to not marked for listing.
 
 [Police Station things]
 
@@ -207,7 +241,8 @@ Whistlebarry Ave is a room. "A quiet neighborhood of Littleburg, USA."
 Mary Sues' House is a room. "Mary Sue's House. The picture perfect house for the modern family. It doesn't look like anyone is here."
 Mary Sue's Bedroom is a room. "Mary Sue's Bedroom. Walter is overcome from the sight of all the pictures of Chuck Rogers."
 [The Bomb Shelter is a room. "Can never be too careful."]
-Littleburg High is a room. "Littleburg High, home of the Crushing Scottish Warriors."
+Littleburg High is a room. "Littleburg High, home of the Fighting Kiwi's. A local boy, Jimmy is standing around looking glum. Chuck Rogers, the captain of the High School football team is seen preping for the Big Game.[paragraph break]To the north is Whistlebarry Ave.".
+
 [Room Connections]
 Whistlebarry Ave is south of Main Street.
 Mary Sue's House is west of Whistlebarry Ave.
@@ -215,7 +250,7 @@ Mary Sue's Bedroom is inside of Mary Sue's House.
 Littleburg High is south of Whistlebarry Ave.
 
 [Whistlebarry Ave Characters] [includes Walter's House, Littleburg High, Betty's Farm]
-Jimmy is a unconvinced man in Littleburg High. "A young lad. A fan of baseball and comic books. He looks upset.".
+Jimmy is a unconvinced man in Littleburg High. The description is "A young lad. A fan of baseball and comic books. He looks upset.".
 
 Table of Jimmy's Replies
 Topic			Matter
@@ -226,17 +261,17 @@ Topic			Matter
 "what's troubling you"			"'My mom threw out my latest issue of Bucky Rogers!' says Jimmy."
 "whats troubling you"			"'My mom threw out my latest issue of Bucky Rogers!' says Jimmy."
 "comic books"			"Jimmy looks up at Walter and says, 'Bucky Rogers is my favorite! But my mom threw away my latest issue.'"
+"baseball"			"'Kiwi's are the best, just go ask Chuck,' replies Jimmy"
 
 After asking Jimmy about a topic listed in the Table of Jimmy's Replies, say "[matter entry]".
 
-Old Man Magoo is a unconvinced man in Whistlebarry Ave. "An elderly man. Easily startled and impressionable."
 [Old Man Magoo Rules]
-Old Man Magoo is a man in Whistlebarry Ave. "An elderly man. Easily startled and impressionable."
+Old Man Magoo is a unconvinced man in Whistlebarry Ave. The description is "An elderly man. Easily startled and impressionable."
 After showing Alien Photograph to Old Man Magoo: 
 	increase goal counter by 1;
 	say "What's this! Oh my...AN ALIEN! oh goodness no! I must warn my grandson Gary!".
 	
-Chuck Rogers is a unconvinced man in Littleburg High. "Captain of the Littleburg High Football team. Go Kiwi's! Very protective of the school mascot."
+Chuck Rogers is a unconvinced man in Littleburg High. The description is "Captain of the Littleburg High Football team. Go Kiwi's! Very protective of the school mascot."
 
 [Whistlebarry Ave things]
 
@@ -254,8 +289,12 @@ Secret Chest Key is on Mary's Desk.
 
 [Littleburg High things]
 
+[Littleburg High rules]
+Rule for listing nondescript items of the Littleburg High:
+	change Jimmy to not marked for listing.
+
 [Farm Rooms]
-Betty's Farm is a room. "Old Betty's farm. Supplying the finest products to this fine little town."
+Betty's Farm is a room. "Old Betty's farm. Supplying the finest products to this fine little town. There is a barn here, [if invasion has not happened]with a happy looking cow by it.[otherwise]with an odd looking cow by it. It tries to moo but can't. Was it taken by the aliens too?[end if] Walter see's a bucket and a bottle near the cow, guess that's for milking."
 Farm Field is a room. "A wide open field filled with the smells of livestock."
 Alien Ship is a room. "The ship of the alien invaders. What horrors must they conduct in here?"
 Alien Ship Interior is a room. "The inside of the alien ship."
@@ -271,6 +310,12 @@ Arbit is a man in Alien Ship. "The Audio Invaders commander. A mean chap who pla
 Zig is a man in Farm Field. "Heavily armed guard of the Audio Invader's ship."
 Zag is a man in Farm Field. "Heavily armed guard of the Audio Invader's ship."
 [Betty's Farm things]
+The barn is a backdrop. The barn is in Betty's Farm. The description is "An old barn. There is a [if invasion has not happened]a cow by it. 'Moo,' exclaims the cow.[otherwise]an odd looking cow by it. It opens it's mouth as if to moo, but no sound is heard.[end if]".
+A bottle is a container in Betty's Farm. The description is "A milk bottle similar to the one's that Roger the Milkman uses.".
+A cow is a milk-able thing in Betty's Farm.
+
+Rule for listing nondescript items of the Betty's Farm:
+	change bottle to not marked for listing.
 
 [Farm Field things]
 
@@ -287,3 +332,4 @@ When the introduction ends:
 	say "Walter's boss leaves the room, slaming the door shut behind him. That's Walter's cue to get to work on the next big scoop.".
 
 [invasion scene rules]
+The invasion begins when the player is mute.
