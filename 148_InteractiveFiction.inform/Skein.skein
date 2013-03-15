@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Skein rootNode="node-0x030E3DD0" xmlns="http://www.logicalshift.org.uk/IF/Skein">
+<Skein rootNode="node-0x028E4CD8" xmlns="http://www.logicalshift.org.uk/IF/Skein">
   <generator>Inform 7 for Windows</generator>
-  <activeNode nodeId="node-0x030E3DD0"/>
-  <item nodeId="node-0x030E3DD0">
+  <activeNode nodeId="node-0x028E4CD8"/>
+  <item nodeId="node-0x028E4CD8">
     <command xml:space="preserve">- start -</command>
     <result xml:space="preserve">It's a bright and sunny day in Littleburg, USA. The town is quiet, but the local news paper, The Daily Babler would like to see that changed, hoping to catch a big story to run. Walter Flintlock is a jorunalist at the Babler, but he's been struggling to find a good story to run. Maybe today will change all of that.&#x000A;&#x000A;Frank Woodchuck burst into Walter Flintlock's Office, "It's almost printing time and you still don't have a story Walter! I don't pay you to sit around your office all day. Give me one reason why shouldn't fire you?"&#x000A;&#x000A;Audio Invaders&#x000A;An Interactive Fiction by Adam Magleby, Drew Facchiano, Jason Judd Roth&#x000A;Release 1 / Serial number 130314 / Inform 7 build 6G60 (I6/v6.32 lib 6/12N) SD&#x000A;&#x000A;Walter's Office&#x000A;Walter's office. His desk is seen here, with Photographs, Walter's Camera and a cup of coffee on it. Woodchuck, Walter's boss, is blocking the doorway to the east, staring Walter down.&#x000A;&#x000A;To the east is the break room.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -10,12 +10,12 @@
     <changed>NO</changed>
     <temporary score="0">NO</temporary>
     <children>
-      <child nodeId="node-0x030E2960"/>
-      <child nodeId="node-0x030D6370"/>
-      <child nodeId="node-0x030D68B0"/>
+      <child nodeId="node-0x028E4F48"/>
+      <child nodeId="node-0x028D69F8"/>
+      <child nodeId="node-0x028D6F38"/>
     </children>
   </item>
-  <item nodeId="node-0x030E2960">
+  <item nodeId="node-0x028E4F48">
     <command xml:space="preserve">look</command>
     <result xml:space="preserve">Walter's Office&#x000A;Walter's office. His desk is seen here, with Photographs, Walter's Camera and a cup of coffee (full) on it. Woodchuck, Walter's boss, is blocking the doorway to the east, staring Walter down.&#x000A;&#x000A;To the east is the break room.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -23,12 +23,12 @@
     <changed>YES</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x030E3E40"/>
-      <child nodeId="node-0x030D6140"/>
-      <child nodeId="node-0x030D61B0"/>
+      <child nodeId="node-0x028BEC70"/>
+      <child nodeId="node-0x028D67C8"/>
+      <child nodeId="node-0x028D6838"/>
     </children>
   </item>
-  <item nodeId="node-0x030E3E40">
+  <item nodeId="node-0x028BEC70">
     <command xml:space="preserve">east</command>
     <result xml:space="preserve">You can't go that way.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -36,10 +36,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x030E3EB0"/>
+      <child nodeId="node-0x028BECE0"/>
     </children>
   </item>
-  <item nodeId="node-0x030E3EB0">
+  <item nodeId="node-0x028BECE0">
     <command xml:space="preserve"></command>
     <result xml:space="preserve">I beg your pardon?&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -47,10 +47,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x030E3F20"/>
+      <child nodeId="node-0x028BED50"/>
     </children>
   </item>
-  <item nodeId="node-0x030E3F20">
+  <item nodeId="node-0x028BED50">
     <command xml:space="preserve">e</command>
     <result xml:space="preserve">You can't go that way.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -58,10 +58,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x030CDA98"/>
+      <child nodeId="node-0x028BEDC0"/>
     </children>
   </item>
-  <item nodeId="node-0x030CDA98">
+  <item nodeId="node-0x028BEDC0">
     <command xml:space="preserve">e</command>
     <result xml:space="preserve">You can't go that way.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -69,10 +69,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x030CDB08"/>
+      <child nodeId="node-0x028BEE30"/>
     </children>
   </item>
-  <item nodeId="node-0x030CDB08">
+  <item nodeId="node-0x028BEE30">
     <command xml:space="preserve">e</command>
     <result xml:space="preserve">You can't go that way.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -80,10 +80,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x030CDB78"/>
+      <child nodeId="node-0x028BEEA0"/>
     </children>
   </item>
-  <item nodeId="node-0x030CDB78">
+  <item nodeId="node-0x028BEEA0">
     <command xml:space="preserve">east</command>
     <result xml:space="preserve">You can't go that way.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -91,10 +91,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x030CDBE8"/>
+      <child nodeId="node-0x028BEF58"/>
     </children>
   </item>
-  <item nodeId="node-0x030CDBE8">
+  <item nodeId="node-0x028BEF58">
     <command xml:space="preserve"></command>
     <result xml:space="preserve">I beg your pardon?&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -102,10 +102,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x030CDCA0"/>
+      <child nodeId="node-0x028CDAE0"/>
     </children>
   </item>
-  <item nodeId="node-0x030CDCA0">
+  <item nodeId="node-0x028CDAE0">
     <command xml:space="preserve"></command>
     <result xml:space="preserve">I beg your pardon?&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -113,10 +113,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x030CDD58"/>
+      <child nodeId="node-0x028CDB98"/>
     </children>
   </item>
-  <item nodeId="node-0x030CDD58">
+  <item nodeId="node-0x028CDB98">
     <command xml:space="preserve"></command>
     <result xml:space="preserve">I beg your pardon?&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -124,10 +124,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x030CDDC8"/>
+      <child nodeId="node-0x028CDC08"/>
     </children>
   </item>
-  <item nodeId="node-0x030CDDC8">
+  <item nodeId="node-0x028CDC08">
     <command xml:space="preserve"></command>
     <result xml:space="preserve">I beg your pardon?&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -135,10 +135,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x030CDE38"/>
+      <child nodeId="node-0x028CDC78"/>
     </children>
   </item>
-  <item nodeId="node-0x030CDE38">
+  <item nodeId="node-0x028CDC78">
     <command xml:space="preserve"></command>
     <result xml:space="preserve">I beg your pardon?&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -146,10 +146,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x030CDEA8"/>
+      <child nodeId="node-0x028CDCE8"/>
     </children>
   </item>
-  <item nodeId="node-0x030CDEA8">
+  <item nodeId="node-0x028CDCE8">
     <command xml:space="preserve"></command>
     <result xml:space="preserve">I beg your pardon?&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -157,10 +157,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x030D5AB0"/>
+      <child nodeId="node-0x028D6138"/>
     </children>
   </item>
-  <item nodeId="node-0x030D5AB0">
+  <item nodeId="node-0x028D6138">
     <command xml:space="preserve">west</command>
     <result xml:space="preserve">Main Office&#x000A;The Main Office of the Daily Babbler. Hot tips come in and hard hitting news goes out.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -168,10 +168,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x030D5B20"/>
+      <child nodeId="node-0x028D61A8"/>
     </children>
   </item>
-  <item nodeId="node-0x030D5B20">
+  <item nodeId="node-0x028D61A8">
     <command xml:space="preserve">est</command>
     <result xml:space="preserve">That's not a verb I recognise.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -179,10 +179,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x030D5B90"/>
+      <child nodeId="node-0x028D6218"/>
     </children>
   </item>
-  <item nodeId="node-0x030D5B90">
+  <item nodeId="node-0x028D6218">
     <command xml:space="preserve">e</command>
     <result xml:space="preserve">Walter's Office&#x000A;Walter's office. It is covered in photograhps that he has taken from around the town.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -190,10 +190,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x030D5C00"/>
+      <child nodeId="node-0x028D6288"/>
     </children>
   </item>
-  <item nodeId="node-0x030D5C00">
+  <item nodeId="node-0x028D6288">
     <command xml:space="preserve">e</command>
     <result xml:space="preserve">You can't go that way.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -201,10 +201,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x030D5C70"/>
+      <child nodeId="node-0x028D62F8"/>
     </children>
   </item>
-  <item nodeId="node-0x030D5C70">
+  <item nodeId="node-0x028D62F8">
     <command xml:space="preserve">w</command>
     <result xml:space="preserve">Main Office&#x000A;The Main Office of the Daily Babbler. Hot tips come in and hard hitting news goes out.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -212,10 +212,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x030D5CE0"/>
+      <child nodeId="node-0x028D6368"/>
     </children>
   </item>
-  <item nodeId="node-0x030D5CE0">
+  <item nodeId="node-0x028D6368">
     <command xml:space="preserve">w</command>
     <result xml:space="preserve">You can't go that way.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -223,10 +223,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x030D5D50"/>
+      <child nodeId="node-0x028D63D8"/>
     </children>
   </item>
-  <item nodeId="node-0x030D5D50">
+  <item nodeId="node-0x028D63D8">
     <command xml:space="preserve">n</command>
     <result xml:space="preserve">Woodchuck's Office&#x000A;Mr. Woodchuck's office. Any good journalist will try to avoid it as much as possible.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -234,10 +234,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x030D5DC0"/>
+      <child nodeId="node-0x028D6448"/>
     </children>
   </item>
-  <item nodeId="node-0x030D5DC0">
+  <item nodeId="node-0x028D6448">
     <command xml:space="preserve">n</command>
     <result xml:space="preserve">You can't go that way.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -245,10 +245,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x030D5E30"/>
+      <child nodeId="node-0x028D64B8"/>
     </children>
   </item>
-  <item nodeId="node-0x030D5E30">
+  <item nodeId="node-0x028D64B8">
     <command xml:space="preserve">s</command>
     <result xml:space="preserve">Main Office&#x000A;The Main Office of the Daily Babbler. Hot tips come in and hard hitting news goes out.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -256,10 +256,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x030D5EA0"/>
+      <child nodeId="node-0x028D6528"/>
     </children>
   </item>
-  <item nodeId="node-0x030D5EA0">
+  <item nodeId="node-0x028D6528">
     <command xml:space="preserve">s</command>
     <result xml:space="preserve">Main Street&#x000A;The Main Street of Littleburg. USA. There has never been a more beautiful town than this one. &#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -267,10 +267,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x030D5F10"/>
+      <child nodeId="node-0x028D6598"/>
     </children>
   </item>
-  <item nodeId="node-0x030D5F10">
+  <item nodeId="node-0x028D6598">
     <command xml:space="preserve">s</command>
     <result xml:space="preserve">Second Street&#x000A;Second Street is where the industrious little town works&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -278,10 +278,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x030D5F80"/>
+      <child nodeId="node-0x028D6608"/>
     </children>
   </item>
-  <item nodeId="node-0x030D5F80">
+  <item nodeId="node-0x028D6608">
     <command xml:space="preserve">s</command>
     <result xml:space="preserve">You can't go that way.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -289,10 +289,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x030D5FF0"/>
+      <child nodeId="node-0x028D6678"/>
     </children>
   </item>
-  <item nodeId="node-0x030D5FF0">
+  <item nodeId="node-0x028D6678">
     <command xml:space="preserve">s</command>
     <result xml:space="preserve">You can't go that way.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -300,10 +300,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x030D6060"/>
+      <child nodeId="node-0x028D66E8"/>
     </children>
   </item>
-  <item nodeId="node-0x030D6060">
+  <item nodeId="node-0x028D66E8">
     <command xml:space="preserve">e</command>
     <result xml:space="preserve">East Second Street&#x000A;East Second Street holds most of the homes where the good people Littleburg live.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -311,10 +311,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x030D60D0"/>
+      <child nodeId="node-0x028D6758"/>
     </children>
   </item>
-  <item nodeId="node-0x030D60D0">
+  <item nodeId="node-0x028D6758">
     <command xml:space="preserve">w</command>
     <result xml:space="preserve">Second Street&#x000A;Second Street is where the industrious little town works&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -322,7 +322,7 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
   </item>
-  <item nodeId="node-0x030D6140">
+  <item nodeId="node-0x028D67C8">
     <command xml:space="preserve">x</command>
     <result xml:space="preserve">(Frank Woodchuck)&#x000A;Walter's boss stares him down with a menecing stare.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -330,7 +330,7 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
   </item>
-  <item nodeId="node-0x030D61B0">
+  <item nodeId="node-0x028D6838">
     <command xml:space="preserve">take camera</command>
     <result xml:space="preserve">Walter picks up his camera ready for action. Woodchuck seems pleased with this&#x000A;&#x000A;Walter's boss leaves the room, slaming the door shut behind him. That's Walter's cue to get to work on the next big scoop.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -338,10 +338,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x030D6220"/>
+      <child nodeId="node-0x028D68A8"/>
     </children>
   </item>
-  <item nodeId="node-0x030D6220">
+  <item nodeId="node-0x028D68A8">
     <command xml:space="preserve">look</command>
     <result xml:space="preserve">Walter's Office&#x000A;Walter's office. His desk is seen here, with Photographs and a cup of coffee (full) on it. Woodchuck, Walter's boss, is blocking the doorway to the east, staring Walter down.&#x000A;&#x000A;To the east is the break room.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -349,10 +349,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x030D6290"/>
+      <child nodeId="node-0x028D6918"/>
     </children>
   </item>
-  <item nodeId="node-0x030D6290">
+  <item nodeId="node-0x028D6918">
     <command xml:space="preserve">actions</command>
     <result xml:space="preserve">Actions listing on.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -360,10 +360,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x030D6300"/>
+      <child nodeId="node-0x028D6988"/>
     </children>
   </item>
-  <item nodeId="node-0x030D6300">
+  <item nodeId="node-0x028D6988">
     <command xml:space="preserve">look</command>
     <result xml:space="preserve">[looking]&#x000A;Walter's Office&#x000A;Walter's office. His desk is seen here, with Photographs and a cup of coffee (full) on it. Woodchuck, Walter's boss, is blocking the doorway to the east, staring Walter down.&#x000A;&#x000A;To the east is the break room.&#x000A;&#x000A;[looking - succeeded]&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -371,7 +371,7 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
   </item>
-  <item nodeId="node-0x030D6370">
+  <item nodeId="node-0x028D69F8">
     <command xml:space="preserve">w</command>
     <result xml:space="preserve">Main Office&#x000A;The Main Office of the Daily Babbler. Hot tips come in and hard hitting news goes out.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -379,11 +379,11 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x030D63E0"/>
-      <child nodeId="node-0x030D6760"/>
+      <child nodeId="node-0x028D6A68"/>
+      <child nodeId="node-0x028D6DE8"/>
     </children>
   </item>
-  <item nodeId="node-0x030D63E0">
+  <item nodeId="node-0x028D6A68">
     <command xml:space="preserve">s</command>
     <result xml:space="preserve">Main Street&#x000A;The Main Street of Littleburg. USA. There has never been a more beautiful town than this one. &#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -391,10 +391,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x030D6450"/>
+      <child nodeId="node-0x028D6AD8"/>
     </children>
   </item>
-  <item nodeId="node-0x030D6450">
+  <item nodeId="node-0x028D6AD8">
     <command xml:space="preserve">go in malt shop</command>
     <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -402,10 +402,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x030D64C0"/>
+      <child nodeId="node-0x028D6B48"/>
     </children>
   </item>
-  <item nodeId="node-0x030D64C0">
+  <item nodeId="node-0x028D6B48">
     <command xml:space="preserve">enter malt shop</command>
     <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -413,10 +413,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x030D6530"/>
+      <child nodeId="node-0x028D6BB8"/>
     </children>
   </item>
-  <item nodeId="node-0x030D6530">
+  <item nodeId="node-0x028D6BB8">
     <command xml:space="preserve">enter Malt Shop</command>
     <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -424,10 +424,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x030D65A0"/>
+      <child nodeId="node-0x028D6C28"/>
     </children>
   </item>
-  <item nodeId="node-0x030D65A0">
+  <item nodeId="node-0x028D6C28">
     <command xml:space="preserve">inside Malt Shop</command>
     <result xml:space="preserve">I only understood you as far as wanting to inside.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -435,10 +435,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x030D6610"/>
+      <child nodeId="node-0x028D6C98"/>
     </children>
   </item>
-  <item nodeId="node-0x030D6610">
+  <item nodeId="node-0x028D6C98">
     <command xml:space="preserve">go inside the Malt Shop</command>
     <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -446,10 +446,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x030D6680"/>
+      <child nodeId="node-0x028D6D08"/>
     </children>
   </item>
-  <item nodeId="node-0x030D6680">
+  <item nodeId="node-0x028D6D08">
     <command xml:space="preserve">go inside</command>
     <result xml:space="preserve">Malt Shop&#x000A;A fancy malt shop.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -457,10 +457,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x030D66F0"/>
+      <child nodeId="node-0x028D6D78"/>
     </children>
   </item>
-  <item nodeId="node-0x030D66F0">
+  <item nodeId="node-0x028D6D78">
     <command xml:space="preserve">go outside</command>
     <result xml:space="preserve">Main Street&#x000A;The Main Street of Littleburg. USA. There has never been a more beautiful town than this one. &#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -468,7 +468,7 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
   </item>
-  <item nodeId="node-0x030D6760">
+  <item nodeId="node-0x028D6DE8">
     <command xml:space="preserve">n</command>
     <result xml:space="preserve">Woodchuck's Office&#x000A;Mr. Woodchuck's office. Any good journalist will try to avoid it as much as possible.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -476,10 +476,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x030D67D0"/>
+      <child nodeId="node-0x028D6E58"/>
     </children>
   </item>
-  <item nodeId="node-0x030D67D0">
+  <item nodeId="node-0x028D6E58">
     <command xml:space="preserve">s</command>
     <result xml:space="preserve">Main Office&#x000A;The Main Office of the Daily Babbler. Hot tips come in and hard hitting news goes out.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -487,10 +487,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x030D6840"/>
+      <child nodeId="node-0x028D6EC8"/>
     </children>
   </item>
-  <item nodeId="node-0x030D6840">
+  <item nodeId="node-0x028D6EC8">
     <command xml:space="preserve">s</command>
     <result xml:space="preserve">Main Street&#x000A;The Main Street of Littleburg. USA. There has never been a more beautiful town than this one. &#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -498,7 +498,7 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
   </item>
-  <item nodeId="node-0x030D68B0">
+  <item nodeId="node-0x028D6F38">
     <command xml:space="preserve">e</command>
     <result xml:space="preserve">Woodchuck blocks Walter from leaving the room. Walter better think of something to get him to leave.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -506,17 +506,17 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x030D6920"/>
-      <child nodeId="node-0x030D9A08"/>
-      <child nodeId="node-0x030D9A78"/>
-      <child nodeId="node-0x030D9D18"/>
-      <child nodeId="node-0x030D9DF8"/>
-      <child nodeId="node-0x030D9FB8"/>
-      <child nodeId="node-0x030DA3A8"/>
-      <child nodeId="node-0x030DA798"/>
+      <child nodeId="node-0x028D6FA8"/>
+      <child nodeId="node-0x028D9FA0"/>
+      <child nodeId="node-0x028DA010"/>
+      <child nodeId="node-0x028DA2B0"/>
+      <child nodeId="node-0x028DA390"/>
+      <child nodeId="node-0x028DA550"/>
+      <child nodeId="node-0x028DA940"/>
+      <child nodeId="node-0x028DAD30"/>
     </children>
   </item>
-  <item nodeId="node-0x030D6920">
+  <item nodeId="node-0x028D6FA8">
     <command xml:space="preserve">e</command>
     <result xml:space="preserve">Office Supply Room&#x000A;A room filled with random office supplies.&#x000A;&#x000A;I CANT SPEAK!&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -524,10 +524,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x030D6990"/>
+      <child nodeId="node-0x028D7018"/>
     </children>
   </item>
-  <item nodeId="node-0x030D6990">
+  <item nodeId="node-0x028D7018">
     <command xml:space="preserve">w</command>
     <result xml:space="preserve">Break Room&#x000A;A place where employee's converse on the latest gossip around the town.&#x000A;&#x000A;I CAN SPEAK!&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -535,10 +535,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x030D6A00"/>
+      <child nodeId="node-0x028D7088"/>
     </children>
   </item>
-  <item nodeId="node-0x030D6A00">
+  <item nodeId="node-0x028D7088">
     <command xml:space="preserve">e</command>
     <result xml:space="preserve">Office Supply Room&#x000A;A room filled with random office supplies.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -546,10 +546,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x030D9998"/>
+      <child nodeId="node-0x028D9F30"/>
     </children>
   </item>
-  <item nodeId="node-0x030D9998">
+  <item nodeId="node-0x028D9F30">
     <command xml:space="preserve">w</command>
     <result xml:space="preserve">Break Room&#x000A;A place where employee's converse on the latest gossip around the town.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -557,7 +557,7 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
   </item>
-  <item nodeId="node-0x030D9A08">
+  <item nodeId="node-0x028D9FA0">
     <command xml:space="preserve">x water cooler</command>
     <result xml:space="preserve">A cooler that dispenses water.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -565,7 +565,7 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
   </item>
-  <item nodeId="node-0x030D9A78">
+  <item nodeId="node-0x028DA010">
     <command xml:space="preserve">x cooler</command>
     <result xml:space="preserve">A cooler that dispenses water.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -573,10 +573,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x030D9AE8"/>
+      <child nodeId="node-0x028DA080"/>
     </children>
   </item>
-  <item nodeId="node-0x030D9AE8">
+  <item nodeId="node-0x028DA080">
     <command xml:space="preserve">x water cooler</command>
     <result xml:space="preserve">A cooler that dispenses water.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -584,10 +584,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x030D9B58"/>
+      <child nodeId="node-0x028DA0F0"/>
     </children>
   </item>
-  <item nodeId="node-0x030D9B58">
+  <item nodeId="node-0x028DA0F0">
     <command xml:space="preserve">x water</command>
     <result xml:space="preserve">A cooler that dispenses water.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -595,10 +595,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x030D9BC8"/>
+      <child nodeId="node-0x028DA160"/>
     </children>
   </item>
-  <item nodeId="node-0x030D9BC8">
+  <item nodeId="node-0x028DA160">
     <command xml:space="preserve">x wa</command>
     <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -606,10 +606,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x030D9C38"/>
+      <child nodeId="node-0x028DA1D0"/>
     </children>
   </item>
-  <item nodeId="node-0x030D9C38">
+  <item nodeId="node-0x028DA1D0">
     <command xml:space="preserve">x water</command>
     <result xml:space="preserve">A cooler that dispenses water.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -617,10 +617,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x030D9CA8"/>
+      <child nodeId="node-0x028DA240"/>
     </children>
   </item>
-  <item nodeId="node-0x030D9CA8">
+  <item nodeId="node-0x028DA240">
     <command xml:space="preserve">x cooler</command>
     <result xml:space="preserve">A cooler that dispenses water.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -628,7 +628,7 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
   </item>
-  <item nodeId="node-0x030D9D18">
+  <item nodeId="node-0x028DA2B0">
     <command xml:space="preserve">take cooler</command>
     <result xml:space="preserve">That's hardly portable.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -636,10 +636,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x030D9D88"/>
+      <child nodeId="node-0x028DA320"/>
     </children>
   </item>
-  <item nodeId="node-0x030D9D88">
+  <item nodeId="node-0x028DA320">
     <command xml:space="preserve">w</command>
     <result xml:space="preserve">Walter's Office&#x000A;Walter's office. It is covered in photograhps that he has taken from around the town. To the east is the break room.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -647,7 +647,7 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
   </item>
-  <item nodeId="node-0x030D9DF8">
+  <item nodeId="node-0x028DA390">
     <command xml:space="preserve">w</command>
     <result xml:space="preserve">You can't go that way.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -655,11 +655,11 @@
     <changed>YES</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x030D9E68"/>
-      <child nodeId="node-0x030D9ED8"/>
+      <child nodeId="node-0x028DA400"/>
+      <child nodeId="node-0x028DA470"/>
     </children>
   </item>
-  <item nodeId="node-0x030D9E68">
+  <item nodeId="node-0x028DA400">
     <command xml:space="preserve">look</command>
     <result xml:space="preserve">Walter's Office&#x000A;Walter's office. It is covered in photograhps that he has taken from around the town.&#x000A;&#x000A;To the east is the break room.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -667,7 +667,7 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
   </item>
-  <item nodeId="node-0x030D9ED8">
+  <item nodeId="node-0x028DA470">
     <command xml:space="preserve">actions</command>
     <result xml:space="preserve">Actions listing on.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -675,10 +675,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x030D9F48"/>
+      <child nodeId="node-0x028DA4E0"/>
     </children>
   </item>
-  <item nodeId="node-0x030D9F48">
+  <item nodeId="node-0x028DA4E0">
     <command xml:space="preserve">look</command>
     <result xml:space="preserve">[looking]&#x000A;Walter's Office&#x000A;Walter's office. It is covered in photograhps that he has taken from around the town.&#x000A;&#x000A;To the east is the break room.&#x000A;&#x000A;Walter's boss, a man with a stare that would crush the heart of any journalist. He is very hard to convince about even the simplest of things.&#x000A;&#x000A;[looking - succeeded]&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -686,7 +686,7 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
   </item>
-  <item nodeId="node-0x030D9FB8">
+  <item nodeId="node-0x028DA550">
     <command xml:space="preserve">drink</command>
     <result xml:space="preserve">(the water cooler)&#x000A;Walter takes a small paper cup, and poors himself a drink of water. Ah refreshing!&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -694,10 +694,10 @@
     <changed>YES</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x030DA028"/>
+      <child nodeId="node-0x028DA5C0"/>
     </children>
   </item>
-  <item nodeId="node-0x030DA028">
+  <item nodeId="node-0x028DA5C0">
     <command xml:space="preserve">take drink from water cooler</command>
     <result xml:space="preserve">Walter gets a small paper cup, and poor himself a drink of water from the cooler.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -705,10 +705,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x030DA098"/>
+      <child nodeId="node-0x028DA630"/>
     </children>
   </item>
-  <item nodeId="node-0x030DA098">
+  <item nodeId="node-0x028DA630">
     <command xml:space="preserve">take a drink</command>
     <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -716,10 +716,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x030DA108"/>
+      <child nodeId="node-0x028DA6A0"/>
     </children>
   </item>
-  <item nodeId="node-0x030DA108">
+  <item nodeId="node-0x028DA6A0">
     <command xml:space="preserve">take water cooler</command>
     <result xml:space="preserve">That's hardly portable.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -727,10 +727,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x030DA178"/>
+      <child nodeId="node-0x028DA710"/>
     </children>
   </item>
-  <item nodeId="node-0x030DA178">
+  <item nodeId="node-0x028DA710">
     <command xml:space="preserve">drink from water</command>
     <result xml:space="preserve">Walter gets a small paper cup, and poor himself a drink of water from the cooler.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -738,10 +738,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x030DA1E8"/>
+      <child nodeId="node-0x028DA780"/>
     </children>
   </item>
-  <item nodeId="node-0x030DA1E8">
+  <item nodeId="node-0x028DA780">
     <command xml:space="preserve">drink walter</command>
     <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -749,10 +749,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x030DA2C8"/>
+      <child nodeId="node-0x028DA860"/>
     </children>
   </item>
-  <item nodeId="node-0x030DA2C8">
+  <item nodeId="node-0x028DA860">
     <command xml:space="preserve">drink self</command>
     <result xml:space="preserve">There's nothing suitable to drink here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -760,7 +760,7 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
   </item>
-  <item nodeId="node-0x030DA3A8">
+  <item nodeId="node-0x028DA940">
     <command xml:space="preserve">drink self</command>
     <result xml:space="preserve">There's nothing suitable to drink here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -768,10 +768,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x030DA418"/>
+      <child nodeId="node-0x028DA9B0"/>
     </children>
   </item>
-  <item nodeId="node-0x030DA418">
+  <item nodeId="node-0x028DA9B0">
     <command xml:space="preserve">drink the player</command>
     <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -779,10 +779,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x030DA488"/>
+      <child nodeId="node-0x028DAA20"/>
     </children>
   </item>
-  <item nodeId="node-0x030DA488">
+  <item nodeId="node-0x028DAA20">
     <command xml:space="preserve">take a drink from the player</command>
     <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -790,10 +790,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x030DA4F8"/>
+      <child nodeId="node-0x028DAA90"/>
     </children>
   </item>
-  <item nodeId="node-0x030DA4F8">
+  <item nodeId="node-0x028DAA90">
     <command xml:space="preserve">take from from player</command>
     <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -801,10 +801,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x030DA568"/>
+      <child nodeId="node-0x028DAB00"/>
     </children>
   </item>
-  <item nodeId="node-0x030DA568">
+  <item nodeId="node-0x028DAB00">
     <command xml:space="preserve">actions</command>
     <result xml:space="preserve">Actions listing on.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -812,10 +812,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x030DA5D8"/>
+      <child nodeId="node-0x028DAB70"/>
     </children>
   </item>
-  <item nodeId="node-0x030DA5D8">
+  <item nodeId="node-0x028DAB70">
     <command xml:space="preserve">take drink from player</command>
     <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -823,10 +823,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x030DA648"/>
+      <child nodeId="node-0x028DABE0"/>
     </children>
   </item>
-  <item nodeId="node-0x030DA648">
+  <item nodeId="node-0x028DABE0">
     <command xml:space="preserve">take drink from cooler</command>
     <result xml:space="preserve">[taking a drink the water cooler]&#x000A;Walter gets a small paper cup, and poor himself a drink of water from the cooler. Ah, refreshing.&#x000A;[taking a drink the water cooler - succeeded]&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -834,10 +834,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x030DA6B8"/>
+      <child nodeId="node-0x028DAC50"/>
     </children>
   </item>
-  <item nodeId="node-0x030DA6B8">
+  <item nodeId="node-0x028DAC50">
     <command xml:space="preserve">drink water</command>
     <result xml:space="preserve">[drinking the water cooler]&#x000A;There's nothing suitable to drink here.&#x000A;[drinking the water cooler - failed the block drinking rule]&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -845,7 +845,7 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
   </item>
-  <item nodeId="node-0x030DA798">
+  <item nodeId="node-0x028DAD30">
     <command xml:space="preserve">drink water</command>
     <result xml:space="preserve">There's nothing suitable to drink here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -853,12 +853,12 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x030DA808"/>
-      <child nodeId="node-0x030E5468"/>
-      <child nodeId="node-0x030E5D28"/>
+      <child nodeId="node-0x028DADA0"/>
+      <child nodeId="node-0x028E6160"/>
+      <child nodeId="node-0x028E6A20"/>
     </children>
   </item>
-  <item nodeId="node-0x030DA808">
+  <item nodeId="node-0x028DADA0">
     <command xml:space="preserve">drink</command>
     <result xml:space="preserve">(the water cooler)&#x000A;There's nothing suitable to drink here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -866,10 +866,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x030DA8E8"/>
+      <child nodeId="node-0x028DAE80"/>
     </children>
   </item>
-  <item nodeId="node-0x030DA8E8">
+  <item nodeId="node-0x028DAE80">
     <command xml:space="preserve">drink the water cooler</command>
     <result xml:space="preserve">There's nothing suitable to drink here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -877,7 +877,7 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
   </item>
-  <item nodeId="node-0x030E5468">
+  <item nodeId="node-0x028E6160">
     <command xml:space="preserve">drink water cooler</command>
     <result xml:space="preserve">There's nothing suitable to drink here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -885,11 +885,11 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x030E5548"/>
-      <child nodeId="node-0x030E5AF8"/>
+      <child nodeId="node-0x028E6240"/>
+      <child nodeId="node-0x028E67F0"/>
     </children>
   </item>
-  <item nodeId="node-0x030E5548">
+  <item nodeId="node-0x028E6240">
     <command xml:space="preserve">drink water cooler</command>
     <result xml:space="preserve">There's nothing suitable to drink here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -897,10 +897,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x030E55B8"/>
+      <child nodeId="node-0x028E62B0"/>
     </children>
   </item>
-  <item nodeId="node-0x030E55B8">
+  <item nodeId="node-0x028E62B0">
     <command xml:space="preserve">drink</command>
     <result xml:space="preserve">(the water cooler)&#x000A;There's nothing suitable to drink here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -908,10 +908,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x030E5698"/>
+      <child nodeId="node-0x028E6390"/>
     </children>
   </item>
-  <item nodeId="node-0x030E5698">
+  <item nodeId="node-0x028E6390">
     <command xml:space="preserve">drink the water cooler</command>
     <result xml:space="preserve">There's nothing suitable to drink here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -919,10 +919,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x030E5708"/>
+      <child nodeId="node-0x028E6400"/>
     </children>
   </item>
-  <item nodeId="node-0x030E5708">
+  <item nodeId="node-0x028E6400">
     <command xml:space="preserve">look</command>
     <result xml:space="preserve">Break Room&#x000A;A place where employee's converse on the latest gossip around the town. There is a water cooler with a small refridgerator next to it.&#x000A;&#x000A;Walter's office is to the west, the office supply room is to the east, and the Daily Babler foyer is to the south.&#x000A;&#x000A;You can see a water cooler here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -930,10 +930,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x030E5778"/>
+      <child nodeId="node-0x028E6470"/>
     </children>
   </item>
-  <item nodeId="node-0x030E5778">
+  <item nodeId="node-0x028E6470">
     <command xml:space="preserve">action</command>
     <result xml:space="preserve">That's not a verb I recognise.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -941,10 +941,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x030E57E8"/>
+      <child nodeId="node-0x028E64E0"/>
     </children>
   </item>
-  <item nodeId="node-0x030E57E8">
+  <item nodeId="node-0x028E64E0">
     <command xml:space="preserve">actions</command>
     <result xml:space="preserve">Actions listing on.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -952,10 +952,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x030E5858"/>
+      <child nodeId="node-0x028E6550"/>
     </children>
   </item>
-  <item nodeId="node-0x030E5858">
+  <item nodeId="node-0x028E6550">
     <command xml:space="preserve">drink water cooler</command>
     <result xml:space="preserve">[drinking the water cooler]&#x000A;There's nothing suitable to drink here.&#x000A;[drinking the water cooler - failed the block drinking rule]&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -963,10 +963,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x030E58C8"/>
+      <child nodeId="node-0x028E65C0"/>
     </children>
   </item>
-  <item nodeId="node-0x030E58C8">
+  <item nodeId="node-0x028E65C0">
     <command xml:space="preserve">x water cooler</command>
     <result xml:space="preserve">[examining the water cooler]&#x000A;A cooler that dispenses water.&#x000A;&#x000A;[examining the water cooler - succeeded]&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -974,10 +974,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x030E5938"/>
+      <child nodeId="node-0x028E6630"/>
     </children>
   </item>
-  <item nodeId="node-0x030E5938">
+  <item nodeId="node-0x028E6630">
     <command xml:space="preserve">take water cooler</command>
     <result xml:space="preserve">[taking the water cooler]&#x000A;Taken.&#x000A;[taking the water cooler - succeeded]&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -985,10 +985,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x030E59A8"/>
+      <child nodeId="node-0x028E66A0"/>
     </children>
   </item>
-  <item nodeId="node-0x030E59A8">
+  <item nodeId="node-0x028E66A0">
     <command xml:space="preserve">drink water cooler</command>
     <result xml:space="preserve">[drinking the water cooler]&#x000A;There's nothing suitable to drink here.&#x000A;[drinking the water cooler - failed the block drinking rule]&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -996,10 +996,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x030E5A18"/>
+      <child nodeId="node-0x028E6710"/>
     </children>
   </item>
-  <item nodeId="node-0x030E5A18">
+  <item nodeId="node-0x028E6710">
     <command xml:space="preserve">drop water cooler</command>
     <result xml:space="preserve">[dropping the water cooler]&#x000A;Dropped.&#x000A;[dropping the water cooler - succeeded]&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -1007,10 +1007,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x030E5A88"/>
+      <child nodeId="node-0x028E6780"/>
     </children>
   </item>
-  <item nodeId="node-0x030E5A88">
+  <item nodeId="node-0x028E6780">
     <command xml:space="preserve">look</command>
     <result xml:space="preserve">[looking]&#x000A;Break Room&#x000A;A place where employee's converse on the latest gossip around the town. There is a water cooler with a small refridgerator next to it.&#x000A;&#x000A;Walter's office is to the west, the office supply room is to the east, and the Daily Babler foyer is to the south.&#x000A;&#x000A;You can see a water cooler here.&#x000A;&#x000A;[looking - succeeded]&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -1018,7 +1018,7 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
   </item>
-  <item nodeId="node-0x030E5AF8">
+  <item nodeId="node-0x028E67F0">
     <command xml:space="preserve">take drink of water cooler</command>
     <result xml:space="preserve">Walter gets a small paper cup, and poor himself a drink of water from the cooler. Ah, refreshing.&#x000A;&#x000A;taking a drink of water cooler.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -1026,10 +1026,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x030E5B68"/>
+      <child nodeId="node-0x028E6860"/>
     </children>
   </item>
-  <item nodeId="node-0x030E5B68">
+  <item nodeId="node-0x028E6860">
     <command xml:space="preserve">actions</command>
     <result xml:space="preserve">Actions listing on.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -1037,10 +1037,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x030E5BD8"/>
+      <child nodeId="node-0x028E68D0"/>
     </children>
   </item>
-  <item nodeId="node-0x030E5BD8">
+  <item nodeId="node-0x028E68D0">
     <command xml:space="preserve">i</command>
     <result xml:space="preserve">[taking inventory]&#x000A;You are carrying nothing.&#x000A;&#x000A;[taking inventory - succeeded]&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -1048,10 +1048,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x030E5C48"/>
+      <child nodeId="node-0x028E6940"/>
     </children>
   </item>
-  <item nodeId="node-0x030E5C48">
+  <item nodeId="node-0x028E6940">
     <command xml:space="preserve">drink water</command>
     <result xml:space="preserve">[drinking the water cooler]&#x000A;There's nothing suitable to drink here.&#x000A;[drinking the water cooler - failed the block drinking rule]&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -1059,10 +1059,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x030E5CB8"/>
+      <child nodeId="node-0x028E69B0"/>
     </children>
   </item>
-  <item nodeId="node-0x030E5CB8">
+  <item nodeId="node-0x028E69B0">
     <command xml:space="preserve">take drink of self</command>
     <result xml:space="preserve">[drink yourself]&#x000A;Walter knows he can't drink that.&#x000A;[drink yourself - failed the Check drink when the noun is not drinkable]&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -1070,7 +1070,7 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
   </item>
-  <item nodeId="node-0x030E5D28">
+  <item nodeId="node-0x028E6A20">
     <command xml:space="preserve">take drink</command>
     <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
