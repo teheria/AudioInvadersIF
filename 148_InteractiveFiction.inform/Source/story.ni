@@ -294,7 +294,7 @@ Rule for listing nondescript items of the Littleburg High:
 	change Jimmy to not marked for listing.
 
 [Farm Rooms]
-Betty's Farm is a room. "Old Betty's farm. Supplying the finest products to this fine little town. There is a barn here, [if invasion has not happened]with a happy looking cow by it.[otherwise]with an odd looking cow by it. It tries to moo but can't. Was it taken by the aliens too?[end if] Walter see's a bucket and a bottle near the cow, guess that's for milking."
+Betty's Farm is a room. "Old Betty's farm. Supplying the finest products to this fine little town. There is a barn here, [if invasion has not happened]with a happy looking cow by it.[otherwise]with an odd looking cow by it.[end if] Walter see's a bucket and a bottle near the cow, guess that's for milking."
 Farm Field is a room. "A wide open field filled with the smells of livestock."
 Alien Ship is a room. "The ship of the alien invaders. What horrors must they conduct in here?"
 Alien Ship Interior is a room. "The inside of the alien ship."
@@ -309,13 +309,19 @@ Farmer Zeke is a unconvinced man in Betty's Farm. "A strange and nervous fellow.
 Arbit is a man in Alien Ship. "The Audio Invaders commander. A mean chap who plans to take over the world."
 Zig is a man in Farm Field. "Heavily armed guard of the Audio Invader's ship."
 Zag is a man in Farm Field. "Heavily armed guard of the Audio Invader's ship."
+
 [Betty's Farm things]
 The barn is a backdrop. The barn is in Betty's Farm. The description is "An old barn. There is a [if invasion has not happened]a cow by it. 'Moo,' exclaims the cow.[otherwise]an odd looking cow by it. It opens it's mouth as if to moo, but no sound is heard.[end if]".
 A bottle is a container in Betty's Farm. The description is "A milk bottle similar to the one's that Roger the Milkman uses.".
-A cow is a milk-able thing in Betty's Farm.
+A bucket is a container in Betty's Farm. The description is "A bucket used for milking cows."
+A cow is a milk-able thing in Betty's Farm. The description is "[if invasion has not happened]A happy looking cow. A source of milk in Littleburg, USA.[otherwise]A strange looking cow. It tries to moo but can't. Did the aliens take it's voice too?[end if]".
+[After milking the cow during the invasion:]
+	
 
 Rule for listing nondescript items of the Betty's Farm:
-	change bottle to not marked for listing.
+	change bottle to not marked for listing;
+	change cow to not marked for listing;
+	change bucket to not marked for listing.
 
 [Farm Field things]
 
