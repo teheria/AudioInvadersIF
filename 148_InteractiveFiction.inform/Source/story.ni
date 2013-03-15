@@ -4,7 +4,6 @@ The block giving rule is not listed in the check giving it to rules.
 Instead of giving the Alien Photograph to someone, say "This is priceless evidence! You can't give that away!"
 Alien Photograph is an object.
 
-
 [gaol to win condition]
 The goal counter is a number variable. The goal counter is 0.
 [Carry out adding [or whatever action]: increase goal counter by 1.]
@@ -18,6 +17,7 @@ The invasion is a scene.
 After asking someone about something during the invasion, say "Walter tries to speak, but no words come out. [the topic understood] gives Walter a puzzling look.".
 After telling someone about something during the invasion, say "Walter tries to explain [the noun] to [the topic understood], but no words come out. [the topic understood] gives Walter a funny look.".
 A person can be convinced or unconvinced.
+A person can be tense or  not tense. A person is usually not tense.
 
 [Things]
 A subject is a kind of thing.
@@ -58,6 +58,12 @@ Check typing:
 		rule fails.
 Report typing:
 	say "Walter types on [the noun].".
+
+[Attaching]
+[The block attaching rule is not listed in the check attaching it to rules.
+attaching is an action applying to two visible things.
+Understand "attach [something] and [something] together" as attaching.]
+
 
 [News Office Rooms of the Daily Babler]
 Walter's Office is a room. "[If Introduction has not ended]Walter's office. His desk is seen here, with [a list of things on Walter's desk] on it. Woodchuck, Walter's boss, is blocking the doorway to the east, staring Walter down.[otherwise] Walter's office. It is covered in photograhps that he has taken from around the town. There is a cup of coffee on his desk.[end if][paragraph break]To the east is the break room."
@@ -229,15 +235,45 @@ Topic			Matter
 
 After asking Jimmy about a topic listed in the Table of Jimmy's Replies, say "[matter entry]".
 
-Old Man Magoo is a unconvinced man in Whistlebarry Ave. "An elderly man. Easily startled and impressionable."
 [Old Man Magoo Rules]
-Old Man Magoo is a man in Whistlebarry Ave. "An elderly man. Easily startled and impressionable."
+Old Man Magoo is a unconvinced man in Whistlebarry Ave. "An elderly man Easily startled and impressionable."
 After showing Alien Photograph to Old Man Magoo: 
 	increase goal counter by 1;
 	say "What's this! Oh my...AN ALIEN! oh goodness no! I must warn my grandson Gary!".
-	
+
+[Chuck Rogers Rules]
 Chuck Rogers is a unconvinced man in Littleburg High. "Captain of the Littleburg High Football team. Go Kiwi's! Very protective of the school mascot."
 
+Table of Chuck Rogers's Replies
+Topic			Matter
+"what's the matter"			"'I'm just gosh darned hyped about the big game this weekend. It's us agains the CrushingScottish 	Warriors. They are pretty good but our Kiwi pride will lead us to victory!' says Chuck."
+"whats the matter"			"'I'm just gosh darned hyped about the big game this weekend. It's us agains the CrushingScottish 	Warriors. They are pretty good but our Kiwi pride will lead us to victory!' says Chuck."
+"what's wrong"			"'I'm just gosh darned hyped about the big game this weekend. It's us agains the CrushingScottish 	Warriors. They are pretty good but our Kiwi pride will lead us to victory!' says Chuck."
+"whats wrong"			"'I'm just gosh darned hyped about the big game this weekend. It's us agains the CrushingScottish 	Warriors. They are pretty good but our Kiwi pride will lead us to victory!' says Chuck."
+"what's troubling you"			"'I'm just gosh darned hyped about the big game this weekend. It's us agains the CrushingScottish 	Warriors. They are pretty good but our Kiwi pride will lead us to victory!' says Chuck."
+"whats troubling you"			"'I'm just gosh darned hyped about the big game this weekend. It's us agains the CrushingScottish 	Warriors. They are pretty good but our Kiwi pride will lead us to victory!' says Chuck."
+"the game"			"'Sorry can't talk about the game. Coach will tan my hide if I spill the beans on our secret techniques.' says Chuck."
+"Kiwi"			"'Gotta love those birds. They may not be able to fly but they got heart, just like us! GO KIWIS!!!' yells Chuck."
+"Kiwis"			"'Gotta love those birds. They may not be able to fly but they got heart, just like us! GO KIWIS!!!' yells Chuck."
+"Kiwi's"			"'Gotta love those birds. They may not be able to fly but they got heart, just like us! GO KIWIS!!!' yells Chuck."
+[
+"hot stories"			""
+"hot story"			""
+"news"			""
+]
+
+After asking Chuck Rogers about a topic listed in the Table of Chuck Rogers's Replies, say "[matter entry]".
+
+After giving the broken kiwi doll to Chuck Rogers:
+	now Chuck Rogers is tense;
+	say "'Why Walter? Who would do something like this?! I am so %&(!#&($ angry right now Walter!!! I tell you what, you show me who did this and I will personally $%&! them up!!!' yells Chuck. He is shaking with anger and is looking mighty scary.".
+	
+After showing Alien Photograph to Chuck Rogers:
+	if Chuck Rogers is tense:
+		increase goal counter by 1;
+		say "'I should have known Walter! Those guys on the tube been saying that there have been aliens up to no good. Thanks Walter. I got some business to take care of.' says Chuck. He seems awfully intimidating. Wouldn't want to be those aliens right now.".
+
+	
 [Whistlebarry Ave things]
 
 [Mary Sue's Bedroom things]
@@ -253,6 +289,9 @@ Secret Chest Key is on Mary's Desk.
 [Bomb Shelter things]
 
 [Littleburg High things]
+The Feild is a room. "The football field for Littleburg High. Bleachers circle around the impressive field. On game nights it wil be filled with fans, cheeing on their favorite team, The Littleburg Kiwis."
+The Feild is east of Littleburg High.
+The broken kiwi doll is in The Feild.
 
 [Farm Rooms]
 Betty's Farm is a room. "Old Betty's farm. Supplying the finest products to this fine little town."
