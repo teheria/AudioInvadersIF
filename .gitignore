@@ -4,6 +4,7 @@
 # Ignore the following directories
 
 # Ignore the following file extensions
+*.skein
 
 #Ignore VIM files
 *~
