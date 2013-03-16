@@ -165,15 +165,16 @@ Rule for listing nondescript items of the Break Room:
 	change water cooler to not marked for listing.
 
 [Office Supply Room things]
+alien article is an object. "an article that Walter wrote. It seems crazy. Only someone blinded by the written word would believe this."
 A old wooden table is a supporter in the Office Supply Room. The description is "An old wooden table.".
 
 An old typewriter is a fixed in place thing on the old wooden table. The description is "A Royal typewriter. It looks like it hasn't been used in quite some time.".
 The old typewriter is type-able.
-[After typing on old typewriter during the invasion:
-	alien article is an object;
-	player now holds alien article;
+
+After typing the old typewriter during the invasion:
+	now player holds alien article;
 	say "Walter types on the [noun], Walter has written an article about the alien invasion. Hopefully someone believes this crazy story."
-]
+
 Instead of taking the old typewriter, say "The [noun] is a little too heavy to carry.".
 
 [Office Supply Room rules]
@@ -183,14 +184,11 @@ Rule for listing nondescript items of the Office Supply Room:
 [Daily Babler Foyer things]
 
 [First Street Rooms]
-First Street is a room.  "First St. of Littleburg, USA. There has never been a more beautiful town than this one. The local milkman is seen making his rounds.[paragraph break]To the north is The Daily Babler, to the south is Main Street, to the west is the local Police Station and to the east is the Mayor's Office."
 
-Garbage Can is a container in First Street. "A small garbage can sits idly next to a bench".
-[Garbage is a container in First Street. "A small garbage can sit's idle by a bench."
-instead of opening Garbage , say "You try rummageing through the garbage can in hopes of finding something usefull. You do not."
-]
-The Police Station is a room. "You arrive at the Police Station. Home to the fine men in blue of Littleburg, USA. To the East is First Street."
-The Mayors Office is a room. "The office of Mayor Calahan."
+First Street is a room.  "First St. of Littleburg, USA. There has never been a more beautiful town than this one. The local milkman is seen making his rounds.[paragraph break]To the north is The Daily Babler, to the south is Main Street, to the west is the local Police Station and to the east is the Mayor's Office".
+The Police Station is a room. "The fine men in blue of Littleburg, USA."
+The Mayors Office is a room. "The office of Mayor Calahan. [if the invasion has not happened]The mayor is here, looking proud to be a fine citizen of Littleburg.[otherwise]The mayor is here.[end if][paragraph break]To the west if First Street.".
+
 [Room Connections]
 First Street is south of the Daily Babler Foyer. 
 The Police Station is west of First Street.
@@ -233,17 +231,17 @@ Officer Smith is a unconvinced man in Police Station. "A grizzled cop who doesn'
 
 Table of Officer Smith Replies
 Topic			Matter
-"what's the matter"			"This here is a dirty town Walt. It takes tough men like me to clean it up. "
-"whats the matter"			"This here is a dirty town Walt. It takes tough men like me to clean it up. "
-"what's wrong"			"This here is a dirty town Walt. It takes tough men like me to clean it up. "
-"whats wrong"			"This here is a dirty town Walt. It takes tough men like me to clean it up. "
-"what's troubling you"			"This here is a dirty town Walt. It takes tough men like me to clean it up. "
+"what's the matter"			"'This here is a dirty town Walt. It takes tough men like me to clean it up.', says officer Smith. "
+"whats the matter"			"'This here is a dirty town Walt. It takes tough men like me to clean it up.', says officer Smith. "
+"what's wrong"			"'This here is a dirty town Walt. It takes tough men like me to clean it up.', says officer Smith. "
+"whats wrong"			"'This here is a dirty town Walt. It takes tough men like me to clean it up.', says officer Smith. "
+"what's troubling you"			"'This here is a dirty town Walt. It takes tough men like me to clean it up.', says officer Smith. "
 "whats troubling you"			"This here is a dirty town Walt. It takes tough men like me to clean it up. "
-"newspaper"			"One of the only respectable things about this town. MY buddy Wood Chuck never lies"
-"whats new"			"nothing Walt. Littleburg...Littleburg never changes"
-"Kiwi"			"'...I don't like birds"
-"Kiwis"			"'...I don't like birds"
-"Kiwi's"			"'...I don't like birds"
+"newspaper"			"'One of the only respectable things about this town. MY buddy Wood Chuck never print lies' says officer Smith"
+"whats new"			"'nothing Walt. Littleburg...Littleburg never changes' says officer Smith"
+"Kiwi"			"'...I don't like birds' says officer Smith."
+"Kiwis"			"'...I don't like birds says officer Smith."
+"Kiwi's"			"'...I don't like birds says officer Smith."
 
 
 After telling Officer Smith about "aliens" during the invasion:
@@ -269,10 +267,8 @@ The Pile of Money is an object in the Mayors office.
 
 Main Street is a room. "The main street of Littleburg, USA. A hot spot for local folks. To the west is the malt shop, to the east is Jim's Bar, to the south is WhistleBerry Avenue to the north is First Street."
 
-
-
 icky Garbage is a container in Main Street. "A small garbage can sits idly next to a bench".
-instead of opening Garbage can, say "You rummage through the can, hoping to find something useful. You find nothing."
+instead of opening Garbage, say "You rummage through the can, hoping to find something useful. You find nothing."
 The Malt Shop is a room. "A local hang out for all hip kids in Littleburg.  To the east is Mainstreet."
 Jims Bar is a room. "Serving libations since 1912. To the West is Main Street."
 [Room Connections]
@@ -284,18 +280,89 @@ Jims Bar is east of Main Street.
 
 Suzy is a unconvinced woman in Malt Shop. "Suzy, a student of LittleBurg High sit's by her sweetheart Jake. Loves chocolate shakes."
 Jake is a unconvinced man in Malt Shop. "Jae a student of LitleBurg High sit's by his sweetheart Suzy. Loves listening to the Beach Boys."
-Jim Magee is a unconvinced man. He is in Jim's Bar. "Mr. Magee Runs the local bar, where everybody knows your name."
+
+
+Table of Suzy  Replies
+Topic 					Matter
+"what's the matter"					"'nothing at all Walt, just me and ma handsome fella hanging out', says Suzy"
+"whats the matter"					"'nothing at all Walt, just me and ma handsome fella hanging out', says Suzy"
+"what is the matter"					"'nothing at all Walt, just me and ma handsome fella hanging out', says Suzy"
+"what's wrong"					"'nothing at all Walt, just me and ma handsome fella hanging out', says Suzy"
+"whats wrong"					"'nothing at all Walt, just me and ma handsome fella hanging out', says Suzy"
+"what is wrong"					"'nothing at all Walt, just me and ma handsome fella hanging out', says Suzy"
+"Chuck"					"'nothing at all Walt, just me and ma handsome fella hanging out', says Suzy"
+"Chuck Rogers"					"'nothing at all Walt, just me and ma handsome fella hanging out', says Suzy"
+"news"					"''News? I danno I've been...destracted', says Suzy"					
+"News"					"''News? I danno I've been...destracted', says Suzy"	
+"hot stories"					"''News? I danno I've been...destracted', says Suzy"	
+"stories"					"''News? I danno I've been...destracted', says Suzy"	
+
+After asking Suzy about a topic listed in the Table of Suzy Replies, say "[matter entry]".
+
+Table of Jake Replies
+Topic 					Matter
+"what's the matter"					"'nothing at all Walt, just me and ma handsome fella hanging out', says Suzy"
+"whats the matter"					"'nothing at all Walt, just me and ma handsome fella hanging out', says Suzy"
+"what is the matter"					"'nothing at all Walt, just me and ma handsome fella hanging out', says Suzy"
+"what's wrong"					"'nothing at all Walt, just me and ma handsome fella hanging out', says Suzy"
+"whats wrong"					"'nothing at all Walt, just me and ma handsome fella hanging out', says Suzy"
+"what is wrong"					"'nothing at all Walt, just me and ma handsome fella hanging out', says Suzy"
+"Chuck"					"'nothing at all Walt, just me and ma handsome fella hanging out', says Suzy"
+"Chuck Rogers"					"'nothing at all Walt, just me and ma handsome fella hanging out', says Suzy"
+"news"					"''News? I danno I've been...destracted', says Suzy"					
+"News"					"''News? I danno I've been...destracted', says Suzy"	
+"hot stories"					"''News? I danno I've been...destracted', says Suzy"	
+"stories"					"''News? I danno I've been...destracted', says Suzy"
+
+
+After asking Jake about a topic listed in the Table of Jake Replies, say "[matter entry]".
+
+
+Jim Magee is a unconvinced man. He is in Jim's Bar. "Mr. Magee Runs the local bar, where everybody knows your name. He's a stubborn man, who assumes he's seen it all."
+
+Table of Kim Magee Replies
+Topic 					Matter
+"what's the matter"					"'Eh, some punk kids running around, talking bout the end of the world. I say it's a bunch of malarky' says Jim Magee."
+"whats the matter"					"'Eh, some punk kids running around, talking bout the end of the world. I say it's a bunch of malarky' says Jim Magee."
+"what is the matter"					"'Eh, some punk kids running around, talking bout the end of the world. I say it's a bunch of malarky' says Jim Magee."
+"what's wrong"					"'Eh, some punk kids running around, talking bout the end of the world. I say it's a bunch of malarky' says Jim Magee."
+"whats wrong"					"'Eh, some punk kids running around, talking bout the end of the world. I say it's a bunch of malarky' says Jim Magee."
+"what is wrong"					"'Eh, some punk kids running around, talking bout the end of the world. I say it's a bunch of malarky' says Jim Magee."				
+"aliens"					"'Eh, it'll never happen. Why would aliens wanna come down here?' says Jim Magee."
+"news"					"'Well I have heard that Farmer Zekes been acting stranger then normal...' says Jim Magee."	
+"News"					"'Well I have heard that Farmer Zekes been acting stranger then normal...' says Jim Magee ."
+"hot stories"					"'Well I have heard that Farmer Zekes been acting stranger then normal...' says Jim Magee."
+"stories"					"'Well I have heard that Farmer Zekes been acting stranger then normal...' says Jim Magee."
+
+
+
 Mary Sue is a unconvinced woman in Main Street. "Mary Sue stands idly by a bench. She is a perky young dame with a relatively flat personality."
 
-[
-Table of Mary Sue's Replies:
-Topic                                                Matter
-]
+Table of Mary Sue's Replies
+Topic 					Matter
+"what's the matter"					"'Hey Walter! Are you excited for the big game coming up soon? Chuck is going to be playing and I know he will be the best player out there!' says Mary. She seems very excited about seeing Chuck play."
+"whats the matter"					"'Hey Walter! Are you excited for the big game coming up soon? Chuck is going to be playing and I know he will be the best player out there!' says Mary. She seems very excited about seeing Chuck play."
+"what is the matter"					"'Hey Walter! Are you excited for the big game coming up soon? Chuck is going to be playing and I know he will be the best player out there!' says Mary. She seems very excited about seeing Chuck play."
+"what's wrong"					"'Hey Walter! Are you excited for the big game coming up soon? Chuck is going to be playing and I know he will be the best player out there!' says Mary. She seems very excited about seeing Chuck play."
+"whats wrong"					"'Hey Walter! Are you excited for the big game coming up soon? Chuck is going to be playing and I know he will be the best player out there!' says Mary. She seems very excited about seeing Chuck play."
+"what is wrong"					"'Hey Walter! Are you excited for the big game coming up soon? Chuck is going to be playing and I know he will be the best player out there!' says Mary. She seems very excited about seeing Chuck play."
+"Chuck"					"'Chuck is simply the best. He is an all around great guy.... if only could talk to him' says Mary. Walter overhears her mumbling something about a diary and secrets."
+"Chuck Rogers"					"'Chuck is simply the best. He is an all around great guy.... if only could talk to him' says Mary. Walter overhears her mumbling something about a diary and secrets."
+"diary"					"'Why would you want to know about my diary?! Your not planning on running it as a story are you!? I think I might die if someone were to get a hold of that.' says Mary Sue."
+"Diary"					"'Why would you want to know about my diary?! Your not planning on running it as a story are you!? I think I might die if someone were to get a hold of that.' says Mary Sue."
+"aliens"					"'Aliens? I don't believe in that stuff Walter. But if they did exist I am sure our town hero, Chuck Rogers would save us!' says Mary. Her eyes are shimmering and she seems lost in a dream."
+"news"					"'Well I have heard that Farmer Zekes been acting stranger then normal...' says Mary Sue '"	
+"News"					"'Well I have heard that Farmer Zekes been acting stranger then normal...' says Mary Sue '"
+"hot stories"					"'Well I have heard that Farmer Zekes been acting stranger then normal...' says Mary Sue '"
+"stories"					"'Well I have heard that Farmer Zekes been acting stranger then normal...' says Mary Sue '"
+
+After asking Mary Sue about a topic listed in the Table of Mary Sue's Replies, say "[matter entry]".
+
 After giving the Diary to Mary Sue:
 	if Mary Sue is not convinced:
 		now Mary Sue is convinced;
 		increase goal counter by 1;
-		say "but how?! how can this be!?! It's the commi's! The aliens! The commi-aliens! And now they know my secrets!";
+		say "but how?! how can this be!?! It's the commi's! The aliens! The commi-aliens! And now they know my secrets! [paragraph break]Walter has now convinced [goal counter] people about the alien invasion. He must convince [5 - goal counter] more.";
 	otherwise:
 		say "'Don't show me that again Walter. I am too upset to look at them right. I'll bet Chuck knows my secrets now...' says Mary Sue".
 
@@ -306,13 +373,13 @@ After giving the Diary to Mary Sue:
 [Jims Bar things]
 
 [Whistlebarry Ave Rooms]
-Whistlebarry Ave is a room. "A quiet neighborhood of Littleburg, USA."
+Whistlebarry Ave is a room. "A quiet neighborhood of Littleburg, USA. Mary Sue's house is to the West, to the East is Betties Farm. To the South is LittleBurg High, to the Nirth is Main Street. "
 
 Stinky Garbage is a container in Whistlebarry Ave. "A small garbage can sits idly next to a bench".
 The Buck Rogers #55 comic-book is in stinky Garbage.
 
 
-Mary Sues' House is a room. "Mary Sue's House. The picture perfect house for the modern family. It doesn't look like anyone is here."
+Mary Sue's House is a room. "Mary Sue's House. The picture perfect house for the modern family. It doesn't look like anyone is here. You could probobly just walk in..."
 Mary Sue's Bedroom is a room. "Mary Sue's Bedroom. Walter is overcome from the sight of all the pictures of Chuck Rogers."
 [The Bomb Shelter is a room. "Can never be too careful."]
 Littleburg High is a room. "Littleburg High, home of the Fighting Kiwi's. A local boy, Jimmy is standing around looking glum. Chuck Rogers, the captain of the High School football team is seen preping for the Big Game.[paragraph break]To the north is Whistlebarry Ave.".
@@ -338,7 +405,7 @@ Topic			Matter
 "baseball"			"'Kiwi's are the best, just go ask Chuck,' replies Jimmy"
 
 After asking Jimmy about a topic listed in the Table of Jimmy's Replies, say "[matter entry]".
-[][][][][]
+
 After giving the Buck Rogers #55 comic-book to Jimmy:
 	now Jimmy is tense;
 	say "'Oh Gee-Wilakers! thanks Mister! This here comic is great! It's about Buck Rogers fightin off an alien threat! Aliens are really scary huh?' says Jimmy".
@@ -366,11 +433,9 @@ Topic		Matter
 "comic books"		"silly things! Back in my day, kids played with sticks and stones, and it was wonderfull!"
 "baseball"		"tote's American"
 "Aliens"		"goodness! The idea scares me!"
-"hot stories"		"Old Lazy Magoo made a lovely quilt the other day. I'd call that newsworthy!"
-"hot story"		"Old Lazy Magoo made a lovely quilt the other day. I'd call that newsworthy!"
-"news"		"Old Lazy Magoo made a lovely quilt the other day. I'd call that newsworthy!"
-
-
+"hot stories"		"Old Lady Magoo made a lovely quilt the other day. I'd call that newsworthy!"
+"hot story"		"Old Lady Magoo made a lovely quilt the other day. I'd call that newsworthy!"
+"news"		"Old Lady Magoo made a lovely quilt the other day. I'd call that newsworthy!"
 
 After asking Old Man Magoo about a topic listed in the Table of Old Man Magoo's Replies, say "[matter entry]"
 
@@ -378,7 +443,7 @@ After showing Alien Photograph to Old Man Magoo:
 	if Old Man Magoo is not convinced:
 		now Old Man Magoo is convinced;
 		increase goal counter by 1;
-		say "What's this! Oh my...AN ALIEN! oh goodness no! I must warn my grandson Gary!";
+		say "What's this! Oh my...AN ALIEN! oh goodness no! I must warn my grandson Gary! [paragraph break]Walter has now convinced [goal counter] people about the alien invasion. He must convince [5 - goal counter] more.";
 	otherwise:
 		say "'Good work Walter. Those commi-aliens will not get away with' says Old Man Magoo".
 
@@ -397,11 +462,10 @@ Topic			Matter
 "Kiwi"			"'Gotta love those birds. They may not be able to fly but they got heart, just like us! GO KIWIS!!!' yells Chuck."
 "Kiwis"			"'Gotta love those birds. They may not be able to fly but they got heart, just like us! GO KIWIS!!!' yells Chuck."
 "Kiwi's"			"'Gotta love those birds. They may not be able to fly but they got heart, just like us! GO KIWIS!!!' yells Chuck."
-[
-"hot stories"			""
-"hot story"			""
-"news"			""
-]
+"hot stories"			"'Walter don't ya know? The big game is coming this weekend! How could you not know about it? You need to get out more.' exclaims Chuck. He is compltely focused on the upcoming game."
+"hot story"			"'Walter don't ya know? The big game is coming this weekend! How could you not know about it? You need to get out more.' exclaims Chuck. He is compltely focused on the upcoming game."
+"news"			"'Walter don't ya know? The big game is coming this weekend! How could you not know about it? You need to get out more.' exclaims Chuck. He is compltely focused on the upcoming game."
+
 
 After asking Chuck Rogers about a topic listed in the Table of Chuck Rogers's Replies, say "[matter entry]".
 
@@ -414,7 +478,7 @@ After showing Alien Photograph to Chuck Rogers:
 		if Chuck Rogers is not convinced:
 			now Chuck Rogers is convinced;
 			increase goal counter by 1;
-			say "'I should have known Walter! Those guys on the tube been saying that there have been aliens up to no good. Thanks Walter. I got some business to take care of.' says Chuck. He seems awfully intimidating. Wouldn't want to be those aliens right now.";
+			say "'I should have known Walter! Those guys on the tube been saying that there have been aliens up to no good. Thanks Walter. I got some business to take care of.' says Chuck. He seems awfully intimidating. Wouldn't want to be those aliens right now. [paragraph break]Walter has now convinced [goal counter] people about the alien invasion. He must convince [5 - goal counter] more.";
 		otherwise:
 			say "'Walter, I;m getting myself ready for those alien freaks. Nobody hurts a kiwi on my watch.' Chuck says with a serious tone.".
 
@@ -423,14 +487,15 @@ After showing Alien Photograph to Chuck Rogers:
 
 [Mary Sue's Bedroom things]
 Secret Chest is a container in Mary Sue's Bedroom. It is lockable and locked.
-Diary is in Secret Chest.
-Secret Chest Key unlocks Secret Chest.
+The Diary is an object in the Secret Chest.
+Secret Key unlocks Secret Chest.
 
 Poster Board is in Mary Sue's Bedroom. Poster Board is scenery.
-Mary Sue's Bed is in Mary Sue's Bedroom. Mary Sue's Bed is a container.
+Mary Sue's Bed is in Mary Sue's Bedroom. 
 
 Mary's Desk is a supporter in Mary Sue's Bedroom. 
-Secret Chest Key is on Mary's Desk.
+Secret Key is on Mary's Desk.
+
 [Bomb Shelter things]
 
 [Littleburg High things]
@@ -444,14 +509,12 @@ Rule for listing nondescript items of the Littleburg High:
 
 [Farm Rooms]
 Betty's Farm is a room. "Old Betty's farm. Supplying the finest products to this fine little town. There is a barn here, [if invasion has not happened]with a happy looking cow by it.[otherwise]with an odd looking cow by it.[end if] Walter see's a bottle near the cow, guess that's for milking."
-Farm Field is a room. "A wide open field filled with the smells of livestock."
-Alien Ship is a room. "The ship of the alien invaders. What horrors must they conduct in here?"
-Alien Ship Interior is a room. "The inside of the alien ship."
+Farm Field is a room. "[if invasion has not happened]A wide open field filled with the smells of livestock, but there is no livestock actually here. Walter sees strange glowing lights to the east.[paragraph break]Betty's Farm is to the south and some strange glowing lights are to the east.[otherwise]A wide open field, where the aliens have been abducting people and the farm animals of Betty's farm, stealing their voices for unknown reasons. Zig and Zag, two Audio Invaders guarding the alien ship.[paragraph break]Betty's farm is to the south and the Alien Ship is to the east.[end if]".
+Alien Ship is a room. "The ship of the alien invaders. What horrors must they conduct in here and why are they stealing everyone's voice?[paragraph break]The Field of Betty's Farm is to the outside.".
 [Room Connections]
 Betty's Farm is east of Whistlebarry Ave.
 Farm Field is north of Betty's Farm.
-Alien Ship is east of Farm Field.
-Inside from the Alien Ship is the Alien Ship Interior.
+Inside from the Farm Field is the Alien Ship.
 
 [Farm and Alien Ship Characters]
 Farmer Zeke is a unconvinced man in Betty's Farm. "Farmer Zeke is a strange and nervous fellow. Believes that something is going on in his field but too afraid to take a look."
@@ -480,9 +543,9 @@ After showing Alien Photograph to Farmer Zeke:
 		say "'we gatta get help Walter! Try asking the Mayor! Maybe he will listen."
 
 
-Arbit is a man in Alien Ship. " Arbit is the Audio Invaders commander. A mean chap who plans to take over the world."
-Zig is a man in Farm Field. "Zig is a heavily armed guard of the Audio Invader's ship."
-Zag is a man in Farm Field. "Zag is a heavily armed guard of the Audio Invader's ship."
+Arbit is a man in Alien Ship. The description is " Arbit is the Audio Invaders commander. A mean chap who plans to take over the world, stealing all of it's sound."
+Zig is a man in Farm Field. The description is "Zig is a heavily armed guard of the Audio Invader's ship."
+Zag is a man in Farm Field. The description is "Zag is a heavily armed guard of the Audio Invader's ship."
 
 [Betty's Farm things]
 The barn is a backdrop. The barn is in Betty's Farm. The description is "An old barn. There is a [if invasion has not happened]a cow by it. 'Moo,' exclaims the cow.[otherwise]an odd looking cow by it. It opens it's mouth as if to moo, but no sound is heard.[end if]".
@@ -506,10 +569,20 @@ Rule for listing nondescript items of the Betty's Farm:
 	change cow to not marked for listing.
 
 [Farm Field things]
+Glowing lights are a backdrop in the Farm Field. The description is "[if the invasion has not happened]Some strange glowing lights. Looks like something out of one of those martin invader movies. Maybe Walter should take a picture just in case.[otherwise]The lights to the alien ship. They have stolen Walters voice, how wil he convince people they are invading?[end if]".
+Understand "lights" or "alien ship" or "ship" as glowing lights.
+After photographing the glowing lights:
+	if the invasion has not happened:
+		say "Suddenly, the lights start flashing on and off, and Walter puts his hands over his face to block the bright lights. Walter see's two creatures appear, they suddenly zap him with some kind of laser and Walter passes out.";
+		now the player is mute;
+
+Rule for listing nondescript items of the Farm Field:
+	change Zig to not marked for listing;
+	change Zag to not marked for listing.
 
 [Alien Ship things]
-
-[Alien Ship Interior things]
+Rule for listing nondescript items of the Alien Ship:
+	change Arbit to not marked for listing.
 
 [introduction scene rules]
 The introduction begins when play begins.
@@ -521,3 +594,6 @@ When the introduction ends:
 
 [invasion scene rules]
 The invasion begins when the player is mute.
+When the invasion begins:
+	say "Walter awakens in a strange envirnoment. A creature, like the one's he saw before, approaches him. The creature brings up a strange device and points it at Walter. The creature fires it. Walter lets out a scream, but his voice slowly starts to fade out, as if it's being slowly taken away from him. Then creature then opens the device, and out of it Walter hears his own screams. The creature brings the device to his mouth, as if he's drinking it. He then lets out a loud burp and says, 'Mmmmm delicious sound!.'[paragraph break]'Oh, you're awake', says the Alien, who speaks in Walter's own voice. 'I'm Arbit, the commander of the Audio Invaders. We are here to feast on the audio sound of this world. I would ask how you're doing, but as you may have noticed, I have taken your voice from you, and now there is no way you can tell anyone about our evil plans,' says Arbit with a laugh. Arbit then pulls out another device and zaps Walter with it. Everything goes white and Walter passes out once again.";
+	move the player to the Mayors Office.
