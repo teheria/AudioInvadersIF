@@ -354,7 +354,7 @@ After asking Jake about a topic listed in the Table of Jake Replies, say "[matte
 
 Jim Magee is a unconvinced man. He is in Jims Bar. The description is "Mr. Magee Runs the local bar, where everybody knows your name. He's a stubborn man, who assumes he's seen it all."
 
-Table of Kim Magee Replies
+Table of Jim Magee Replies
 Topic 					Matter
 "what's the matter"					"'Eh, some punk kids running around, talking bout the end of the world. I say it's a bunch of malarky' says Jim Magee."
 "whats the matter"					"'Eh, some punk kids running around, talking bout the end of the world. I say it's a bunch of malarky' says Jim Magee."
@@ -367,6 +367,8 @@ Topic 					Matter
 "News"					"'Well I have heard that Farmer Zekes been acting stranger then normal...' says Jim Magee ."
 "hot stories"					"'Well I have heard that Farmer Zekes been acting stranger then normal...' says Jim Magee."
 "stories"					"'Well I have heard that Farmer Zekes been acting stranger then normal...' says Jim Magee."
+
+After asking Jim Magee about a topic listed in the Table of Jim Magee Replies, say "[matter entry]".
 
 
 
