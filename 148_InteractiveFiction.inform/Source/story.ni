@@ -24,7 +24,6 @@ Mayor Calahan is a unconvinced man. The description is "A proud politician. He i
 Understand "mayor" as Mayor Calahan.
 
 The goal counter is a number variable. The goal counter is 0.
-[Carry out adding [or whatever action]: increase goal counter by 1.]
 Every turn when goal counter is at least 5:
 	now Mayor Calahan is convinced.
 
@@ -79,12 +78,6 @@ Check milking:
 		rule fails.
 Report milking:
 	say "Walter milks [the noun], ah the joy's of the small town life.".
-
-[Attaching]
-[The block attaching rule is not listed in the check attaching it to rules.
-attaching is an action applying to two visible things.
-Understand "attach [something] and [something] together" as attaching.]
-
 
 [News Office Rooms of the Daily Babler]
 Walter's Office is a room. "[If Introduction has not ended]Walter's office. His desk is seen here, with [a list of things on Walter's desk] on it. Woodchuck, Walter's boss, is blocking the doorway to the east, staring Walter down.[otherwise] Walter's office. It is covered in photograhps that he has taken from around the town. There is a cup of coffee on his desk.[end if][paragraph break]To the east is the break room."
@@ -270,6 +263,7 @@ Topic			Matter
 
 After asking Officer Smith about a topic listed in the Table of Officer Smith Replies, say "[matter entry]".
 
+[Officer Smith Puzzle]
 Before giving the alien article to Officer Smith:
 	if Officer Smith is unconvinced:
 		now Officer Smith is convinced;
@@ -310,7 +304,7 @@ The Pile of Money is an object in the Mayors office.
 [Main Street Rooms]
 Main Street is a room. "The main street of Littleburg, USA. A hot spot for local folks. Mary Sue, a local gal is seen here.[paragraph break]To the west is the malt shop, to the east is Jim's Bar, to the south is Whistlebarry Avenue to the north is First Street."
 
-icky Garbage is a container in Main Street. "A small garbage can sits idly next to a bench".
+icky Garbage is an openable closed container in Main Street. "A small garbage can sits idly next to a bench".
 instead of opening Garbage, say "You rummage through the can, hoping to find something useful. You find nothing."
 The Malt Shop is a room. "A local hang out for all hip kids in Littleburg. [paragraph break]To the east is Main Street."
 Jims Bar is a room. "Serving libations since 1912.[paragraph break]To the West is Main Street."
@@ -443,6 +437,7 @@ Mary Sue's House is a room. "Mary Sue's House. The picture perfect house for the
 
 stinky garbage is an openable closed container in Whistlebarry Ave. The description is "A stinky garbage can that sits idly next to a bench.".
 The comic-book is an object inside the stinky Garbage. The description is "Issue #55 of Bucky Rogers. Jimmy will surely want to see this.".
+Understand "comic book" as comic-book.
 
 Mary Sue's Bedroom is a room. "Mary Sue's Bedroom. Walter is overcome from the sight of all the pictures of Chuck Rogers.[paragraph break]Outside is Mary Sue's house."
 Littleburg High is a room. "Littleburg High, home of the Fighting Kiwi's. A local boy, Jimmy is standing around looking glum. Chuck Rogers, the captain of the High School football team is seen preping for the Big Game.[paragraph break]To the north is Whistlebarry Ave. and to the east is the high school field.".
@@ -456,7 +451,7 @@ Littleburg High is south of Whistlebarry Ave.
 The Field is east of Littleburg High.
 
 [Whistlebarry Ave Characters] [includes Walter's House, Littleburg High, Betty's Farm]
-Jimmy is a unconvinced man in Littleburg High. The description is "You see Jimmy. A young lad who likes baseball and comic books. He looks upset.[if the invasion has not happened][otherwise] He mumbles something about a comic book.[end if]".
+Jimmy is a unconvinced man in Littleburg High. The description is "You see Jimmy. A young lad who likes baseball and comic books. He looks upset.[if the invasion has not happened][otherwise] He mumbles something about a comic book his mom threw away.[end if]".
 
 Table of Jimmy's Replies
 Topic			Matter
@@ -481,9 +476,7 @@ After telling Jimmy about "aliens" during the invasion:
 	otherwise:
 		say "Walter points to the sky, and Roger nods. Walter has no need to convince Roger.".
 
-
-
-
+[Jimmy Puzzle]
 Before giving the comic-book to Jimmy:
 	now Jimmy is tense;
 	say "'Oh Gee-Wilakers! thanks Mister! This here comic is great! It's about Buck Rogers fightin off an alien threat! Aliens are really scary huh?' says Jimmy";
@@ -519,6 +512,7 @@ Topic		Matter
 
 After asking Old Man Magoo about a topic listed in the Table of Old Man Magoo's Replies, say "[matter entry]"
 
+[Old man magoo Puzzle]
 Before showing Alien Photograph to Old Man Magoo: 
 	if Old Man Magoo is not convinced:
 		now Old Man Magoo is convinced;
@@ -719,7 +713,6 @@ Rule for listing nondescript items of the Betty's Farm:
 
 [Farm Field things]
 
-
 Glowing lights are a backdrop in the Farm Field. The description is "[if the invasion has not happened]Some strange glowing lights. Looks like something out of one of those martin invader movies. Maybe Walter should take a picture just in case.[otherwise]The lights to the alien ship. They have stolen Walters voice, how wil he convince people they are invading?[end if]".
 Understand "lights" or "alien ship" or "ship" as glowing lights.
 After photographing the glowing lights:
@@ -771,7 +764,7 @@ After asking Agent Wardrip-Fruin about something during the MIB:
 	say "Agent Wardrip-Fruin looks at Walter and says, 'Thank you Mr. Flintlock. Your compliance on this matter was an informative logic. But I'm sorry say, that this expressive process is over.' Agent Wardrip-Fruin pulls out a small light and flashses it.[paragraph break]Walter is then seen at his desk. Frank Woodchuck walks in and yells, 'It's almost printing time and you still don't have a story Walter! I don't pay you to sit around your office all day. Give me one reason why shouldn't fire you?' Walter tries to speak bu cant.";
 	end the story saying "Walter Flintlock, a man who's dedicated his life to finding the big story, but now he's the main character of a story, a story no one will ever know, except for us...outside of the...Inform 7 Zone.".
 After telling Agent Wardrip-Fruin about something during the MIB:
-	say "Agent Wardrip-Fruin looks at Walter and says, 'Thank you Mr. Flintlock. Your compliance on this matter was an informative logic. But I'm sorry say, that this expressive process is over.' Agent Wardrip-Fruin pulls out a small light and flashses it.[paragraph break]Walter is then seen at his desk. Frank Woodchuck walks in and yells, 'It's almost printing time and you still don't have a story Walter! I don't pay you to sit around your office all day. Give me one reason why shouldn't fire you?' Walter tries to speak bu cant.";
+	say "Agent Wardrip-Fruin looks at Walter and says, 'Thank you Mr. Flintlock. Your compliance on this matter was an informative logic. But I'm sorry say, that this expressive process is over.' Agent Wardrip-Fruin pulls out a small light and flashses it.[paragraph break]Walter is then seen at his desk. Frank Woodchuck walks in and yells, 'It's almost printing time and you still don't have a story Walter! I don't pay you to sit around your office all day. Give me one reason why shouldn't fire you?' Walter tries to speak but cant.";
 	end the story saying "Walter Flintlock, a man who's dedicated his life to finding the big story, but now he's the main character of a story, a story no one will ever know, except for us...outside of the...Inform 7 Zone.".
 	
 The Mayors Main Office is a room. The description is "The main officer of Mayor Calahan, Walter is here to convince the Mayor of the alien invasion.".
