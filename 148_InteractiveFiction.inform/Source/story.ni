@@ -1,4 +1,5 @@
 "Audio Invaders" by Adam Magleby, Drew Facchiano, Jason Judd Roth
+Use no scoring.
 [giving]
 The block giving rule is not listed in the check giving it to rules.
 Alien Photograph is a thing. The description is "A photo of the Aliens outside their ship."
@@ -247,7 +248,7 @@ Before showing the Alien Photograph to Mayor Calahan:
 	rule succeeds.
 
 [Officer Smith Rules]
-Officer Smith is a unconvinced man in Police Station. The description is "A grizzled cop who doesn't play by the rules... not even his own."
+Officer Smith is a unconvinced man in Police Station. The description is "A grizzled cop who doesn't play by the rules... not even his own. But he seems to believe anything he see's in the news.[if the invasion has not happened][otherwise] Maybe there's some way Walter can write a quick article about the aliens to convince Officer Smith.[end if]".
 
 Table of Officer Smith Replies
 Topic			Matter
@@ -269,18 +270,25 @@ Before giving the alien article to Officer Smith:
 	if Officer Smith is unconvinced:
 		now Officer Smith is convinced;
 		increase goal counter by 1;
-		say "'Great Scott! It's in the paper...IT MUST BE TRUE! We have to act quickly Walter! ' says Officer Smith. [paragraph break]Walter has now convinced [goal counter] people about the alien invasion. He must convince [5 - goal counter] more.".
-
-
+		say "'Great Scott! It's in the paper...IT MUST BE TRUE! We have to act quickly Walter! ' says Officer Smith. [paragraph break]Walter has now convinced [goal counter] people about the alien invasion. He must convince [5 - goal counter] more.";
+	otherwise:
+		say "'I saw it Walter, the newpaper is always right! We need to find a way to stop the aliens!' Officer Smith says.";
+	rule succeeds.
+	
+Before showing the alien article to Officer Smith:
+	if Officer Smith is unconvinced:
+		now Officer Smith is convinced;
+		increase goal counter by 1;
+		say "'Great Scott! It's in the paper...IT MUST BE TRUE! We have to act quickly Walter! ' says Officer Smith. [paragraph break]Walter has now convinced [goal counter] people about the alien invasion. He must convince [5 - goal counter] more.";
+	otherwise:
+		say "'I saw it Walter, the newpaper is always right! We need to find a way to stop the aliens!' Officer Smith says.";
+	rule succeeds.
 
 After telling Officer Smith about "aliens" during the invasion:
 	if Officer Smith is unconvinced:
 		say "Walter tries to tell Officer Smith about the aliens, but he can't speak. How can he convince him? If only he had something offical and trustworthy to show him";
 	otherwise:
 		say "Walter points to the sky, and Roger nods. Walter has no need to convince Roger.".
-		
-		
-		
 		
 [First Street things]
 
@@ -432,8 +440,8 @@ Before giving the Diary to Mary Sue:
 Whistlebarry Ave is a room. "A quiet neighborhood of Littleburg, USA.[paragraph break]To the north is Main Street, to the west is Mary Sue's house, to the south is Littleburg High and to the east is Betty's Farm.".
 Mary Sue's House is a room. "Mary Sue's House. The picture perfect house for the modern family. It doesn't look like anyone is here.[paragraph break]Inside from here is Mary Sue's room and to the east is Whistlebarry Ave.".
 
-stinky garbage is a container in Whistlebarry Ave. ["A stinky garbage can sits idly next to a bench".]
-The comic-book is an object inside the stinky Garbage.
+stinky garbage is an openable closed container in Whistlebarry Ave. The description is "A stinky garbage can that sits idly next to a bench.".
+The comic-book is an object inside the stinky Garbage. The description is "Issue #55 of Bucky Rogers. Jimmy will surely want to see this.".
 
 Mary Sue's Bedroom is a room. "Mary Sue's Bedroom. Walter is overcome from the sight of all the pictures of Chuck Rogers.[paragraph break]Outside is Mary Sue's house."
 Littleburg High is a room. "Littleburg High, home of the Fighting Kiwi's. A local boy, Jimmy is standing around looking glum. Chuck Rogers, the captain of the High School football team is seen preping for the Big Game.[paragraph break]To the north is Whistlebarry Ave. and to the east is the high school field.".
@@ -447,7 +455,7 @@ Littleburg High is south of Whistlebarry Ave.
 The Field is east of Littleburg High.
 
 [Whistlebarry Ave Characters] [includes Walter's House, Littleburg High, Betty's Farm]
-Jimmy is a unconvinced man in Littleburg High. The description is "You see Jimmy. A young lad who likes baseball and comic books. He looks upset.".
+Jimmy is a unconvinced man in Littleburg High. The description is "You see Jimmy. A young lad who likes baseball and comic books. He looks upset.[if the invasion has not happened][otherwise] He mumbles something about a comic book.[end if]".
 
 Table of Jimmy's Replies
 Topic			Matter
@@ -464,11 +472,7 @@ After asking Jimmy about a topic listed in the Table of Jimmy's Replies, say "[m
 Before giving the comic-book to Jimmy:
 	now Jimmy is tense;
 	say "'Oh Gee-Wilakers! thanks Mister! This here comic is great! It's about Buck Rogers fightin off an alien threat! Aliens are really scary huh?' says Jimmy";
-	rule succeeds.
-
-
-	
-	
+	rule succeeds.	
 	
 Before showing Alien Photograph to Jimmy:
 	if Jimmy is tense:
@@ -480,10 +484,8 @@ Before showing Alien Photograph to Jimmy:
 		otherwise:
 			say "'I got my bee-bee gun at the ready Mr.Flintlock. Just say when!'says Jimmy".
 
-
-
 [Old Man Magoo Rules]
-Old Man Magoo is a unconvinced man in Whistlebarry Ave. The description is "An elderly man. Easily startled and impressionable. He'll usually believe anything you tell him.".
+Old Man Magoo is a unconvinced man in Whistlebarry Ave. The description is "An elderly man. Easily startled and impressionable. He'll usually believe anything you tell him.[if the invasion has not happened][otherwise] Old Man Magoo will probably believe Walter if he shows him the alien photo.[end if]".
 
 Table of Old Man Magoo's Replies
 Topic		Matter
@@ -512,7 +514,7 @@ Before showing Alien Photograph to Old Man Magoo:
 	rule succeeds.
 
 [Chuck Rogers Rules]
-Chuck Rogers is a unconvinced man in Littleburg High. The description is "Captain of the Littleburg High Football team. Go Kiwi's! Very protective of the school mascot."
+Chuck Rogers is a unconvinced man in Littleburg High. The description is "Captain of the Littleburg High Football team. Go Kiwi's! Very protective of the school mascot.[if the invasion has not happened][otherwise] Maybe Walter can find something around the school or the field to show Chuck to convince him of the alien invasion.[end if]".
 
 Table of Chuck Rogers's Replies
 Topic			Matter
@@ -604,7 +606,7 @@ Farm Field is north of Betty's Farm.
 Inside from the Farm Field is the Alien Ship.
 
 [Farm and Alien Ship Characters]
-Farmer Zeke is a unconvinced man in Betty's Farm. "Farmer Zeke is a strange and nervous fellow. Believes that something is going on in his field but too afraid to take a look."
+Farmer Zeke is a unconvinced man in Betty's Farm. "Farmer Zeke is a strange and nervous fellow. Believes that something is going on in his field but too afraid to take a look.[if the invasion has not happened][otherwise] He'll surely believe Walter if he shows him the alien photo.[end if]".
 
 table of Farmer Zeke Replies
 Topic			Matter
@@ -685,13 +687,38 @@ When the introduction ends:
 
 [invasion scene rules]
 The invasion begins when the player is mute.
+The invasion ends when Mayor Calahan is convinced.
 When the invasion begins:
 	say "Walter awakens in a strange envirnoment. A creature, like the one's he saw before, approaches him. The creature brings up a strange device and points it at Walter. The creature fires it. Walter lets out a scream, but his voice slowly starts to fade out, as if it's being slowly taken away from him. Then creature then opens the device, and out of it Walter hears his own screams. The creature brings the device to his mouth, as if he's drinking it. He then lets out a loud burp and says, 'Mmmmm delicious sound!.'[paragraph break]'Oh, you're awake', says the Alien, who speaks in Walter's own voice. 'I'm Arbit, the commander of the Audio Invaders. We are here to feast on the audio sound of this world. I would ask how you're doing, but as you may have noticed, I have taken your voice from you, and now there is no way you can tell anyone about our evil plans,' says Arbit with a laugh. Arbit then pulls out another device and zaps Walter with it. Everything goes white and Walter passes out once again.";
 	now the player holds Alien Photograph;
 	move the player to the Mayors Office.
 	
 [MIB scene rules]
+Agent Mateas is a man. He is in Mayors Main Office. The description is "A gruff looking man with a mean looking pony tail, dressed in a slick black suit.".
+Understand "Mateas" as Agent Mateas.
+
+Agent Wardrip-Fruin is a man. He is in Mayors Main Office. The description is "A man with a scruffy bread in a slick black suit.".
+Understand "Wardrip Fruin" as Agent Wardrip-Fruin.
+Understand "Wardrip" as Agent Wardrip-Fruin.
+Understand "Fruin" as Agent Wardrip-Fruin.
+
+After asking Agent Mateas about something during the MIB:
+	say "Agent Mateas looks at Walter and says, 'Thank you Mr. Flintlock. Your help on this case has been informative. But I'm sorry say, that we must end this facade...melons.' Agent Mateas pulls out a small light and flashses it.[paragraph break]Walter is then seen at his desk. Frank Woodchuck walks in and yells, 'It's almost printing time and you still don't have a story Walter! I don't pay you to sit around your office all day. Give me one reason why shouldn't fire you?' Walter tries to speak bu cant.";
+	end the story saying "Walter Flintlock, a man who's dedicated his life to finding the big story, but now he's the main character of a story, a story no one will ever know, except for us...outside of the...Inform 7 Zone.".
+After telling Agent Mateas about something during the MIB:
+	say "Agent Mateas looks at Walter and says, 'Thank you Mr. Flintlock. Your help on this case has been informative. But I'm sorry say, that we must end this facade...melons.' Agent Mateas pulls out a small light and flashses it.[paragraph break]Walter is then seen at his desk. Frank Woodchuck walks in and yells, 'It's almost printing time and you still don't have a story Walter! I don't pay you to sit around your office all day. Give me one reason why shouldn't fire you?' Walter tries to speak bu cant.";
+	end the story saying "Walter Flintlock, a man who's dedicated his life to finding the big story, but now he's the main character of a story, a story no one will ever know, except for us...outside of the...Inform 7 Zone.".
+
+After asking Agent Wardrip-Fruin about something during the MIB:
+	say "Agent Wardrip-Fruin looks at Walter and says, 'Thank you Mr. Flintlock. Your compliance on this matter was an informative logic. But I'm sorry say, that this expressive process is over.' Agent Wardrip-Fruin pulls out a small light and flashses it.[paragraph break]Walter is then seen at his desk. Frank Woodchuck walks in and yells, 'It's almost printing time and you still don't have a story Walter! I don't pay you to sit around your office all day. Give me one reason why shouldn't fire you?' Walter tries to speak bu cant.";
+	end the story saying "Walter Flintlock, a man who's dedicated his life to finding the big story, but now he's the main character of a story, a story no one will ever know, except for us...outside of the...Inform 7 Zone.".
+After telling Agent Wardrip-Fruin about something during the MIB:
+	say "Agent Wardrip-Fruin looks at Walter and says, 'Thank you Mr. Flintlock. Your compliance on this matter was an informative logic. But I'm sorry say, that this expressive process is over.' Agent Wardrip-Fruin pulls out a small light and flashses it.[paragraph break]Walter is then seen at his desk. Frank Woodchuck walks in and yells, 'It's almost printing time and you still don't have a story Walter! I don't pay you to sit around your office all day. Give me one reason why shouldn't fire you?' Walter tries to speak bu cant.";
+	end the story saying "Walter Flintlock, a man who's dedicated his life to finding the big story, but now he's the main character of a story, a story no one will ever know, except for us...outside of the...Inform 7 Zone.".
+	
+The Mayors Main Office is a room. The description is "The main officer of Mayor Calahan, Walter is here to convince the Mayor of the alien invasion.".
+
 The MIB begins when Mayor Calahan is convinced.
 When the MIB begins:
-	move the player to the Mayors Office;
-	say "Having convinced 5 townsfolk of the alien invasion, Walter rounds then up and presents his case to Mayor Calahan. Mayor Calahan, always giving in to the people of Littleburg, comes to terms with the invasion, and decides to do something about it. He opens a secret panel, and pulls out a black phone with one button. He pushes the button, and says, 'Yes...yes..ok.'.[paragraph break]Suddenly, two men in black appear. 'Agent Wardrip-Fruin and Mateas, MIB division,' says one of the men.".
+	move the player to the Mayors Main Office;
+	say "Having convinced 5 townsfolk of the alien invasion, Walter rounds then up and presents his case to Mayor Calahan. Mayor Calahan, always giving in to the people of Littleburg, comes to terms with the invasion, and decides to do something about it. He opens a secret panel, and pulls out a black phone with one button. He pushes the button, and says, 'Yes...yes..ok.'.[paragraph break]Suddenly, two men in black appear. 'Agent Wardrip-Fruin and Mateas, MIB division,' says one of the men. 'Walter, we'd like to have a word with you please,' says Agent Mateas.";
