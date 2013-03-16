@@ -168,9 +168,13 @@ Rule for listing nondescript items of the Break Room:
 A old wooden table is a supporter in the Office Supply Room. The description is "An old wooden table.".
 
 An old typewriter is a fixed in place thing on the old wooden table. The description is "A Royal typewriter. It looks like it hasn't been used in quite some time.".
-The old typewriter is type-able.
+[The old typewriter is type-able.
+After typing on old typewriter during the invasion:
+	alien article is an object;
+	player now holds alien article;
+	say "Walter types on the [noun], Walter has written an article about the alien invasion. Hopefully someone believes this crazy story."
 Instead of taking the old typewriter, say "The [noun] is a little too heavy to carry.".
-
+]
 [Office Supply Room rules]
 Rule for listing nondescript items of the Office Supply Room:
 	change old wooden table to not marked for listing.
@@ -187,12 +191,13 @@ The Police Station is west of First Street.
 The Mayors Office is east of First Street.
 
 [First Street Characters] [inlcudes Police Station and Mayor's Office]
+[Roger the Milkman Rules]
 Roger the Milkman is a unconvinced man in First Street. The description is "A delightful and helpful fellow who can brighten any day with a healthy dose of calcium."
 Understand "milkman" as Roger the Milkman.
 
 Table of Roger's Replies
 Topic			Reply
-"milk"			"'The finiest in all of Littleburg! Straight from Betty's farm,' exclaims Roger"
+"milk"			"'The finest in all of Littleburg! Straight from Betty's farm,' exclaims Roger"
 "Littleburg"			"'The home of the Kiwi's and my delicious milk of course!' says Roger"
 
 After asking Roger the Milkman about a topic listed in the Table of Roger's Replies, say "[reply entry]".
@@ -214,10 +219,31 @@ Before showing the bottle of alien-milk to Roger the Milkman:
 		say "'I know Walter! Those aliens are taking our cows!' says Roger.";
 	rule succeeds.
 	
-
 Mayor Calahan is a unconvinced man. He is in Mayor's Office. "A greedy politician. He is known to take forever to do anything."
+
+[Officer Smith Rules]
 Officer Smith is a unconvinced man in Police Station. "A grizzled cop who doesn't play by the rules... not even his own."
 
+Table of Officer Smith Replies
+Topic			Matter
+"what's the matter"			"This here is a dirty town Walt. It takes tough men like me to clean it up. "
+"whats the matter"			"This here is a dirty town Walt. It takes tough men like me to clean it up. "
+"what's wrong"			"This here is a dirty town Walt. It takes tough men like me to clean it up. "
+"whats wrong"			"This here is a dirty town Walt. It takes tough men like me to clean it up. "
+"what's troubling you"			"This here is a dirty town Walt. It takes tough men like me to clean it up. "
+"whats troubling you"			"This here is a dirty town Walt. It takes tough men like me to clean it up. "
+"newspaper"			"One of the only respectable things about this town. MY buddy Wood Chuck never lies"
+"whats new"			"nothing Walt. Littleburg...Littleburg never changes"
+"Kiwi"			"'...I don't like birds"
+"Kiwis"			"'...I don't like birds"
+"Kiwi's"			"'...I don't like birds"
+
+
+After telling Officer Smith about "aliens" during the invasion:
+	if Officer Smith is unconvinced:
+		say "Walter tries to tell Officer Smith about the aliens, but he can't speak. How can he convince him? If only .";
+	otherwise:
+		say "Walter points to the sky, and Roger nods. Walter has no need to convince Roger.".
 [First Street things]
 
 [Break Room rules]
@@ -231,22 +257,30 @@ Rule for listing nondescript items of the First Street:
 [Main Street Rooms]
 Main Street is a room. "The main street of Littleburg, USA. A hot spot for local folks. To the west is the malt shop, to the east is Jim's Bar, to the south is WhistleBerry Avenue to the north is First Street."
 The Malt Shop is a room. "A local hang out for all hip kids in Littleburg.  To the east is Mainstreet."
-Jims Bar is a room. "Serving libations since 1912. To the West is Main Street"
+Jims Bar is a room. "Serving libations since 1912. To the West is Main Street."
 [Room Connections]
 Main Street is south of First Street.
 The Malt Shop is west of Main Street.
 Jims Bar is east of Main Street.
 
 [Main Street Characters] [includes Malt Shop and Jim's Bar]
+
 Suzy is a unconvinced woman in Malt Shop. "Suzy, a student of LittleBurg High sit's by her sweetheart Jake. Loves chocolate shakes."
 Jake is a unconvinced man in Malt Shop. "Jae a student of LitleBurg High sit's by his sweetheart Suzy. Loves listening to the Beach Boys."
 Jim Magee is a unconvinced man. He is in Jim's Bar. "Mr. Magee Runs the local bar, where everybody knows your name."
 Mary Sue is a unconvinced woman in Main Street. "Mary Sue stands idly by a bench. She is a perky young dame with a relatively flat personality."
 
+[
+Table of Mary Sue's Replies:
+Topic                                                Matter
+]
 After giving the Diary to Mary Sue:
-	increase goal counter by 1;
-	say "but how?! how can this be!?! It's the commi's! The aliens! The commi-aliens! And now they know my secrets!".
-Persuasion rule for asking people to try doing something: persuasion succeeds.
+	if Mary Sue is not convinced:
+		now Mary Sue is convinced;
+		increase goal counter by 1;
+		say "but how?! how can this be!?! It's the commi's! The aliens! The commi-aliens! And now they know my secrets!";
+	otherwise:
+		say "'Don't show me that again Walter. I am too upset to look at them right. I'll bet Chuck knows my secrets now...' says Mary Sue".
 
 [Main Street things]
 
@@ -284,11 +318,36 @@ Topic			Matter
 After asking Jimmy about a topic listed in the Table of Jimmy's Replies, say "[matter entry]".
 
 [Old Man Magoo Rules]
-Old Man Magoo is a unconvinced man in Whistlebarry Ave. The description is "An elderly man. Easily startled and impressionable."
+Old Man Magoo is a unconvinced man in Whistlebarry Ave. The description is "An elderly man. Easily startled and impressionable.".
+
+Table of Old Man Magoo's Replies
+Topic		Matter
+"what's the matter"		"It's these kids Walter! Somethings gatta be done about these kids!"
+"whats the matter"		"It's these kids Walter! Somethings gatta be done about these kids!"
+"what's wrong"		"It's these kids Walter! Somethings gatta be done about these kids!"
+"whats wrong"		"It's these kids Walter! Somethings gatta be done about these kids!"
+"what's troubling you"		"It's these kids Walter! Somethings gatta be done about these kids!"
+"whats troubling you"		"It's these kids Walter! Somethings gatta be done about these kids!"
+"comic books"		"silly things! Back in my day, kids played with sticks and stones, and it was wonderfull!"
+"baseball"		"tote's American"
+"Aliens"		"goodness! The idea scares me!"
+"hot stories"		"Old Lazy Magoo made a lovely quilt the other day. I'd call that newsworthy!"
+"hot story"		"Old Lazy Magoo made a lovely quilt the other day. I'd call that newsworthy!"
+"news"		"Old Lazy Magoo made a lovely quilt the other day. I'd call that newsworthy!"
+
+
+
+After asking Old Man Magoo about a topic listed in the Table of Old Man Magoo's Replies, say "[matter entry]"
+
 After showing Alien Photograph to Old Man Magoo: 
-	increase goal counter by 1;
-	say "What's this! Oh my...AN ALIEN! oh goodness no! I must warn my grandson Gary!".
-	
+	if Old Man Magoo is not convinced:
+		now Old Man Magoo is convinced;
+		increase goal counter by 1;
+		say "What's this! Oh my...AN ALIEN! oh goodness no! I must warn my grandson Gary!";
+	otherwise:
+		say "'Good work Walter. Those commi-aliens will not get away with' says Old Man Magoo".
+
+[Chuck Rogers Rules]
 Chuck Rogers is a unconvinced man in Littleburg High. The description is "Captain of the Littleburg High Football team. Go Kiwi's! Very protective of the school mascot."
 
 Table of Chuck Rogers's Replies
@@ -317,8 +376,12 @@ After giving the broken kiwi doll to Chuck Rogers:
 	
 After showing Alien Photograph to Chuck Rogers:
 	if Chuck Rogers is tense:
-		increase goal counter by 1;
-		say "'I should have known Walter! Those guys on the tube been saying that there have been aliens up to no good. Thanks Walter. I got some business to take care of.' says Chuck. He seems awfully intimidating. Wouldn't want to be those aliens right now.".
+		if Chuck Rogers is not convinced:
+			now Chuck Rogers is convinced;
+			increase goal counter by 1;
+			say "'I should have known Walter! Those guys on the tube been saying that there have been aliens up to no good. Thanks Walter. I got some business to take care of.' says Chuck. He seems awfully intimidating. Wouldn't want to be those aliens right now.";
+		otherwise:
+			say "'Walter, I;m getting myself ready for those alien freaks. Nobody hurts a kiwi on my watch.' Chuck says with a serious tone.".
 
 	
 [Whistlebarry Ave things]
@@ -356,10 +419,35 @@ Alien Ship is east of Farm Field.
 Inside from the Alien Ship is the Alien Ship Interior.
 
 [Farm and Alien Ship Characters]
-Farmer Zeke is a unconvinced man in Betty's Farm. "A strange and nervous fellow. Believes that something is going on in his field but too afraid to take a look."
-Arbit is a man in Alien Ship. "The Audio Invaders commander. A mean chap who plans to take over the world."
-Zig is a man in Farm Field. "Heavily armed guard of the Audio Invader's ship."
-Zag is a man in Farm Field. "Heavily armed guard of the Audio Invader's ship."
+Farmer Zeke is a unconvinced man in Betty's Farm. "Farmer Zeke is a strange and nervous fellow. Believes that something is going on in his field but too afraid to take a look."
+
+table of Farmer Zeke Replies
+Topic			Matter
+"what's the matter"			"Somethin weird is happening out in my feilds...somethin...unnatural."
+"whats the matter"			"Somethin weird is happening out in my feilds...somethin...unnatural."
+"what's wrong"			"Somethin weird is happening out in my feilds...somethin...unnatural."
+"whats wrong"			"Somethin weird is happening out in my feilds...somethin...unnatural."
+"what's troubling you"			"Somethin weird is happening out in my feilds...somethin...unnatural."
+"whats troubling you"			"Somethin weird is happening out in my feilds...somethin...unnatural."
+"cows"			"Ma cows been actin funny lately. Just standin there..never makin a sound."
+"Cows"			"Ma cows been actin funny lately. Just standin there..never makin a sound."
+"hot stories"			"oh I danno Walt...The corns been really yellow this year...A few new cows been born..."
+"hot story"			"oh I danno Walt...The corns been really yellow this year...A few new cows been born..."
+"news"			"oh I danno Walt...The corns been really yellow this year...A few new cows been born..."
+
+
+After showing Alien Photograph to Farmer Zeke: 
+	if Farmer Zeke is not convinced:
+		now Farmer Zeke is convinced;
+		increase goal counter by 1;
+		say "I knew it! I knew something strange was going on!";
+	otherwise:
+		say "'we gatta get help Walter! Try asking the Mayor! Maybe he will listen."
+
+
+Arbit is a man in Alien Ship. " Arbit is the Audio Invaders commander. A mean chap who plans to take over the world."
+Zig is a man in Farm Field. "Zig is a heavily armed guard of the Audio Invader's ship."
+Zag is a man in Farm Field. "Zag is a heavily armed guard of the Audio Invader's ship."
 
 [Betty's Farm things]
 The barn is a backdrop. The barn is in Betty's Farm. The description is "An old barn. There is a [if invasion has not happened]a cow by it. 'Moo,' exclaims the cow.[otherwise]an odd looking cow by it. It opens it's mouth as if to moo, but no sound is heard.[end if]".
