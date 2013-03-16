@@ -1,26 +1,30 @@
 "Audio Invaders" by Adam Magleby, Drew Facchiano, Jason Judd Roth
 [giving]
 The block giving rule is not listed in the check giving it to rules.
+Alien Photograph is a thing. The description is "A photo of the Aliens outside their ship."
 Instead of giving the Alien Photograph to someone, say "This is priceless evidence! You can't give that away!"
-Alien Photograph is an object.
-
-[gaol to win condition]
-The goal counter is a number variable. The goal counter is 0.
-[Carry out adding [or whatever action]: increase goal counter by 1.]
-Every turn when goal counter is at least 5: try jumping [or whatever action].
 
 The introduction is a scene. "It's a bright and sunny day in Littleburg, USA. The town is quiet, but the local news paper, The Daily Babler would like to see that changed, hoping to catch a big story to run. Walter Flintlock is a jorunalist at the Babler, but he's been struggling to find a good story to run. Maybe today will change all of that.[paragraph break]Frank Woodchuck burst into Walter Flintlock's Office, 'It's almost printing time and you still don't have a story Walter! I don't pay you to sit around your office all day. Give me one reason why shouldn't fire you?'"
 
 The invasion is a scene.
+The MIB is a scene.
 
 [General Rules]
-After asking someone about something during the invasion, say "Walter tries to speak, but no words come out. [the topic understood] gives Walter a puzzling look.".
-After telling someone about something during the invasion, say "Walter tries to explain [the noun] to [the topic understood], but no words come out. [the topic understood] gives Walter a funny look. Walter needs to find a way to tell [the topic understood] about the aliens!".
+After asking someone about something during the invasion, say "Walter tries to speak, but no words come out. [the noun] gives Walter a puzzling look.".
+After telling someone about something during the invasion, say "Walter tries to explain [the topic understood] to [the noun], but no words come out. [the noun] gives Walter a funny look. Walter needs to find a way to tell [the noun] about the aliens!".
 A person can be convinced or unconvinced.
 A person can be tense or  not tense. A person is usually not tense.
 A person can be mute. A person is usually not mute.
-[The player is mute.]
 
+[gaol to win condition]
+[Mayor needs to be convinced]
+Mayor Calahan is a unconvinced man. The description is "A proud politician. He is known to take forever to do anything however and usually will only take action when the townsfolk are behind something."
+Understand "mayor" as Mayor Calahan.
+
+The goal counter is a number variable. The goal counter is 4.
+[Carry out adding [or whatever action]: increase goal counter by 1.]
+Every turn when goal counter is at least 5:
+	now Mayor Calahan is convinced.
 
 [Things]
 A subject is a kind of thing.
@@ -218,8 +222,23 @@ Before showing the bottle of alien-milk to Roger the Milkman:
 	otherwise:
 		say "'I know Walter! Those aliens are taking our cows!' says Roger.";
 	rule succeeds.
-	
-Mayor Calahan is a unconvinced man. He is in Mayor's Office. "A greedy politician. He is known to take forever to do anything."
+
+[Mayor Calahan]
+Mayor Calahan is in the Mayors Office.
+
+Table of Calahan's Replies
+Topic			Reply
+"Littleburg"			"'The greatest town in the USA,' says Calahan."
+"mayor"			"'I'm proud to be the mayor if this fine town. You should too Walter', says the Mayor."
+
+After asking Mayor Calahan about a topic listed in the Table of Calahan's Replies, say "[Reply entry].".
+
+After telling Mayor Calahan about "aliens" during the invasion:
+	say "'I don't understand Walter, why can't you tell me what you mean,' says the Mayor.".
+Before showing the Alien Photograph to Mayor Calahan:
+	if Mayor Calahan is unconvinced:
+		say "'What's this Walter? This photograph looks like some kind of strange creature,' says the Mayor. Walter nods and points up at the sky and then points at the photo. 'What are you trying to say Walter? These creatures come from space? Well I don't know what to say, and I find it a little hard to believe. Maybe if you can convince some other people about this we can do something about it', the Mayor explains to Walter.[Paragraph break]Walter must convince [5 - goal counter] more townsfolk in order for the Mayor to do something about the Alien Invasion.";
+	rule succeeds.
 
 [Officer Smith Rules]
 Officer Smith is a unconvinced man in Police Station. "A grizzled cop who doesn't play by the rules... not even his own."
@@ -255,7 +274,7 @@ Rule for listing nondescript items of the First Street:
 [Mayors Office things]
 
 [Main Street Rooms]
-Main Street is a room. "The main street of Littleburg, USA. A hot spot for local folks. To the west is the malt shop, to the east is Jim's Bar, to the south is WhistleBerry Avenue to the north is First Street."
+Main Street is a room. "The main street of Littleburg, USA. A hot spot for local folks.[paragraph break]To the west is the malt shop, to the east is Jim's Bar, to the south is Whistlebarry Avenue to the north is First Street."
 The Malt Shop is a room. "A local hang out for all hip kids in Littleburg.  To the east is Mainstreet."
 Jims Bar is a room. "Serving libations since 1912. To the West is Main Street."
 [Room Connections]
@@ -303,7 +322,7 @@ After giving the Diary to Mary Sue:
 [Jims Bar things]
 
 [Whistlebarry Ave Rooms]
-Whistlebarry Ave is a room. "A quiet neighborhood of Littleburg, USA."
+Whistlebarry Ave is a room. "A quiet neighborhood of Littleburg, USA.[paragraph break]To the north is Main Street, to the west is Mary Sue's house, to the south is Littleburg High and to the east is Betty's Farm."
 Mary Sues' House is a room. "Mary Sue's House. The picture perfect house for the modern family. It doesn't look like anyone is here."
 Mary Sue's Bedroom is a room. "Mary Sue's Bedroom. Walter is overcome from the sight of all the pictures of Chuck Rogers."
 [The Bomb Shelter is a room. "Can never be too careful."]
@@ -327,7 +346,7 @@ Topic			Matter
 "what's troubling you"			"'My mom threw out my latest issue of Bucky Rogers!' says Jimmy."
 "whats troubling you"			"'My mom threw out my latest issue of Bucky Rogers!' says Jimmy."
 "comic books"			"Jimmy looks up at Walter and says, 'Bucky Rogers is my favorite! But my mom threw away my latest issue.'"
-"baseball"			"'Kiwi's are the best, just go ask Chuck,' replies Jimmy"
+"baseball"			"'Kiwi's are the best, just go ask Chuck,' replies Jimmy."
 
 After asking Jimmy about a topic listed in the Table of Jimmy's Replies, say "[matter entry]".
 
@@ -420,8 +439,8 @@ Rule for listing nondescript items of the Littleburg High:
 	change Jimmy to not marked for listing.
 
 [Farm Rooms]
-Betty's Farm is a room. "Old Betty's farm. Supplying the finest products to this fine little town. There is a barn here, [if invasion has not happened]with a happy looking cow by it.[otherwise]with an odd looking cow by it.[end if] Walter see's a bottle near the cow, guess that's for milking."
-Farm Field is a room. "[if invasion has not happened]A wide open field filled with the smells of livestock, but there is no livestock actually here. Walter sees strange glowing lights to the east.[paragraph break]Betty's Farm is to the south and some strange glowing lights are to the east.[otherwise]A wide open field, where the aliens have been abducting people and the farm animals of Betty's farm, stealing their voices for unknown reasons. Zig and Zag, two Audio Invaders guarding the alien ship.[paragraph break]Betty's farm is to the south and the Alien Ship is to the east.[end if]".
+Betty's Farm is a room. "Old Betty's farm. Supplying the finest products to this fine little town. There is a barn here, [if invasion has not happened]with a happy looking cow by it.[otherwise]with an odd looking cow by it.[end if] Walter see's a bottle near the cow, guess that's for milking.[paragraph break]To the north is the farm field and to the west is Whislebarry Ave."
+Farm Field is a room. "[if invasion has not happened]A wide open field filled with the smells of livestock, but there is no livestock actually here. Walter sees strange glowing lights to the east.[paragraph break]Betty's Farm is to the south and some strange glowing lights are to the east.[otherwise]A wide open field, where the aliens have been abducting people and the farm animals of Betty's farm, stealing their voices for unknown reasons. Zig and Zag, two Audio Invaders guarding the alien ship.[paragraph break]Betty's farm is to the south and Walter can go inside the Alien Ship.[end if]".
 Alien Ship is a room. "The ship of the alien invaders. What horrors must they conduct in here and why are they stealing everyone's voice?[paragraph break]The Field of Betty's Farm is to the outside.".
 [Room Connections]
 Betty's Farm is east of Whistlebarry Ave.
@@ -462,6 +481,7 @@ Zag is a man in Farm Field. The description is "Zag is a heavily armed guard of 
 [Betty's Farm things]
 The barn is a backdrop. The barn is in Betty's Farm. The description is "An old barn. There is a [if invasion has not happened]a cow by it. 'Moo,' exclaims the cow.[otherwise]an odd looking cow by it. It opens it's mouth as if to moo, but no sound is heard.[end if]".
 A milk-bottle is a container in Betty's Farm. The description is "A milk bottle similar to the one's that Roger the Milkman uses.".
+Understand "bottle" as milk-bottle.
 After taking the milk-bottle during the invasion:
 	say "Walter picks up the milk-bottle. It looks rather empty without any milk in it.";
 	rule succeeds.
@@ -472,7 +492,7 @@ After milking the cow during the invasion:
 	if the player is carrying the milk-bottle:
 		now player holds bottle of alien-milk;
 		remove milk-bottle from play;
-		say "Walter milks the strange looking cow. A liquid substance resembling milk fills the bucket. Roger will want to see this.";
+		say "Walter milks the strange looking cow. A liquid substance resembling milk fills the bottle. Roger will want to see this.";
 	otherwise:
 		say "Walter needs something to put the milk in before milking the strange cow.".	
 
@@ -481,12 +501,14 @@ Rule for listing nondescript items of the Betty's Farm:
 	change cow to not marked for listing.
 
 [Farm Field things]
+
+
 Glowing lights are a backdrop in the Farm Field. The description is "[if the invasion has not happened]Some strange glowing lights. Looks like something out of one of those martin invader movies. Maybe Walter should take a picture just in case.[otherwise]The lights to the alien ship. They have stolen Walters voice, how wil he convince people they are invading?[end if]".
 Understand "lights" or "alien ship" or "ship" as glowing lights.
 After photographing the glowing lights:
 	if the invasion has not happened:
-		say "Suddenly, the lights start flashing on and off, and Walter puts his hands over his face to block the bright lights. Walter see's two creatures appear, they suddenly zap him with some kind of laser and Walter passes out.";
-		now the player is mute;
+		say "Walter snaps a shot of the lights.[paragraph break]Walter is now holding a strange photo[paragraph break]Suddenly, the lights start flashing on and off, and Walter puts his hands over his face to block the bright lights. Walter see's two creatures appear, they suddenly zap him with some kind of laser and Walter passes out.";
+		now the player is mute.
 
 Rule for listing nondescript items of the Farm Field:
 	change Zig to not marked for listing;
@@ -508,4 +530,11 @@ When the introduction ends:
 The invasion begins when the player is mute.
 When the invasion begins:
 	say "Walter awakens in a strange envirnoment. A creature, like the one's he saw before, approaches him. The creature brings up a strange device and points it at Walter. The creature fires it. Walter lets out a scream, but his voice slowly starts to fade out, as if it's being slowly taken away from him. Then creature then opens the device, and out of it Walter hears his own screams. The creature brings the device to his mouth, as if he's drinking it. He then lets out a loud burp and says, 'Mmmmm delicious sound!.'[paragraph break]'Oh, you're awake', says the Alien, who speaks in Walter's own voice. 'I'm Arbit, the commander of the Audio Invaders. We are here to feast on the audio sound of this world. I would ask how you're doing, but as you may have noticed, I have taken your voice from you, and now there is no way you can tell anyone about our evil plans,' says Arbit with a laugh. Arbit then pulls out another device and zaps Walter with it. Everything goes white and Walter passes out once again.";
+	now the player holds Alien Photograph;
 	move the player to the Mayors Office.
+	
+[MIB scene rules]
+The MIB begins when Mayor Calahan is convinced.
+When the MIB begins:
+	move the player to the Mayors Office;
+	say "Having convinced 5 townsfolk of the alien invasion, Walter rounds then up and presents his case to Mayor Calahan. Mayor Calahan, always giving in to the people of Littleburg, comes to terms with the invasion, and decides to do something about it. He opens a secret panel, and pulls out a black phone with one button. He pushes the button, and says, 'Yes...yes..ok.'.[paragraph break]Suddenly, two men in black appear. 'Agent Wardrip-Fruin and Mateas, MIB division,' says one of the men.".
