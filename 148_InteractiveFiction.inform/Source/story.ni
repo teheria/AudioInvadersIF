@@ -268,6 +268,8 @@ Jims Bar is east of Main Street.
 Suzy is a unconvinced woman in Malt Shop. "Suzy, a student of LittleBurg High sit's by her sweetheart Jake. Loves chocolate shakes."
 Jake is a unconvinced man in Malt Shop. "Jae a student of LitleBurg High sit's by his sweetheart Suzy. Loves listening to the Beach Boys."
 Jim Magee is a unconvinced man. He is in Jim's Bar. "Mr. Magee Runs the local bar, where everybody knows your name."
+
+[Mary Sue Rules]
 Mary Sue is a unconvinced woman in Main Street. "Mary Sue stands idly by a bench. She is a perky young dame with a relatively flat personality."
 
 Table of Mary Sue's Replies
@@ -283,10 +285,10 @@ Topic 					Matter
 "diary"					"'Why would you want to know about my diary?! Your not planning on running it as a story are you!? I think I might die if someone were to get a hold of that.' says Mary Sue."
 "Diary"					"'Why would you want to know about my diary?! Your not planning on running it as a story are you!? I think I might die if someone were to get a hold of that.' says Mary Sue."
 "aliens"					"'Aliens? I don't believe in that stuff Walter. But if they did exist I am sure our town hero, Chuck Rogers would save us!' says Mary. Her eyes are shimmering and she seems lost in a dream."
-"news"					"'Well I have heard that Farmer '"					
-"News"
-"hot stories"
-"stories"
+"news"					"'Well I have heard that Farmer Zeke has been saying he sees odd things in his field. But honestly that guy is as loony as bunny.' says Mary.'"					
+"News"					"'Well I have heard that Farmer Zeke has been saying he sees odd things in his field. But honestly that guy is as loony as bunny.' says Mary.'"	
+"hot stories"					"'Well I have heard that Farmer Zeke has been saying he sees odd things in his field. But honestly that guy is as loony as bunny.' says Mary.'"	
+"stories"					"'Well I have heard that Farmer Zeke has been saying he sees odd things in his field. But honestly that guy is as loony as bunny.' says Mary.'"	
 
 After giving the Diary to Mary Sue:
 	if Mary Sue is not convinced:
@@ -304,7 +306,7 @@ After giving the Diary to Mary Sue:
 
 [Whistlebarry Ave Rooms]
 Whistlebarry Ave is a room. "A quiet neighborhood of Littleburg, USA."
-Mary Sues' House is a room. "Mary Sue's House. The picture perfect house for the modern family. It doesn't look like anyone is here."
+Mary Sue's House is a room. "Mary Sue's House. The picture perfect house for the modern family. It doesn't look like anyone is here."
 Mary Sue's Bedroom is a room. "Mary Sue's Bedroom. Walter is overcome from the sight of all the pictures of Chuck Rogers."
 [The Bomb Shelter is a room. "Can never be too careful."]
 Littleburg High is a room. "Littleburg High, home of the Fighting Kiwi's. A local boy, Jimmy is standing around looking glum. Chuck Rogers, the captain of the High School football team is seen preping for the Big Game.[paragraph break]To the north is Whistlebarry Ave.".
@@ -392,8 +394,9 @@ After showing Alien Photograph to Chuck Rogers:
 			increase goal counter by 1;
 			say "'I should have known Walter! Those guys on the tube been saying that there have been aliens up to no good. Thanks Walter. I got some business to take care of.' says Chuck. He seems awfully intimidating. Wouldn't want to be those aliens right now. [paragraph break]Walter has now convinced [goal counter] people about the alien invasion. He must convince [5 - goal counter] more.";
 		otherwise:
-			say "'Walter, I;m getting myself ready for those alien freaks. Nobody hurts a kiwi on my watch.' Chuck says with a serious tone.".
-
+			say "'Walter, I;m getting myself ready for those alien freaks. Nobody hurts a kiwi on my watch.' Chuck says with a serious tone.";
+	otherwise:
+		say "'That's a funny looking picture you got there Walter. I don't really know what I am looking at here. Those guys look kinda funny though.', says Chuck."
 	
 [Whistlebarry Ave things]
 
