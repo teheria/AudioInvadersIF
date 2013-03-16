@@ -9,8 +9,8 @@ The goal counter is a number variable. The goal counter is 0.
 [Carry out adding [or whatever action]: increase goal counter by 1.]
 Every turn when goal counter is at least 5: try jumping [or whatever action].
 
-[Scenes]
 The introduction is a scene. "It's a bright and sunny day in Littleburg, USA. The town is quiet, but the local news paper, The Daily Babler would like to see that changed, hoping to catch a big story to run. Walter Flintlock is a jorunalist at the Babler, but he's been struggling to find a good story to run. Maybe today will change all of that.[paragraph break]Frank Woodchuck burst into Walter Flintlock's Office, 'It's almost printing time and you still don't have a story Walter! I don't pay you to sit around your office all day. Give me one reason why shouldn't fire you?'"
+
 The invasion is a scene.
 
 [General Rules]
@@ -182,7 +182,7 @@ Rule for listing nondescript items of the Office Supply Room:
 [Daily Babler Foyer things]
 
 [First Street Rooms]
-First Street is a room.  "First St. of Littleburg, USA. There has never been a more beautiful town than this one. The local milkman is seen making his rounds.[paragraph break]To the north is The Daily Babler, to the south is Main Stree, to the west is the local Police Station and to the east is the Mayor's Office".
+First Street is a room.  "First St. of Littleburg, USA. There has never been a more beautiful town than this one. The local milkman is seen making his rounds.[paragraph break]To the north is The Daily Babler, to the south is Main Street, to the west is the local Police Station and to the east is the Mayor's Office".
 The Police Station is a room. "The fine men in blue of Littleburg, USA."
 The Mayors Office is a room. "The office of Mayor Calahan."
 [Room Connections]
@@ -197,7 +197,7 @@ Understand "milkman" as Roger the Milkman.
 
 Table of Roger's Replies
 Topic			Reply
-"milk"			"'The finiest in all of Littleburg! Straight from Betty's farm,' exclaims Roger"
+"milk"			"'The finest in all of Littleburg! Straight from Betty's farm,' exclaims Roger"
 "Littleburg"			"'The home of the Kiwi's and my delicious milk of course!' says Roger"
 
 After asking Roger the Milkman about a topic listed in the Table of Roger's Replies, say "[reply entry]".
@@ -255,21 +255,20 @@ Rule for listing nondescript items of the First Street:
 [Mayors Office things]
 
 [Main Street Rooms]
-Main Street is a room. "The main street of Littleburg, USA."
-The Malt Shop is a room. "A local hang out for all hip kids in Littleburg."
-Jims Bar is a room. "Serving libations since 1912."
+Main Street is a room. "The main street of Littleburg, USA. A hot spot for local folks. To the west is the malt shop, to the east is Jim's Bar, to the south is WhistleBerry Avenue to the north is First Street."
+The Malt Shop is a room. "A local hang out for all hip kids in Littleburg.  To the east is Mainstreet."
+Jims Bar is a room. "Serving libations since 1912. To the West is Main Street."
 [Room Connections]
 Main Street is south of First Street.
 The Malt Shop is west of Main Street.
 Jims Bar is east of Main Street.
 
 [Main Street Characters] [includes Malt Shop and Jim's Bar]
-Suzy is a unconvinced woman in Malt Shop. "Deeply in love with Jake. Loves chocolate shakes."
-Jake is a unconvinced man in Malt Shop. "Deeply in love with Suzy. Loves listening to the Beach Boys."
-Jim Magee is a unconvinced man. He is in Jim's Bar. "Runs the local bar, where everybody knows your name."
 
-[Mary Sue Rules]
-Mary Sue is a unconvinced woman in Main Street. "A perky young dame with a relatively flat personality."
+Suzy is a unconvinced woman in Malt Shop. "Suzy, a student of LittleBurg High sit's by her sweetheart Jake. Loves chocolate shakes."
+Jake is a unconvinced man in Malt Shop. "Jae a student of LitleBurg High sit's by his sweetheart Suzy. Loves listening to the Beach Boys."
+Jim Magee is a unconvinced man. He is in Jim's Bar. "Mr. Magee Runs the local bar, where everybody knows your name."
+Mary Sue is a unconvinced woman in Main Street. "Mary Sue stands idly by a bench. She is a perky young dame with a relatively flat personality."
 
 Table of Mary Sue's Replies
 Topic 					Matter
@@ -288,7 +287,6 @@ Topic 					Matter
 "News"
 "hot stories"
 "stories"
-
 
 After giving the Diary to Mary Sue:
 	if Mary Sue is not convinced:
@@ -334,8 +332,24 @@ Topic			Matter
 After asking Jimmy about a topic listed in the Table of Jimmy's Replies, say "[matter entry]".
 
 [Old Man Magoo Rules]
-Old Man Magoo is a unconvinced man in Whistlebarry Ave. The description is "An elderly man. Easily startled and impressionable."
+Old Man Magoo is a unconvinced man in Whistlebarry Ave. The description is "An elderly man. Easily startled and impressionable.".
 
+Table of Old Man Magoo's Replies
+Topic		Matter
+"what's the matter"		"It's these kids Walter! Somethings gatta be done about these kids!"
+"whats the matter"		"It's these kids Walter! Somethings gatta be done about these kids!"
+"what's wrong"		"It's these kids Walter! Somethings gatta be done about these kids!"
+"whats wrong"		"It's these kids Walter! Somethings gatta be done about these kids!"
+"what's troubling you"		"It's these kids Walter! Somethings gatta be done about these kids!"
+"whats troubling you"		"It's these kids Walter! Somethings gatta be done about these kids!"
+"comic books"		"silly things! Back in my day, kids played with sticks and stones, and it was wonderfull!"
+"baseball"		"tote's American"
+"Aliens"		"goodness! The idea scares me!"
+"hot stories"		"Old Lady Magoo made a lovely quilt the other day. I'd call that newsworthy!"
+"hot story"		"Old Lady Magoo made a lovely quilt the other day. I'd call that newsworthy!"
+"news"		"Old Lady Magoo made a lovely quilt the other day. I'd call that newsworthy!"
+
+After asking Old Man Magoo about a topic listed in the Table of Old Man Magoo's Replies, say "[matter entry]"
 
 After showing Alien Photograph to Old Man Magoo: 
 	if Old Man Magoo is not convinced:
@@ -417,10 +431,35 @@ Alien Ship is east of Farm Field.
 Inside from the Alien Ship is the Alien Ship Interior.
 
 [Farm and Alien Ship Characters]
-Farmer Zeke is a unconvinced man in Betty's Farm. "A strange and nervous fellow. Believes that something is going on in his field but too afraid to take a look."
-Arbit is a man in Alien Ship. "The Audio Invaders commander. A mean chap who plans to take over the world."
-Zig is a man in Farm Field. "Heavily armed guard of the Audio Invader's ship."
-Zag is a man in Farm Field. "Heavily armed guard of the Audio Invader's ship."
+Farmer Zeke is a unconvinced man in Betty's Farm. "Farmer Zeke is a strange and nervous fellow. Believes that something is going on in his field but too afraid to take a look."
+
+table of Farmer Zeke Replies
+Topic			Matter
+"what's the matter"			"Somethin weird is happening out in my feilds...somethin...unnatural."
+"whats the matter"			"Somethin weird is happening out in my feilds...somethin...unnatural."
+"what's wrong"			"Somethin weird is happening out in my feilds...somethin...unnatural."
+"whats wrong"			"Somethin weird is happening out in my feilds...somethin...unnatural."
+"what's troubling you"			"Somethin weird is happening out in my feilds...somethin...unnatural."
+"whats troubling you"			"Somethin weird is happening out in my feilds...somethin...unnatural."
+"cows"			"Ma cows been actin funny lately. Just standin there..never makin a sound."
+"Cows"			"Ma cows been actin funny lately. Just standin there..never makin a sound."
+"hot stories"			"oh I danno Walt...The corns been really yellow this year...A few new cows been born..."
+"hot story"			"oh I danno Walt...The corns been really yellow this year...A few new cows been born..."
+"news"			"oh I danno Walt...The corns been really yellow this year...A few new cows been born..."
+
+
+After showing Alien Photograph to Farmer Zeke: 
+	if Farmer Zeke is not convinced:
+		now Farmer Zeke is convinced;
+		increase goal counter by 1;
+		say "I knew it! I knew something strange was going on!";
+	otherwise:
+		say "'we gatta get help Walter! Try asking the Mayor! Maybe he will listen."
+
+
+Arbit is a man in Alien Ship. " Arbit is the Audio Invaders commander. A mean chap who plans to take over the world."
+Zig is a man in Farm Field. "Zig is a heavily armed guard of the Audio Invader's ship."
+Zag is a man in Farm Field. "Zag is a heavily armed guard of the Audio Invader's ship."
 
 [Betty's Farm things]
 The barn is a backdrop. The barn is in Betty's Farm. The description is "An old barn. There is a [if invasion has not happened]a cow by it. 'Moo,' exclaims the cow.[otherwise]an odd looking cow by it. It opens it's mouth as if to moo, but no sound is heard.[end if]".
