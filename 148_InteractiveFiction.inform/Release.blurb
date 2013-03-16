@@ -1,18 +1,32 @@
 ! Blurb file created by Inform build 6G60
 
+<<<<<<< HEAD
 status "C:\Program Files (x86)\Inform 7\Inform7\Extensions\Reserved\CblorbModel.html" "C:\Users\Berky\Desktop\LittleBurg\AudioInvadersIF\148_InteractiveFiction.inform\Build\StatusCblorb.html"
+=======
+status "C:\Program Files (x86)\Inform 7\Inform7\Extensions\Reserved\CblorbModel.html" "C:\Users\Jason Roth\GitHub\AudioInvadersIF\148_InteractiveFiction.inform\Build\StatusCblorb.html"
+>>>>>>> 1bf3b1570a1b6b183cf1eec12632d23a68be22b2
 
 
 ! Identification
 
+<<<<<<< HEAD
 project folder "C:\Users\Berky\Desktop\LittleBurg\AudioInvadersIF\148_InteractiveFiction.inform"
 release to "C:\Users\Berky\Desktop\LittleBurg\AudioInvadersIF\148_InteractiveFiction Materials\Release"
+=======
+project folder "C:\Users\Jason Roth\GitHub\AudioInvadersIF\148_InteractiveFiction.inform"
+release to "C:\Users\Jason Roth\GitHub\AudioInvadersIF\148_InteractiveFiction Materials\Release"
+>>>>>>> 1bf3b1570a1b6b183cf1eec12632d23a68be22b2
 
 ! Blorb instructions
 
 storyfile leafname "Audio Invaders.zblorb"
+<<<<<<< HEAD
 storyfile "C:\Users\Berky\Desktop\LittleBurg\AudioInvadersIF\148_InteractiveFiction.inform\Build\output.z5" include
 ifiction "C:\Users\Berky\Desktop\LittleBurg\AudioInvadersIF\148_InteractiveFiction.inform\Metadata.iFiction" include
+=======
+storyfile "C:\Users\Jason Roth\GitHub\AudioInvadersIF\148_InteractiveFiction.inform\Build\output.z5" include
+ifiction "C:\Users\Jason Roth\GitHub\AudioInvadersIF\148_InteractiveFiction.inform\Metadata.iFiction" include
+>>>>>>> 1bf3b1570a1b6b183cf1eec12632d23a68be22b2
 cover "C:\Program Files (x86)\Inform 7\Inform7\Extensions\Reserved\DefaultCover.jpg"
 picture 1 "C:\Program Files (x86)\Inform 7\Inform7\Extensions\Reserved\DefaultCover.jpg"
 
