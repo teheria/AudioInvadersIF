@@ -165,16 +165,16 @@ Rule for listing nondescript items of the Break Room:
 	change water cooler to not marked for listing.
 
 [Office Supply Room things]
+alien article is an object. "an article that Walter wrote. It seems crazy. Only someone blinded by the written word would believe this."
 A old wooden table is a supporter in the Office Supply Room. The description is "An old wooden table.".
 
 An old typewriter is a fixed in place thing on the old wooden table. The description is "A Royal typewriter. It looks like it hasn't been used in quite some time.".
-[The old typewriter is type-able.
-After typing on old typewriter during the invasion:
-	alien article is an object;
-	player now holds alien article;
+The old typewriter is type-able.
+After typing the old typewriter during the invasion:
+	now player holds alien article;
 	say "Walter types on the [noun], Walter has written an article about the alien invasion. Hopefully someone believes this crazy story."
 Instead of taking the old typewriter, say "The [noun] is a little too heavy to carry.".
-]
+
 [Office Supply Room rules]
 Rule for listing nondescript items of the Office Supply Room:
 	change old wooden table to not marked for listing.
@@ -232,7 +232,7 @@ Topic			Matter
 "whats wrong"			"This here is a dirty town Walt. It takes tough men like me to clean it up. "
 "what's troubling you"			"This here is a dirty town Walt. It takes tough men like me to clean it up. "
 "whats troubling you"			"This here is a dirty town Walt. It takes tough men like me to clean it up. "
-"newspaper"			"One of the only respectable things about this town. MY buddy Wood Chuck never lies"
+"newspaper"			"One of the only respectable things about this town. MY buddy Wood Chuck never print lies"
 "whats new"			"nothing Walt. Littleburg...Littleburg never changes"
 "Kiwi"			"'...I don't like birds"
 "Kiwis"			"'...I don't like birds"
@@ -270,15 +270,29 @@ Jake is a unconvinced man in Malt Shop. "Jae a student of LitleBurg High sit's b
 Jim Magee is a unconvinced man. He is in Jim's Bar. "Mr. Magee Runs the local bar, where everybody knows your name."
 Mary Sue is a unconvinced woman in Main Street. "Mary Sue stands idly by a bench. She is a perky young dame with a relatively flat personality."
 
-[
-Table of Mary Sue's Replies:
-Topic                                                Matter
-]
+Table of Mary Sue's Replies
+Topic 					Matter
+"what's the matter"					"'Hey Walter! Are you excited for the big game coming up soon? Chuck is going to be playing and I know he will be the best player out there!' says Mary. She seems very excited about seeing Chuck play."
+"whats the matter"					"'Hey Walter! Are you excited for the big game coming up soon? Chuck is going to be playing and I know he will be the best player out there!' says Mary. She seems very excited about seeing Chuck play."
+"what is the matter"					"'Hey Walter! Are you excited for the big game coming up soon? Chuck is going to be playing and I know he will be the best player out there!' says Mary. She seems very excited about seeing Chuck play."
+"what's wrong"					"'Hey Walter! Are you excited for the big game coming up soon? Chuck is going to be playing and I know he will be the best player out there!' says Mary. She seems very excited about seeing Chuck play."
+"whats wrong"					"'Hey Walter! Are you excited for the big game coming up soon? Chuck is going to be playing and I know he will be the best player out there!' says Mary. She seems very excited about seeing Chuck play."
+"what is wrong"					"'Hey Walter! Are you excited for the big game coming up soon? Chuck is going to be playing and I know he will be the best player out there!' says Mary. She seems very excited about seeing Chuck play."
+"Chuck"					"'Chuck is simply the best. He is an all around great guy.... if only could talk to him' says Mary. Walter overhears her mumbling something about a diary and secrets."
+"Chuck Rogers"					"'Chuck is simply the best. He is an all around great guy.... if only could talk to him' says Mary. Walter overhears her mumbling something about a diary and secrets."
+"diary"					"'Why would you want to know about my diary?! Your not planning on running it as a story are you!? I think I might die if someone were to get a hold of that.' says Mary Sue."
+"Diary"					"'Why would you want to know about my diary?! Your not planning on running it as a story are you!? I think I might die if someone were to get a hold of that.' says Mary Sue."
+"aliens"					"'Aliens? I don't believe in that stuff Walter. But if they did exist I am sure our town hero, Chuck Rogers would save us!' says Mary. Her eyes are shimmering and she seems lost in a dream."
+"news"					"'Well I have heard that Farmer '"					
+"News"
+"hot stories"
+"stories"
+
 After giving the Diary to Mary Sue:
 	if Mary Sue is not convinced:
 		now Mary Sue is convinced;
 		increase goal counter by 1;
-		say "but how?! how can this be!?! It's the commi's! The aliens! The commi-aliens! And now they know my secrets!";
+		say "but how?! how can this be!?! It's the commi's! The aliens! The commi-aliens! And now they know my secrets! [paragraph break]Walter has now convinced [goal counter] people about the alien invasion. He must convince [5 - goal counter] more.";
 	otherwise:
 		say "'Don't show me that again Walter. I am too upset to look at them right. I'll bet Chuck knows my secrets now...' says Mary Sue".
 
@@ -331,11 +345,9 @@ Topic		Matter
 "comic books"		"silly things! Back in my day, kids played with sticks and stones, and it was wonderfull!"
 "baseball"		"tote's American"
 "Aliens"		"goodness! The idea scares me!"
-"hot stories"		"Old Lazy Magoo made a lovely quilt the other day. I'd call that newsworthy!"
-"hot story"		"Old Lazy Magoo made a lovely quilt the other day. I'd call that newsworthy!"
-"news"		"Old Lazy Magoo made a lovely quilt the other day. I'd call that newsworthy!"
-
-
+"hot stories"		"Old Lady Magoo made a lovely quilt the other day. I'd call that newsworthy!"
+"hot story"		"Old Lady Magoo made a lovely quilt the other day. I'd call that newsworthy!"
+"news"		"Old Lady Magoo made a lovely quilt the other day. I'd call that newsworthy!"
 
 After asking Old Man Magoo about a topic listed in the Table of Old Man Magoo's Replies, say "[matter entry]"
 
@@ -343,7 +355,7 @@ After showing Alien Photograph to Old Man Magoo:
 	if Old Man Magoo is not convinced:
 		now Old Man Magoo is convinced;
 		increase goal counter by 1;
-		say "What's this! Oh my...AN ALIEN! oh goodness no! I must warn my grandson Gary!";
+		say "What's this! Oh my...AN ALIEN! oh goodness no! I must warn my grandson Gary! [paragraph break]Walter has now convinced [goal counter] people about the alien invasion. He must convince [5 - goal counter] more.";
 	otherwise:
 		say "'Good work Walter. Those commi-aliens will not get away with' says Old Man Magoo".
 
@@ -362,11 +374,10 @@ Topic			Matter
 "Kiwi"			"'Gotta love those birds. They may not be able to fly but they got heart, just like us! GO KIWIS!!!' yells Chuck."
 "Kiwis"			"'Gotta love those birds. They may not be able to fly but they got heart, just like us! GO KIWIS!!!' yells Chuck."
 "Kiwi's"			"'Gotta love those birds. They may not be able to fly but they got heart, just like us! GO KIWIS!!!' yells Chuck."
-[
-"hot stories"			""
-"hot story"			""
-"news"			""
-]
+"hot stories"			"'Walter don't ya know? The big game is coming this weekend! How could you not know about it? You need to get out more.' exclaims Chuck. He is compltely focused on the upcoming game."
+"hot story"			"'Walter don't ya know? The big game is coming this weekend! How could you not know about it? You need to get out more.' exclaims Chuck. He is compltely focused on the upcoming game."
+"news"			"'Walter don't ya know? The big game is coming this weekend! How could you not know about it? You need to get out more.' exclaims Chuck. He is compltely focused on the upcoming game."
+
 
 After asking Chuck Rogers about a topic listed in the Table of Chuck Rogers's Replies, say "[matter entry]".
 
@@ -379,7 +390,7 @@ After showing Alien Photograph to Chuck Rogers:
 		if Chuck Rogers is not convinced:
 			now Chuck Rogers is convinced;
 			increase goal counter by 1;
-			say "'I should have known Walter! Those guys on the tube been saying that there have been aliens up to no good. Thanks Walter. I got some business to take care of.' says Chuck. He seems awfully intimidating. Wouldn't want to be those aliens right now.";
+			say "'I should have known Walter! Those guys on the tube been saying that there have been aliens up to no good. Thanks Walter. I got some business to take care of.' says Chuck. He seems awfully intimidating. Wouldn't want to be those aliens right now. [paragraph break]Walter has now convinced [goal counter] people about the alien invasion. He must convince [5 - goal counter] more.";
 		otherwise:
 			say "'Walter, I;m getting myself ready for those alien freaks. Nobody hurts a kiwi on my watch.' Chuck says with a serious tone.".
 
@@ -396,6 +407,7 @@ Mary Sue's Bed is in Mary Sue's Bedroom. Mary Sue's Bed is a container.
 
 Mary's Desk is a supporter in Mary Sue's Bedroom. 
 Secret Chest Key is on Mary's Desk.
+
 [Bomb Shelter things]
 
 [Littleburg High things]
