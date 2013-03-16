@@ -184,7 +184,7 @@ Rule for listing nondescript items of the Office Supply Room:
 [First Street Rooms]
 First Street is a room.  "First St. of Littleburg, USA. There has never been a more beautiful town than this one. The local milkman is seen making his rounds.[paragraph break]To the north is The Daily Babler, to the south is Main Street, to the west is the local Police Station and to the east is the Mayor's Office".
 The Police Station is a room. "The fine men in blue of Littleburg, USA."
-The Mayors Office is a room. "The office of Mayor Calahan."
+The Mayors Office is a room. "The office of Mayor Calahan. [if the invasion has not happened]The mayor is here, looking proud to be a fine citizen of Littleburg.[otherwise]The mayor is here.[end if][paragraph break]To the west if First Street.".
 [Room Connections]
 First Street is south of the Daily Babler Foyer. 
 The Police Station is west of First Street.
@@ -409,14 +409,12 @@ Rule for listing nondescript items of the Littleburg High:
 
 [Farm Rooms]
 Betty's Farm is a room. "Old Betty's farm. Supplying the finest products to this fine little town. There is a barn here, [if invasion has not happened]with a happy looking cow by it.[otherwise]with an odd looking cow by it.[end if] Walter see's a bottle near the cow, guess that's for milking."
-Farm Field is a room. "A wide open field filled with the smells of livestock."
-Alien Ship is a room. "The ship of the alien invaders. What horrors must they conduct in here?"
-Alien Ship Interior is a room. "The inside of the alien ship."
+Farm Field is a room. "[if invasion has not happened]A wide open field filled with the smells of livestock, but there is no livestock actually here. Walter sees strange glowing lights to the east.[paragraph break]Betty's Farm is to the south and some strange glowing lights are to the east.[otherwise]A wide open field, where the aliens have been abducting people and the farm animals of Betty's farm, stealing their voices for unknown reasons. Zig and Zag, two Audio Invaders guarding the alien ship.[paragraph break]Betty's farm is to the south and the Alien Ship is to the east.[end if]".
+Alien Ship is a room. "The ship of the alien invaders. What horrors must they conduct in here and why are they stealing everyone's voice?[paragraph break]The Field of Betty's Farm is to the outside.".
 [Room Connections]
 Betty's Farm is east of Whistlebarry Ave.
 Farm Field is north of Betty's Farm.
-Alien Ship is east of Farm Field.
-Inside from the Alien Ship is the Alien Ship Interior.
+Inside from the Farm Field is the Alien Ship.
 
 [Farm and Alien Ship Characters]
 Farmer Zeke is a unconvinced man in Betty's Farm. "Farmer Zeke is a strange and nervous fellow. Believes that something is going on in his field but too afraid to take a look."
@@ -445,9 +443,9 @@ After showing Alien Photograph to Farmer Zeke:
 		say "'we gatta get help Walter! Try asking the Mayor! Maybe he will listen."
 
 
-Arbit is a man in Alien Ship. " Arbit is the Audio Invaders commander. A mean chap who plans to take over the world."
-Zig is a man in Farm Field. "Zig is a heavily armed guard of the Audio Invader's ship."
-Zag is a man in Farm Field. "Zag is a heavily armed guard of the Audio Invader's ship."
+Arbit is a man in Alien Ship. The description is " Arbit is the Audio Invaders commander. A mean chap who plans to take over the world, stealing all of it's sound."
+Zig is a man in Farm Field. The description is "Zig is a heavily armed guard of the Audio Invader's ship."
+Zag is a man in Farm Field. The description is "Zag is a heavily armed guard of the Audio Invader's ship."
 
 [Betty's Farm things]
 The barn is a backdrop. The barn is in Betty's Farm. The description is "An old barn. There is a [if invasion has not happened]a cow by it. 'Moo,' exclaims the cow.[otherwise]an odd looking cow by it. It opens it's mouth as if to moo, but no sound is heard.[end if]".
@@ -471,10 +469,20 @@ Rule for listing nondescript items of the Betty's Farm:
 	change cow to not marked for listing.
 
 [Farm Field things]
+Glowing lights are a backdrop in the Farm Field. The description is "[if the invasion has not happened]Some strange glowing lights. Looks like something out of one of those martin invader movies. Maybe Walter should take a picture just in case.[otherwise]The lights to the alien ship. They have stolen Walters voice, how wil he convince people they are invading?[end if]".
+Understand "lights" or "alien ship" or "ship" as glowing lights.
+After photographing the glowing lights:
+	if the invasion has not happened:
+		say "Suddenly, the lights start flashing on and off, and Walter puts his hands over his face to block the bright lights. Walter see's two creatures appear, they suddenly zap him with some kind of laser and Walter passes out.";
+		now the player is mute;
+
+Rule for listing nondescript items of the Farm Field:
+	change Zig to not marked for listing;
+	change Zag to not marked for listing.
 
 [Alien Ship things]
-
-[Alien Ship Interior things]
+Rule for listing nondescript items of the Alien Ship:
+	change Arbit to not marked for listing.
 
 [introduction scene rules]
 The introduction begins when play begins.
@@ -486,3 +494,6 @@ When the introduction ends:
 
 [invasion scene rules]
 The invasion begins when the player is mute.
+When the invasion begins:
+	say "Walter awakens in a strange envirnoment. A creature, like the one's he saw before, approaches him. The creature brings up a strange device and points it at Walter. The creature fires it. Walter lets out a scream, but his voice slowly starts to fade out, as if it's being slowly taken away from him. Then creature then opens the device, and out of it Walter hears his own screams. The creature brings the device to his mouth, as if he's drinking it. He then lets out a loud burp and says, 'Mmmmm delicious sound!.'[paragraph break]'Oh, you're awake', says the Alien, who speaks in Walter's own voice. 'I'm Arbit, the commander of the Audio Invaders. We are here to feast on the audio sound of this world. I would ask how you're doing, but as you may have noticed, I have taken your voice from you, and now there is no way you can tell anyone about our evil plans,' says Arbit with a laugh. Arbit then pulls out another device and zaps Walter with it. Everything goes white and Walter passes out once again.";
+	move the player to the Mayors Office.
