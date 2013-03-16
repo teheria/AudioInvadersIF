@@ -262,6 +262,10 @@ Topic			Matter
 "Kiwi"			"'...I don't like birds' says officer Smith."
 "Kiwis"			"'...I don't like birds says officer Smith."
 "Kiwi's"			"'...I don't like birds says officer Smith."
+"story"			"' You want me to give ya a story Walt? I thought that was your job!' says officer Smith"
+"hot story"			"' You want me to give ya a story Walt? I thought that was your job!' says officer Smith"
+"stories"			"' You want me to give ya a story Walt? I thought that was your job!' says officer Smith"
+"crime"			"'It's rough out here Walt, just the other day I had to grab a cat from a tree...' says Officer Smith"
 
 After asking Officer Smith about a topic listed in the Table of Officer Smith Replies, say "[matter entry]".
 
@@ -321,29 +325,26 @@ Topic 					Matter
 "what's wrong"					"'nothing at all Walt, just me and ma handsome fella hanging out', says Suzy"
 "whats wrong"					"'nothing at all Walt, just me and ma handsome fella hanging out', says Suzy"
 "what is wrong"					"'nothing at all Walt, just me and ma handsome fella hanging out', says Suzy"
-"Chuck"					"'nothing at all Walt, just me and ma handsome fella hanging out', says Suzy"
-"Chuck Rogers"					"'nothing at all Walt, just me and ma handsome fella hanging out', says Suzy"
 "news"					"''News? I danno I've been...destracted', says Suzy"					
 "News"					"''News? I danno I've been...destracted', says Suzy"	
 "hot stories"					"''News? I danno I've been...destracted', says Suzy"	
 "stories"					"''News? I danno I've been...destracted', says Suzy"	
 
+
 After asking Suzy about a topic listed in the Table of Suzy Replies, say "[matter entry]".
 
 Table of Jake Replies
 Topic 					Matter
-"what's the matter"					"'nothing at all Walt, just me and ma handsome fella hanging out', says Suzy"
-"whats the matter"					"'nothing at all Walt, just me and ma handsome fella hanging out', says Suzy"
-"what is the matter"					"'nothing at all Walt, just me and ma handsome fella hanging out', says Suzy"
-"what's wrong"					"'nothing at all Walt, just me and ma handsome fella hanging out', says Suzy"
-"whats wrong"					"'nothing at all Walt, just me and ma handsome fella hanging out', says Suzy"
-"what is wrong"					"'nothing at all Walt, just me and ma handsome fella hanging out', says Suzy"
-"Chuck"					"'nothing at all Walt, just me and ma handsome fella hanging out', says Suzy"
-"Chuck Rogers"					"'nothing at all Walt, just me and ma handsome fella hanging out', says Suzy"
-"news"					"''News? I danno I've been...destracted', says Suzy"					
-"News"					"''News? I danno I've been...destracted', says Suzy"	
-"hot stories"					"''News? I danno I've been...destracted', says Suzy"	
-"stories"					"''News? I danno I've been...destracted', says Suzy"
+"what's the matter"					"'Thing's could'nt be better Walt. Just me and my number one gal sitty pretty', says Jake"
+"whats the matter"					"'Thing's could'nt be better Walt. Just me and my number one gal sitty pretty', says Jake"
+"what is the matter"					"'Thing's could'nt be better Walt. Just me and my number one gal sitty pretty', says Jake"
+"what's wrong"					"'Thing's could'nt be better Walt. Just me and my number one gal sitty pretty', says Jake"
+"whats wrong"					"'Thing's could'nt be better Walt. Just me and my number one gal sitty pretty', says Jake"
+"what is wrong"					"'Thing's could'nt be better Walt. Just me and my number one gal sitty pretty', says Jake"
+"news"					"''News? I danno I've been...destracted', says Jake"					
+"News"					"''News? I danno I've been...destracted', says Jake"	
+"hot stories"					"''News? I danno I've been...destracted', says Jake"	
+"stories"					"''News? I danno I've been...destracted', says Jake"
 
 
 After asking Jake about a topic listed in the Table of Jake Replies, say "[matter entry]".
@@ -459,8 +460,22 @@ Topic			Matter
 "whats troubling you"			"'My mom threw out my latest issue of Bucky Rogers!' says Jimmy."
 "comic books"			"Jimmy looks up at Walter and says, 'Bucky Rogers is my favorite! But my mom threw away my latest issue.'"
 "baseball"			"'Kiwi's are the best, just go ask Chuck,' replies Jimmy."
+"news"					"''Well Gee I danno Mr.Flintlock, Word on the street is Farmer Zeke been havin trouble lately with his cows.', says Jimmy"					
+"News"					"''Well Gee I danno Mr.Flintlock, Word on the street is Farmer Zeke been havin trouble lately with his cows.', says Jimmy"		
+"hot stories"					"''Well Gee I danno Mr.Flintlock, Word on the street is Farmer Zeke been havin trouble lately with his cows.', says Jimmy"		
+"stories"					"''Well Gee I danno Mr.Flintlock, Word on the street is Farmer Zeke been havin trouble lately with his cows.', says Jimmy"	
 
 After asking Jimmy about a topic listed in the Table of Jimmy's Replies, say "[matter entry]".
+
+After telling Jimmy about "aliens" during the invasion:
+	if Jimmy is unconvinced:
+		say "Walter tries to tell Jimmy about the aliens, but he just stares akwardly back. Walter remembers that Jimmy is a fan of comic books. Perhaps he should find one to grab the young lads attention.";
+	otherwise:
+		say "Walter points to the sky, and Roger nods. Walter has no need to convince Roger.".
+
+
+
+
 Before giving the comic-book to Jimmy:
 	now Jimmy is tense;
 	say "'Oh Gee-Wilakers! thanks Mister! This here comic is great! It's about Buck Rogers fightin off an alien threat! Aliens are really scary huh?' says Jimmy";
