@@ -2,6 +2,7 @@
 [giving]
 The block giving rule is not listed in the check giving it to rules.
 Alien Photograph is a thing. The description is "A photo of the Aliens outside their ship."
+Understand "alien photo" or "photo of aliens" or "photo of alien" as Alien photograph.
 Instead of giving the Alien Photograph to someone, say "This is priceless evidence! You can't give that away!"
 
 The introduction is a scene. "It's a bright and sunny day in Littleburg, USA. The town is quiet, but the local news paper, The Daily Babler would like to see that changed, hoping to catch a big story to run. Walter Flintlock is a jorunalist at the Babler, but he's been struggling to find a good story to run. Maybe today will change all of that.[paragraph break]Frank Woodchuck burst into Walter Flintlock's Office, 'It's almost printing time and you still don't have a story Walter! I don't pay you to sit around your office all day. Give me one reason why shouldn't fire you?'"
@@ -21,7 +22,7 @@ A person can be mute. A person is usually not mute.
 Mayor Calahan is a unconvinced man. The description is "A proud politician. He is known to take forever to do anything however and usually will only take action when the townsfolk are behind something."
 Understand "mayor" as Mayor Calahan.
 
-The goal counter is a number variable. The goal counter is 4.
+The goal counter is a number variable. The goal counter is 0.
 [Carry out adding [or whatever action]: increase goal counter by 1.]
 Every turn when goal counter is at least 5:
 	now Mayor Calahan is convinced.
@@ -190,7 +191,7 @@ Rule for listing nondescript items of the Office Supply Room:
 [First Street Rooms]
 
 First Street is a room.  "First St. of Littleburg, USA. There has never been a more beautiful town than this one. The local milkman is seen making his rounds.[paragraph break]To the north is The Daily Babler, to the south is Main Street, to the west is the local Police Station and to the east is the Mayor's Office".
-The Police Station is a room. "The fine men in blue of Littleburg, USA."
+The Police Station is a room. "The fine men in blue of Littleburg, USA.[paragraph break]To the east is First Street."
 The Mayors Office is a room. "The office of Mayor Calahan. [if the invasion has not happened]The mayor is here, looking proud to be a fine citizen of Littleburg.[otherwise]The mayor is here.[end if][paragraph break]To the west if First Street.".
 
 [Room Connections]
@@ -246,7 +247,7 @@ Before showing the Alien Photograph to Mayor Calahan:
 	rule succeeds.
 
 [Officer Smith Rules]
-Officer Smith is a unconvinced man in Police Station. "A grizzled cop who doesn't play by the rules... not even his own."
+Officer Smith is a unconvinced man in Police Station. The description is "A grizzled cop who doesn't play by the rules... not even his own."
 
 Table of Officer Smith Replies
 Topic			Matter
@@ -282,12 +283,12 @@ The propganda poster is an object in the Mayors office.
 The Pile of Money is an object in the Mayors office.
 
 [Main Street Rooms]
-Main Street is a room. "The main street of Littleburg, USA. A hot spot for local folks.[paragraph break]To the west is the malt shop, to the east is Jim's Bar, to the south is Whistlebarry Avenue to the north is First Street."
+Main Street is a room. "The main street of Littleburg, USA. A hot spot for local folks. Mary Sue, a local gal is seen here.[paragraph break]To the west is the malt shop, to the east is Jim's Bar, to the south is Whistlebarry Avenue to the north is First Street."
 
 icky Garbage is a container in Main Street. "A small garbage can sits idly next to a bench".
 instead of opening Garbage, say "You rummage through the can, hoping to find something useful. You find nothing."
-The Malt Shop is a room. "A local hang out for all hip kids in Littleburg.  To the east is Mainstreet."
-Jims Bar is a room. "Serving libations since 1912. To the West is Main Street."
+The Malt Shop is a room. "A local hang out for all hip kids in Littleburg. [paragraph break]To the east is Main Street."
+Jims Bar is a room. "Serving libations since 1912.[paragraph break]To the West is Main Street."
 [Room Connections]
 Main Street is south of First Street.
 The Malt Shop is west of Main Street.
@@ -295,8 +296,8 @@ Jims Bar is east of Main Street.
 
 [Main Street Characters] [includes Malt Shop and Jim's Bar]
 
-Suzy is a unconvinced woman in Malt Shop. "Suzy, a student of LittleBurg High sit's by her sweetheart Jake. Loves chocolate shakes."
-Jake is a unconvinced man in Malt Shop. "Jae a student of LitleBurg High sit's by his sweetheart Suzy. Loves listening to the Beach Boys."
+Suzy is a unconvinced woman in Malt Shop. The description is "Suzy, a student of LittleBurg High sit's by her sweetheart Jake. Loves chocolate shakes."
+Jake is a unconvinced man in Malt Shop. The description is "Jake a student of LitleBurg High sit's by his sweetheart Suzy. Loves listening to Chuck Berry."
 
 
 Table of Suzy  Replies
@@ -335,7 +336,7 @@ Topic 					Matter
 After asking Jake about a topic listed in the Table of Jake Replies, say "[matter entry]".
 
 
-Jim Magee is a unconvinced man. He is in Jim's Bar. "Mr. Magee Runs the local bar, where everybody knows your name. He's a stubborn man, who assumes he's seen it all."
+Jim Magee is a unconvinced man. He is in Jims Bar. The description is "Mr. Magee Runs the local bar, where everybody knows your name. He's a stubborn man, who assumes he's seen it all."
 
 Table of Kim Magee Replies
 Topic 					Matter
@@ -353,7 +354,7 @@ Topic 					Matter
 
 
 
-Mary Sue is a unconvinced woman in Main Street. "Mary Sue stands idly by a bench. She is a perky young dame with a relatively flat personality."
+Mary Sue is a unconvinced woman in Main Street. The description is "Mary Sue stands idly by a bench. She is a perky young dame with a relatively flat personality. Usually she's seen around town writing in her diary, but doesn't seem to have it with her today."
 
 Table of Mary Sue's Replies
 Topic 					Matter
@@ -371,16 +372,42 @@ Topic 					Matter
 "news"					"'Well I have heard that Farmer Zeke has been saying he sees odd things in his field. But honestly that guy is as loony as bunny.' says Mary.'"					
 "News"					"'Well I have heard that Farmer Zeke has been saying he sees odd things in his field. But honestly that guy is as loony as bunny.' says Mary.'"	
 "hot stories"					"'Well I have heard that Farmer Zeke has been saying he sees odd things in his field. But honestly that guy is as loony as bunny.' says Mary.'"	
-"stories"					"'Well I have heard that Farmer Zeke has been saying he sees odd things in his field. But honestly that guy is as loony as bunny.' says Mary.'"	
+"stories"					"'Well I have heard that Farmer Zeke has been saying he sees odd things in his field. But honestly that guy is as loony as bunny.' says Mary.'"
 
+After asking Mary Sue about a topic listed in the Table of Mary Sue's Replies, say "[matter entry]".
+After asking Mary Sue about something, say "Mary Sue ignores Walter, but mumbles something about not having her diary.".
+After telling Mary Sue about "aliens" during the invasion:
+	say "'I can't understand you Walter.  What are you trying to say? Maybe if you had a diary like me you could write down what you're thinking,' says Mary Sue.".
 
-After giving the Diary to Mary Sue:
-	if Mary Sue is not convinced:
-		now Mary Sue is convinced;
-		increase goal counter by 1;
-		say "but how?! how can this be!?! It's the commi's! The aliens! The commi-aliens! And now they know my secrets! [paragraph break]Walter has now convinced [goal counter] people about the alien invasion. He must convince [5 - goal counter] more.";
+[Mary Sue Puzzle]
+Before giving the Diary to Mary Sue during the invasion:
+	if Mary Sue is unconvinced:
+		move the diary to Mary Sue;
+		say "'Why do you have my diary? How did you get this Walter! Where did you find this?!' Mary Sue says. This is Walter's chance to blame it on the aliens to convince Mary Sue they are coming.";
+		rule succeeds;
 	otherwise:
 		say "'Don't show me that again Walter. I am too upset to look at them right. I'll bet Chuck knows my secrets now...' says Mary Sue".
+
+Before showing the Diary to Mary Sue during the invasion:
+	if Mary Sue is unconvinced:
+		move the diary to Mary Sue;
+		say "'Why do you have my diary? How did you get this Walter! Where did you find this?!' Mary Sue says. This is Walter's chance to blame it on the aliens to convince Mary Sue they are coming.";
+		rule succeeds;
+	otherwise:
+		say "'Don't show me that again Walter. I am too upset to look at them right. I'll bet Chuck knows my secrets now...' says Mary Sue".
+
+Before showing the Alien Photograph to Mary Sue:
+	if Mary Sue is unconvinced:
+		now Mary Sue is convinced;
+		increase goal counter by 1;
+		say "'The aliens took my diary? Those commi-alien's are gonna get it!' Mary Sue yells out.[paragraph break]Walter has now convinced [goal counter] people about the alien invasion. He must convince [5 - goal counter] more.";
+		rule succeeds;
+	otherwise:
+		say "I know Walter, the damn commi-aliens are coming! Mary Sue exclaims.".
+
+Before giving the Diary to Mary Sue:
+	say "Walter probably shouldn't let Mary Sue know he stole her Diary, but Walter should keep it, it might come in handy later.";
+	rule succeeds.
 
 [Main Street things]
 
@@ -389,21 +416,22 @@ After giving the Diary to Mary Sue:
 [Jims Bar things]
 
 [Whistlebarry Ave Rooms]
-Whistlebarry Ave is a room. "A quiet neighborhood of Littleburg, USA.[paragraph break]To the north is Main Street, to the west is Mary Sue's house, to the south is Littleburg High and to the east is Betty's Farm."
-Mary Sues' House is a room. "Mary Sue's House. The picture perfect house for the modern family. It doesn't look like anyone is here."
+Whistlebarry Ave is a room. "A quiet neighborhood of Littleburg, USA.[paragraph break]To the north is Main Street, to the west is Mary Sue's house, to the south is Littleburg High and to the east is Betty's Farm.".
+Mary Sue's House is a room. "Mary Sue's House. The picture perfect house for the modern family. It doesn't look like anyone is here.[paragraph break]Inside from here is Mary Sue's room and to the east is Whistlebarry Ave.".
 
 Stinky Garbage is a container in Whistlebarry Ave. "A small garbage can sits idly next to a bench".
 The Buck Rogers #55 comic-book is in stinky Garbage.
 
-Mary Sue's Bedroom is a room. "Mary Sue's Bedroom. Walter is overcome from the sight of all the pictures of Chuck Rogers."
-[The Bomb Shelter is a room. "Can never be too careful."]
-Littleburg High is a room. "Littleburg High, home of the Fighting Kiwi's. A local boy, Jimmy is standing around looking glum. Chuck Rogers, the captain of the High School football team is seen preping for the Big Game.[paragraph break]To the north is Whistlebarry Ave.".
+Mary Sue's Bedroom is a room. "Mary Sue's Bedroom. Walter is overcome from the sight of all the pictures of Chuck Rogers.[paragraph break]Outside is Mary Sue's house."
+Littleburg High is a room. "Littleburg High, home of the Fighting Kiwi's. A local boy, Jimmy is standing around looking glum. Chuck Rogers, the captain of the High School football team is seen preping for the Big Game.[paragraph break]To the north is Whistlebarry Ave. and to the east is the high school field.".
+The Field is a room. "The football field for Littleburg High. Bleachers circle around the impressive field. On game nights it wil be filled with fans, cheeing on their favorite team, The Littleburg Kiwis.[paragraph break]To the west is Littleburg High."
 
 [Room Connections]
 Whistlebarry Ave is south of Main Street.
 Mary Sue's House is west of Whistlebarry Ave.
 Mary Sue's Bedroom is inside of Mary Sue's House.
 Littleburg High is south of Whistlebarry Ave.
+The Field is east of Littleburg High.
 
 [Whistlebarry Ave Characters] [includes Walter's House, Littleburg High, Betty's Farm]
 Jimmy is a unconvinced man in Littleburg High. The description is "You see Jimmy. A young lad who likes baseball and comic books. He looks upset.".
@@ -435,7 +463,7 @@ After showing Alien Photograph to Jimmy:
 			say "'I got my bee-bee gun at the ready Mr.Flintlock. Just say when!'says Jimmy".
 
 [Old Man Magoo Rules]
-Old Man Magoo is a unconvinced man in Whistlebarry Ave. The description is "An elderly man. Easily startled and impressionable.".
+Old Man Magoo is a unconvinced man in Whistlebarry Ave. The description is "An elderly man. Easily startled and impressionable. He'll usually believe anything you tell him.".
 
 Table of Old Man Magoo's Replies
 Topic		Matter
@@ -454,13 +482,14 @@ Topic		Matter
 
 After asking Old Man Magoo about a topic listed in the Table of Old Man Magoo's Replies, say "[matter entry]"
 
-After showing Alien Photograph to Old Man Magoo: 
+Before showing Alien Photograph to Old Man Magoo: 
 	if Old Man Magoo is not convinced:
 		now Old Man Magoo is convinced;
 		increase goal counter by 1;
-		say "What's this! Oh my...AN ALIEN! oh goodness no! I must warn my grandson Gary! [paragraph break]Walter has now convinced [goal counter] people about the alien invasion. He must convince [5 - goal counter] more.";
+		say "What's this! Oh my...AN ALIEN! oh goodness no! I must warn my grandson Gary![paragraph break]Walter has now convinced [goal counter] people about the alien invasion. He must convince [5 - goal counter] more.";
 	otherwise:
-		say "'Good work Walter. Those commi-aliens will not get away with' says Old Man Magoo".
+		say "'Good work Walter. Those commi-aliens will not get away with this.' says Old Man Magoo.";
+	rule succeeds.
 
 [Chuck Rogers Rules]
 Chuck Rogers is a unconvinced man in Littleburg High. The description is "Captain of the Littleburg High Football team. Go Kiwi's! Very protective of the school mascot."
@@ -484,40 +513,62 @@ Topic			Matter
 
 After asking Chuck Rogers about a topic listed in the Table of Chuck Rogers's Replies, say "[matter entry]".
 
-After giving the broken kiwi doll to Chuck Rogers:
-	now Chuck Rogers is tense;
-	say "'Why Walter? Who would do something like this?! I am so %&(!#&($ angry right now Walter!!! I tell you what, you show me who did this and I will personally $%&! them up!!!' yells Chuck. He is shaking with anger and is looking mighty scary.".
+After telling Chuck Rogers about "aliens" during the invasion, say "'I can't understand you Walter, can you speak up? says Chuck. Walter needs to find some way to convince Chuck. Maybe Walter should check out the field.".
+After telling Chuck Rogers about "alien" during the invasion, say "'I can't understand you Walter, can you speak up? says Chuck. Walter needs to find some way to convince Chuck. Maybe Walter should check out the field.".
+After asking Chuck Rogers about "aliens" during the invasion, say "'I can't understand you Walter, can you speak up? says Chuck. Walter needs to find some way to convince Chuck. Maybe Walter should check out the field.".
+After asking Chuck Rogers about "alien" during the invasion, say "'I can't understand you Walter, can you speak up? says Chuck. Walter needs to find some way to convince Chuck. Maybe Walter should check out the field.".
+
+[Chuck Rogers Puzzle]
+The broken kiwi doll is in The Field. The description is "A beat up doll of a Kiwi, the mascot of Littleburg High. Chuck will be upset by the sight of this, maybe Walter should show him.".
+After taking the kiwi doll, say "Walter picks up the Kiwi Doll. Chuck Rogers will certainly want to see this.".
+
+Before giving the broken kiwi doll to Chuck Rogers:
+	if Chuck Rogers is tense:
+		say "'You show me who did this Walter and I'll kill em!' Chuck proclaims.";
+	otherwise:
+		now Chuck Rogers is tense;
+		move the kiwi doll to Chuck Rogers;
+		say "'Why Walter? Who would do something like this?! I am so %&(!#&($ angry right now Walter!!! I tell you what, you show me who did this and I will personally $%&! them up!!!' yells Chuck. He is shaking with anger and is looking mighty scary. This is Walter's chance to convince Chuck of the alien invasion.";
+	rule succeeds.
 	
-After showing Alien Photograph to Chuck Rogers:
+Before showing the broken kiwi doll to Chuck Rogers:
+	if Chuck Rogers is tense:
+		say "'You show me who did this Walter and I'll kill em!' Chuck proclaims.";
+	otherwise:
+		now Chuck Rogers is tense;
+		move the kiwi doll to Chuck Rogers;
+		say "'Why Walter? Who would do something like this?! I am so %&(!#&($ angry right now Walter!!! I tell you what, you show me who did this and I will personally $%&! them up!!!' yells Chuck. He is shaking with anger and is looking mighty scary. This is Walter's chance to convince Chuck of the alien invasion.";
+	rule succeeds.
+
+Before showing Alien Photograph to Chuck Rogers:
 	if Chuck Rogers is tense:
 		if Chuck Rogers is not convinced:
 			now Chuck Rogers is convinced;
 			increase goal counter by 1;
 			say "'I should have known Walter! Those guys on the tube been saying that there have been aliens up to no good. Thanks Walter. I got some business to take care of.' says Chuck. He seems awfully intimidating. Wouldn't want to be those aliens right now. [paragraph break]Walter has now convinced [goal counter] people about the alien invasion. He must convince [5 - goal counter] more.";
 		otherwise:
-			say "'Walter, I;m getting myself ready for those alien freaks. Nobody hurts a kiwi on my watch.' Chuck says with a serious tone.";
+			say "'Walter, I'm getting myself ready for those alien freaks. Nobody hurts a kiwi on my watch,' Chuck says with a serious tone.";
 	otherwise:
-		say "'That's a funny looking picture you got there Walter. I don't really know what I am looking at here. Those guys look kinda funny though.', says Chuck."
+		say "'That's a funny looking picture you got there Walter. I don't really know what I am looking at here. Those guys look kinda funny though.', says Chuck. Walter needs to find something to show Chuck to get him to believe the aliens are coming.";
+	rule succeeds.
 	
 [Whistlebarry Ave things]
 
 [Mary Sue's Bedroom things]
 Secret Chest is a container in Mary Sue's Bedroom. It is lockable and locked.
-The Diary is an object in the Secret Chest.
-Secret Key unlocks Secret Chest.
+The Diary is an object in the Secret Chest. The description is "Mary Sue's diary. After looking inside Walter see random blips about Mary Sue liking Chuck Rogers and other random teenage girl stuff.".
+Secret Key unlocks Secret Chest. The description of secret key is "A key that looks like it would fit inside the chest in Mary Sue's room."
 
-Poster Board is in Mary Sue's Bedroom. Poster Board is scenery.
-Mary Sue's Bed is in Mary Sue's Bedroom. 
+After taking secret key, say "Walter picks up the key on Mary's desk. It looks like it might unlock the chest near by.".
+After taking the diary, say "Walter takes the diary inside the chest. Maybe this will be of use to somehow convince Mary Sue that the aliens are coming.".
 
-Mary's Desk is a supporter in Mary Sue's Bedroom. 
+Poster Board is in Mary Sue's Bedroom. Poster Board is scenery. The description is "A random collection of pictures that Mary Sue must have taken. Nothing really of interest here.".
+Mary Sue's Bed is in Mary Sue's Bedroom.  The description is "Mary Sue's bed. There is nothing special about it.".
+
+Mary's Desk is a supporter in Mary Sue's Bedroom.
 Secret Key is on Mary's Desk.
 
-[Bomb Shelter things]
-
 [Littleburg High things]
-The Feild is a room. "The football field for Littleburg High. Bleachers circle around the impressive field. On game nights it wil be filled with fans, cheeing on their favorite team, The Littleburg Kiwis."
-The Feild is east of Littleburg High.
-The broken kiwi doll is in The Feild.
 
 [Littleburg High rules]
 Rule for listing nondescript items of the Littleburg High:
@@ -526,7 +577,7 @@ Rule for listing nondescript items of the Littleburg High:
 [Farm Rooms]
 Betty's Farm is a room. "Old Betty's farm. Supplying the finest products to this fine little town. There is a barn here, [if invasion has not happened]with a happy looking cow by it.[otherwise]with an odd looking cow by it.[end if] Walter see's a bottle near the cow, guess that's for milking.[paragraph break]To the north is the farm field and to the west is Whislebarry Ave."
 Farm Field is a room. "[if invasion has not happened]A wide open field filled with the smells of livestock, but there is no livestock actually here. Walter sees strange glowing lights to the east.[paragraph break]Betty's Farm is to the south and some strange glowing lights are to the east.[otherwise]A wide open field, where the aliens have been abducting people and the farm animals of Betty's farm, stealing their voices for unknown reasons. Zig and Zag, two Audio Invaders guarding the alien ship.[paragraph break]Betty's farm is to the south and Walter can go inside the Alien Ship.[end if]".
-Alien Ship is a room. "The ship of the alien invaders. What horrors must they conduct in here and why are they stealing everyone's voice?[paragraph break]The Field of Betty's Farm is to the outside.".
+Alien Ship is a room. "The ship of the alien invaders. What horrors must they conduct in here and why are they stealing everyone's voice? Arbit their leader is walking around.[paragraph break]The Field of Betty's Farm is to the outside.".
 [Room Connections]
 Betty's Farm is east of Whistlebarry Ave.
 Farm Field is north of Betty's Farm.
