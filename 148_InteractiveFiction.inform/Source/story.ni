@@ -174,9 +174,11 @@ A old wooden table is a supporter in the Office Supply Room. The description is 
 
 An old typewriter is a fixed in place thing on the old wooden table. The description is "A Royal typewriter. It looks like it hasn't been used in quite some time.".
 The old typewriter is type-able.
+
 After typing the old typewriter during the invasion:
 	now player holds alien article;
 	say "Walter types on the [noun], Walter has written an article about the alien invasion. Hopefully someone believes this crazy story."
+
 Instead of taking the old typewriter, say "The [noun] is a little too heavy to carry.".
 
 [Office Supply Room rules]
@@ -186,9 +188,11 @@ Rule for listing nondescript items of the Office Supply Room:
 [Daily Babler Foyer things]
 
 [First Street Rooms]
+
 First Street is a room.  "First St. of Littleburg, USA. There has never been a more beautiful town than this one. The local milkman is seen making his rounds.[paragraph break]To the north is The Daily Babler, to the south is Main Street, to the west is the local Police Station and to the east is the Mayor's Office".
 The Police Station is a room. "The fine men in blue of Littleburg, USA."
 The Mayors Office is a room. "The office of Mayor Calahan. [if the invasion has not happened]The mayor is here, looking proud to be a fine citizen of Littleburg.[otherwise]The mayor is here.[end if][paragraph break]To the west if First Street.".
+
 [Room Connections]
 First Street is south of the Daily Babler Foyer. 
 The Police Station is west of First Street.
@@ -196,13 +200,14 @@ The Mayors Office is east of First Street.
 
 [First Street Characters] [inlcudes Police Station and Mayor's Office]
 [Roger the Milkman Rules]
-Roger the Milkman is a unconvinced man in First Street. The description is "A delightful and helpful fellow who can brighten any day with a healthy dose of calcium."
+Roger the Milkman is a unconvinced man in First Street. The description is "You see Roger the milkman. A delightful and helpful fellow who can brighten any day with a healthy dose of calcium."
 Understand "milkman" as Roger the Milkman.
 
 Table of Roger's Replies
 Topic			Reply
 "milk"			"'The finest in all of Littleburg! Straight from Betty's farm,' exclaims Roger"
 "Littleburg"			"'The home of the Kiwi's and my delicious milk of course!' says Roger"
+"news"			"Calcium can give you strong bones!"
 
 After asking Roger the Milkman about a topic listed in the Table of Roger's Replies, say "[reply entry]".
 
@@ -245,22 +250,22 @@ Officer Smith is a unconvinced man in Police Station. "A grizzled cop who doesn'
 
 Table of Officer Smith Replies
 Topic			Matter
-"what's the matter"			"This here is a dirty town Walt. It takes tough men like me to clean it up. "
-"whats the matter"			"This here is a dirty town Walt. It takes tough men like me to clean it up. "
-"what's wrong"			"This here is a dirty town Walt. It takes tough men like me to clean it up. "
-"whats wrong"			"This here is a dirty town Walt. It takes tough men like me to clean it up. "
-"what's troubling you"			"This here is a dirty town Walt. It takes tough men like me to clean it up. "
+"what's the matter"			"'This here is a dirty town Walt. It takes tough men like me to clean it up.', says officer Smith. "
+"whats the matter"			"'This here is a dirty town Walt. It takes tough men like me to clean it up.', says officer Smith. "
+"what's wrong"			"'This here is a dirty town Walt. It takes tough men like me to clean it up.', says officer Smith. "
+"whats wrong"			"'This here is a dirty town Walt. It takes tough men like me to clean it up.', says officer Smith. "
+"what's troubling you"			"'This here is a dirty town Walt. It takes tough men like me to clean it up.', says officer Smith. "
 "whats troubling you"			"This here is a dirty town Walt. It takes tough men like me to clean it up. "
-"newspaper"			"One of the only respectable things about this town. MY buddy Wood Chuck never print lies"
-"whats new"			"nothing Walt. Littleburg...Littleburg never changes"
-"Kiwi"			"'...I don't like birds"
-"Kiwis"			"'...I don't like birds"
-"Kiwi's"			"'...I don't like birds"
+"newspaper"			"'One of the only respectable things about this town. MY buddy Wood Chuck never print lies' says officer Smith"
+"whats new"			"'nothing Walt. Littleburg...Littleburg never changes' says officer Smith"
+"Kiwi"			"'...I don't like birds' says officer Smith."
+"Kiwis"			"'...I don't like birds says officer Smith."
+"Kiwi's"			"'...I don't like birds says officer Smith."
 
 
 After telling Officer Smith about "aliens" during the invasion:
 	if Officer Smith is unconvinced:
-		say "Walter tries to tell Officer Smith about the aliens, but he can't speak. How can he convince him? If only .";
+		say "Walter tries to tell Officer Smith about the aliens, but he can't speak. How can he convince him? If only he had something offical and trustworthy to show him";
 	otherwise:
 		say "Walter points to the sky, and Roger nods. Walter has no need to convince Roger.".
 [First Street things]
@@ -272,9 +277,15 @@ Rule for listing nondescript items of the First Street:
 [Police Station things]
 
 [Mayors Office things]
+The Coffee mug is an object in the Mayors office.
+The propganda poster is an object in the Mayors office.
+The Pile of Money is an object in the Mayors office.
 
 [Main Street Rooms]
 Main Street is a room. "The main street of Littleburg, USA. A hot spot for local folks.[paragraph break]To the west is the malt shop, to the east is Jim's Bar, to the south is Whistlebarry Avenue to the north is First Street."
+
+icky Garbage is a container in Main Street. "A small garbage can sits idly next to a bench".
+instead of opening Garbage, say "You rummage through the can, hoping to find something useful. You find nothing."
 The Malt Shop is a room. "A local hang out for all hip kids in Littleburg.  To the east is Mainstreet."
 Jims Bar is a room. "Serving libations since 1912. To the West is Main Street."
 [Room Connections]
@@ -286,7 +297,62 @@ Jims Bar is east of Main Street.
 
 Suzy is a unconvinced woman in Malt Shop. "Suzy, a student of LittleBurg High sit's by her sweetheart Jake. Loves chocolate shakes."
 Jake is a unconvinced man in Malt Shop. "Jae a student of LitleBurg High sit's by his sweetheart Suzy. Loves listening to the Beach Boys."
-Jim Magee is a unconvinced man. He is in Jim's Bar. "Mr. Magee Runs the local bar, where everybody knows your name."
+
+
+Table of Suzy  Replies
+Topic 					Matter
+"what's the matter"					"'nothing at all Walt, just me and ma handsome fella hanging out', says Suzy"
+"whats the matter"					"'nothing at all Walt, just me and ma handsome fella hanging out', says Suzy"
+"what is the matter"					"'nothing at all Walt, just me and ma handsome fella hanging out', says Suzy"
+"what's wrong"					"'nothing at all Walt, just me and ma handsome fella hanging out', says Suzy"
+"whats wrong"					"'nothing at all Walt, just me and ma handsome fella hanging out', says Suzy"
+"what is wrong"					"'nothing at all Walt, just me and ma handsome fella hanging out', says Suzy"
+"Chuck"					"'nothing at all Walt, just me and ma handsome fella hanging out', says Suzy"
+"Chuck Rogers"					"'nothing at all Walt, just me and ma handsome fella hanging out', says Suzy"
+"news"					"''News? I danno I've been...destracted', says Suzy"					
+"News"					"''News? I danno I've been...destracted', says Suzy"	
+"hot stories"					"''News? I danno I've been...destracted', says Suzy"	
+"stories"					"''News? I danno I've been...destracted', says Suzy"	
+
+After asking Suzy about a topic listed in the Table of Suzy Replies, say "[matter entry]".
+
+Table of Jake Replies
+Topic 					Matter
+"what's the matter"					"'nothing at all Walt, just me and ma handsome fella hanging out', says Suzy"
+"whats the matter"					"'nothing at all Walt, just me and ma handsome fella hanging out', says Suzy"
+"what is the matter"					"'nothing at all Walt, just me and ma handsome fella hanging out', says Suzy"
+"what's wrong"					"'nothing at all Walt, just me and ma handsome fella hanging out', says Suzy"
+"whats wrong"					"'nothing at all Walt, just me and ma handsome fella hanging out', says Suzy"
+"what is wrong"					"'nothing at all Walt, just me and ma handsome fella hanging out', says Suzy"
+"Chuck"					"'nothing at all Walt, just me and ma handsome fella hanging out', says Suzy"
+"Chuck Rogers"					"'nothing at all Walt, just me and ma handsome fella hanging out', says Suzy"
+"news"					"''News? I danno I've been...destracted', says Suzy"					
+"News"					"''News? I danno I've been...destracted', says Suzy"	
+"hot stories"					"''News? I danno I've been...destracted', says Suzy"	
+"stories"					"''News? I danno I've been...destracted', says Suzy"
+
+
+After asking Jake about a topic listed in the Table of Jake Replies, say "[matter entry]".
+
+
+Jim Magee is a unconvinced man. He is in Jim's Bar. "Mr. Magee Runs the local bar, where everybody knows your name. He's a stubborn man, who assumes he's seen it all."
+
+Table of Kim Magee Replies
+Topic 					Matter
+"what's the matter"					"'Eh, some punk kids running around, talking bout the end of the world. I say it's a bunch of malarky' says Jim Magee."
+"whats the matter"					"'Eh, some punk kids running around, talking bout the end of the world. I say it's a bunch of malarky' says Jim Magee."
+"what is the matter"					"'Eh, some punk kids running around, talking bout the end of the world. I say it's a bunch of malarky' says Jim Magee."
+"what's wrong"					"'Eh, some punk kids running around, talking bout the end of the world. I say it's a bunch of malarky' says Jim Magee."
+"whats wrong"					"'Eh, some punk kids running around, talking bout the end of the world. I say it's a bunch of malarky' says Jim Magee."
+"what is wrong"					"'Eh, some punk kids running around, talking bout the end of the world. I say it's a bunch of malarky' says Jim Magee."				
+"aliens"					"'Eh, it'll never happen. Why would aliens wanna come down here?' says Jim Magee."
+"news"					"'Well I have heard that Farmer Zekes been acting stranger then normal...' says Jim Magee."	
+"News"					"'Well I have heard that Farmer Zekes been acting stranger then normal...' says Jim Magee ."
+"hot stories"					"'Well I have heard that Farmer Zekes been acting stranger then normal...' says Jim Magee."
+"stories"					"'Well I have heard that Farmer Zekes been acting stranger then normal...' says Jim Magee."
+
+
+
 Mary Sue is a unconvinced woman in Main Street. "Mary Sue stands idly by a bench. She is a perky young dame with a relatively flat personality."
 
 Table of Mary Sue's Replies
@@ -302,10 +368,11 @@ Topic 					Matter
 "diary"					"'Why would you want to know about my diary?! Your not planning on running it as a story are you!? I think I might die if someone were to get a hold of that.' says Mary Sue."
 "Diary"					"'Why would you want to know about my diary?! Your not planning on running it as a story are you!? I think I might die if someone were to get a hold of that.' says Mary Sue."
 "aliens"					"'Aliens? I don't believe in that stuff Walter. But if they did exist I am sure our town hero, Chuck Rogers would save us!' says Mary. Her eyes are shimmering and she seems lost in a dream."
-"news"					"'Well I have heard that Farmer '"					
-"News"
-"hot stories"
-"stories"
+"news"					"'Well I have heard that Farmer Zeke has been saying he sees odd things in his field. But honestly that guy is as loony as bunny.' says Mary.'"					
+"News"					"'Well I have heard that Farmer Zeke has been saying he sees odd things in his field. But honestly that guy is as loony as bunny.' says Mary.'"	
+"hot stories"					"'Well I have heard that Farmer Zeke has been saying he sees odd things in his field. But honestly that guy is as loony as bunny.' says Mary.'"	
+"stories"					"'Well I have heard that Farmer Zeke has been saying he sees odd things in his field. But honestly that guy is as loony as bunny.' says Mary.'"	
+
 
 After giving the Diary to Mary Sue:
 	if Mary Sue is not convinced:
@@ -324,6 +391,10 @@ After giving the Diary to Mary Sue:
 [Whistlebarry Ave Rooms]
 Whistlebarry Ave is a room. "A quiet neighborhood of Littleburg, USA.[paragraph break]To the north is Main Street, to the west is Mary Sue's house, to the south is Littleburg High and to the east is Betty's Farm."
 Mary Sues' House is a room. "Mary Sue's House. The picture perfect house for the modern family. It doesn't look like anyone is here."
+
+Stinky Garbage is a container in Whistlebarry Ave. "A small garbage can sits idly next to a bench".
+The Buck Rogers #55 comic-book is in stinky Garbage.
+
 Mary Sue's Bedroom is a room. "Mary Sue's Bedroom. Walter is overcome from the sight of all the pictures of Chuck Rogers."
 [The Bomb Shelter is a room. "Can never be too careful."]
 Littleburg High is a room. "Littleburg High, home of the Fighting Kiwi's. A local boy, Jimmy is standing around looking glum. Chuck Rogers, the captain of the High School football team is seen preping for the Big Game.[paragraph break]To the north is Whistlebarry Ave.".
@@ -335,7 +406,7 @@ Mary Sue's Bedroom is inside of Mary Sue's House.
 Littleburg High is south of Whistlebarry Ave.
 
 [Whistlebarry Ave Characters] [includes Walter's House, Littleburg High, Betty's Farm]
-Jimmy is a unconvinced man in Littleburg High. The description is "A young lad. A fan of baseball and comic books. He looks upset.".
+Jimmy is a unconvinced man in Littleburg High. The description is "You see Jimmy. A young lad who likes baseball and comic books. He looks upset.".
 
 Table of Jimmy's Replies
 Topic			Matter
@@ -349,6 +420,19 @@ Topic			Matter
 "baseball"			"'Kiwi's are the best, just go ask Chuck,' replies Jimmy."
 
 After asking Jimmy about a topic listed in the Table of Jimmy's Replies, say "[matter entry]".
+
+After giving the Buck Rogers #55 comic-book to Jimmy:
+	now Jimmy is tense;
+	say "'Oh Gee-Wilakers! thanks Mister! This here comic is great! It's about Buck Rogers fightin off an alien threat! Aliens are really scary huh?' says Jimmy".
+	
+After showing Alien Photograph to Jimmy:
+	if Jimmy is tense:
+		if Jimmy is not convinced:
+			now Jimmy is convinced;
+			increase goal counter by 1;
+			say "'Oh no! Mr.FlintLock It's aliens! Just like in the comic book! We gatta stop em!'says Jimmy ";
+		otherwise:
+			say "'I got my bee-bee gun at the ready Mr.Flintlock. Just say when!'says Jimmy".
 
 [Old Man Magoo Rules]
 Old Man Magoo is a unconvinced man in Whistlebarry Ave. The description is "An elderly man. Easily startled and impressionable.".
@@ -411,21 +495,22 @@ After showing Alien Photograph to Chuck Rogers:
 			increase goal counter by 1;
 			say "'I should have known Walter! Those guys on the tube been saying that there have been aliens up to no good. Thanks Walter. I got some business to take care of.' says Chuck. He seems awfully intimidating. Wouldn't want to be those aliens right now. [paragraph break]Walter has now convinced [goal counter] people about the alien invasion. He must convince [5 - goal counter] more.";
 		otherwise:
-			say "'Walter, I;m getting myself ready for those alien freaks. Nobody hurts a kiwi on my watch.' Chuck says with a serious tone.".
-
+			say "'Walter, I;m getting myself ready for those alien freaks. Nobody hurts a kiwi on my watch.' Chuck says with a serious tone.";
+	otherwise:
+		say "'That's a funny looking picture you got there Walter. I don't really know what I am looking at here. Those guys look kinda funny though.', says Chuck."
 	
 [Whistlebarry Ave things]
 
 [Mary Sue's Bedroom things]
 Secret Chest is a container in Mary Sue's Bedroom. It is lockable and locked.
-Diary is in Secret Chest.
-Secret Chest Key unlocks Secret Chest.
+The Diary is an object in the Secret Chest.
+Secret Key unlocks Secret Chest.
 
 Poster Board is in Mary Sue's Bedroom. Poster Board is scenery.
-Mary Sue's Bed is in Mary Sue's Bedroom. Mary Sue's Bed is a container.
+Mary Sue's Bed is in Mary Sue's Bedroom. 
 
 Mary's Desk is a supporter in Mary Sue's Bedroom. 
-Secret Chest Key is on Mary's Desk.
+Secret Key is on Mary's Desk.
 
 [Bomb Shelter things]
 
