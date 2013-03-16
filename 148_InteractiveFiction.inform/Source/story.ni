@@ -168,13 +168,14 @@ Rule for listing nondescript items of the Break Room:
 A old wooden table is a supporter in the Office Supply Room. The description is "An old wooden table.".
 
 An old typewriter is a fixed in place thing on the old wooden table. The description is "A Royal typewriter. It looks like it hasn't been used in quite some time.".
-[The old typewriter is type-able.
-After typing on old typewriter during the invasion:
+The old typewriter is type-able.
+[After typing on old typewriter during the invasion:
 	alien article is an object;
 	player now holds alien article;
 	say "Walter types on the [noun], Walter has written an article about the alien invasion. Hopefully someone believes this crazy story."
-Instead of taking the old typewriter, say "The [noun] is a little too heavy to carry.".
 ]
+Instead of taking the old typewriter, say "The [noun] is a little too heavy to carry.".
+
 [Office Supply Room rules]
 Rule for listing nondescript items of the Office Supply Room:
 	change old wooden table to not marked for listing.
@@ -182,8 +183,13 @@ Rule for listing nondescript items of the Office Supply Room:
 [Daily Babler Foyer things]
 
 [First Street Rooms]
-First Street is a room.  "First St. of Littleburg, USA. There has never been a more beautiful town than this one. The local milkman is seen making his rounds.[paragraph break]To the north is The Daily Babler, to the south is Main Street, to the west is the local Police Station and to the east is the Mayor's Office".
-The Police Station is a room. "The fine men in blue of Littleburg, USA."
+First Street is a room.  "First St. of Littleburg, USA. There has never been a more beautiful town than this one. The local milkman is seen making his rounds.[paragraph break]To the north is The Daily Babler, to the south is Main Street, to the west is the local Police Station and to the east is the Mayor's Office."
+
+Garbage Can is a container in First Street. "A small garbage can sits idly next to a bench".
+[Garbage is a container in First Street. "A small garbage can sit's idle by a bench."
+instead of opening Garbage , say "You try rummageing through the garbage can in hopes of finding something usefull. You do not."
+]
+The Police Station is a room. "You arrive at the Police Station. Home to the fine men in blue of Littleburg, USA. To the East is First Street."
 The Mayors Office is a room. "The office of Mayor Calahan."
 [Room Connections]
 First Street is south of the Daily Babler Foyer. 
@@ -192,13 +198,14 @@ The Mayors Office is east of First Street.
 
 [First Street Characters] [inlcudes Police Station and Mayor's Office]
 [Roger the Milkman Rules]
-Roger the Milkman is a unconvinced man in First Street. The description is "A delightful and helpful fellow who can brighten any day with a healthy dose of calcium."
+Roger the Milkman is a unconvinced man in First Street. The description is "You see Roger the milkman. A delightful and helpful fellow who can brighten any day with a healthy dose of calcium."
 Understand "milkman" as Roger the Milkman.
 
 Table of Roger's Replies
 Topic			Reply
 "milk"			"'The finest in all of Littleburg! Straight from Betty's farm,' exclaims Roger"
 "Littleburg"			"'The home of the Kiwi's and my delicious milk of course!' says Roger"
+"news"			"Calcium can give you strong bones!"
 
 After asking Roger the Milkman about a topic listed in the Table of Roger's Replies, say "[reply entry]".
 
@@ -241,7 +248,7 @@ Topic			Matter
 
 After telling Officer Smith about "aliens" during the invasion:
 	if Officer Smith is unconvinced:
-		say "Walter tries to tell Officer Smith about the aliens, but he can't speak. How can he convince him? If only .";
+		say "Walter tries to tell Officer Smith about the aliens, but he can't speak. How can he convince him? If only he had something offical and trustworthy to show him";
 	otherwise:
 		say "Walter points to the sky, and Roger nods. Walter has no need to convince Roger.".
 [First Street things]
@@ -253,9 +260,19 @@ Rule for listing nondescript items of the First Street:
 [Police Station things]
 
 [Mayors Office things]
+The Coffee mug is an object in the Mayors office.
+The propganda poster is an object in the Mayors office.
+The Pile of Money is an object in the Mayors office.
 
 [Main Street Rooms]
+
+
 Main Street is a room. "The main street of Littleburg, USA. A hot spot for local folks. To the west is the malt shop, to the east is Jim's Bar, to the south is WhistleBerry Avenue to the north is First Street."
+
+
+
+icky Garbage is a container in Main Street. "A small garbage can sits idly next to a bench".
+instead of opening Garbage can, say "You rummage through the can, hoping to find something useful. You find nothing."
 The Malt Shop is a room. "A local hang out for all hip kids in Littleburg.  To the east is Mainstreet."
 Jims Bar is a room. "Serving libations since 1912. To the West is Main Street."
 [Room Connections]
@@ -290,6 +307,11 @@ After giving the Diary to Mary Sue:
 
 [Whistlebarry Ave Rooms]
 Whistlebarry Ave is a room. "A quiet neighborhood of Littleburg, USA."
+
+Stinky Garbage is a container in Whistlebarry Ave. "A small garbage can sits idly next to a bench".
+The Buck Rogers #55 comic-book is in stinky Garbage.
+
+
 Mary Sues' House is a room. "Mary Sue's House. The picture perfect house for the modern family. It doesn't look like anyone is here."
 Mary Sue's Bedroom is a room. "Mary Sue's Bedroom. Walter is overcome from the sight of all the pictures of Chuck Rogers."
 [The Bomb Shelter is a room. "Can never be too careful."]
@@ -302,7 +324,7 @@ Mary Sue's Bedroom is inside of Mary Sue's House.
 Littleburg High is south of Whistlebarry Ave.
 
 [Whistlebarry Ave Characters] [includes Walter's House, Littleburg High, Betty's Farm]
-Jimmy is a unconvinced man in Littleburg High. The description is "A young lad. A fan of baseball and comic books. He looks upset.".
+Jimmy is a unconvinced man in Littleburg High. The description is "You see Jimmy. A young lad who likes baseball and comic books. He looks upset.".
 
 Table of Jimmy's Replies
 Topic			Matter
@@ -316,6 +338,19 @@ Topic			Matter
 "baseball"			"'Kiwi's are the best, just go ask Chuck,' replies Jimmy"
 
 After asking Jimmy about a topic listed in the Table of Jimmy's Replies, say "[matter entry]".
+[][][][][]
+After giving the Buck Rogers #55 comic-book to Jimmy:
+	now Jimmy is tense;
+	say "'Oh Gee-Wilakers! thanks Mister! This here comic is great! It's about Buck Rogers fightin off an alien threat! Aliens are really scary huh?' says Jimmy".
+	
+After showing Alien Photograph to Jimmy:
+	if Jimmy is tense:
+		if Jimmy is not convinced:
+			now Jimmy is convinced;
+			increase goal counter by 1;
+			say "'Oh no! Mr.FlintLock It's aliens! Just like in the comic book! We gatta stop em!'says Jimmy ";
+		otherwise:
+			say "'I got my bee-bee gun at the ready Mr.Flintlock. Just say when!'says Jimmy".
 
 [Old Man Magoo Rules]
 Old Man Magoo is a unconvinced man in Whistlebarry Ave. The description is "An elderly man. Easily startled and impressionable.".
