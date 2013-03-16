@@ -4,7 +4,9 @@
 # Ignore the following directories
 
 # Ignore the following file extensions
-*.skein
+Skein.skein
+*.html
+*.xml
 
 #Ignore VIM files
 *~
