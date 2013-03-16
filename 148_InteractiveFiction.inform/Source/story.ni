@@ -263,6 +263,10 @@ Topic			Matter
 "Kiwi"			"'...I don't like birds' says officer Smith."
 "Kiwis"			"'...I don't like birds says officer Smith."
 "Kiwi's"			"'...I don't like birds says officer Smith."
+"story"			"' You want me to give ya a story Walt? I thought that was your job!' says officer Smith"
+"hot story"			"' You want me to give ya a story Walt? I thought that was your job!' says officer Smith"
+"stories"			"' You want me to give ya a story Walt? I thought that was your job!' says officer Smith"
+"crime"			"'It's rough out here Walt, just the other day I had to grab a cat from a tree...' says Officer Smith"
 
 After asking Officer Smith about a topic listed in the Table of Officer Smith Replies, say "[matter entry]".
 
@@ -329,29 +333,26 @@ Topic 					Matter
 "what's wrong"					"'nothing at all Walt, just me and ma handsome fella hanging out', says Suzy"
 "whats wrong"					"'nothing at all Walt, just me and ma handsome fella hanging out', says Suzy"
 "what is wrong"					"'nothing at all Walt, just me and ma handsome fella hanging out', says Suzy"
-"Chuck"					"'nothing at all Walt, just me and ma handsome fella hanging out', says Suzy"
-"Chuck Rogers"					"'nothing at all Walt, just me and ma handsome fella hanging out', says Suzy"
 "news"					"''News? I danno I've been...destracted', says Suzy"					
 "News"					"''News? I danno I've been...destracted', says Suzy"	
 "hot stories"					"''News? I danno I've been...destracted', says Suzy"	
 "stories"					"''News? I danno I've been...destracted', says Suzy"	
 
+
 After asking Suzy about a topic listed in the Table of Suzy Replies, say "[matter entry]".
 
 Table of Jake Replies
 Topic 					Matter
-"what's the matter"					"'nothing at all Walt, just me and ma handsome fella hanging out', says Suzy"
-"whats the matter"					"'nothing at all Walt, just me and ma handsome fella hanging out', says Suzy"
-"what is the matter"					"'nothing at all Walt, just me and ma handsome fella hanging out', says Suzy"
-"what's wrong"					"'nothing at all Walt, just me and ma handsome fella hanging out', says Suzy"
-"whats wrong"					"'nothing at all Walt, just me and ma handsome fella hanging out', says Suzy"
-"what is wrong"					"'nothing at all Walt, just me and ma handsome fella hanging out', says Suzy"
-"Chuck"					"'nothing at all Walt, just me and ma handsome fella hanging out', says Suzy"
-"Chuck Rogers"					"'nothing at all Walt, just me and ma handsome fella hanging out', says Suzy"
-"news"					"''News? I danno I've been...destracted', says Suzy"					
-"News"					"''News? I danno I've been...destracted', says Suzy"	
-"hot stories"					"''News? I danno I've been...destracted', says Suzy"	
-"stories"					"''News? I danno I've been...destracted', says Suzy"
+"what's the matter"					"'Thing's could'nt be better Walt. Just me and my number one gal sitty pretty', says Jake"
+"whats the matter"					"'Thing's could'nt be better Walt. Just me and my number one gal sitty pretty', says Jake"
+"what is the matter"					"'Thing's could'nt be better Walt. Just me and my number one gal sitty pretty', says Jake"
+"what's wrong"					"'Thing's could'nt be better Walt. Just me and my number one gal sitty pretty', says Jake"
+"whats wrong"					"'Thing's could'nt be better Walt. Just me and my number one gal sitty pretty', says Jake"
+"what is wrong"					"'Thing's could'nt be better Walt. Just me and my number one gal sitty pretty', says Jake"
+"news"					"''News? I danno I've been...destracted', says Jake"					
+"News"					"''News? I danno I've been...destracted', says Jake"	
+"hot stories"					"''News? I danno I've been...destracted', says Jake"	
+"stories"					"''News? I danno I've been...destracted', says Jake"
 
 
 After asking Jake about a topic listed in the Table of Jake Replies, say "[matter entry]".
@@ -467,8 +468,22 @@ Topic			Matter
 "whats troubling you"			"'My mom threw out my latest issue of Bucky Rogers!' says Jimmy."
 "comic books"			"Jimmy looks up at Walter and says, 'Bucky Rogers is my favorite! But my mom threw away my latest issue.'"
 "baseball"			"'Kiwi's are the best, just go ask Chuck,' replies Jimmy."
+"news"					"''Well Gee I danno Mr.Flintlock, Word on the street is Farmer Zeke been havin trouble lately with his cows.', says Jimmy"					
+"News"					"''Well Gee I danno Mr.Flintlock, Word on the street is Farmer Zeke been havin trouble lately with his cows.', says Jimmy"		
+"hot stories"					"''Well Gee I danno Mr.Flintlock, Word on the street is Farmer Zeke been havin trouble lately with his cows.', says Jimmy"		
+"stories"					"''Well Gee I danno Mr.Flintlock, Word on the street is Farmer Zeke been havin trouble lately with his cows.', says Jimmy"	
 
 After asking Jimmy about a topic listed in the Table of Jimmy's Replies, say "[matter entry]".
+
+After telling Jimmy about "aliens" during the invasion:
+	if Jimmy is unconvinced:
+		say "Walter tries to tell Jimmy about the aliens, but he just stares akwardly back. Walter remembers that Jimmy is a fan of comic books. Perhaps he should find one to grab the young lads attention.";
+	otherwise:
+		say "Walter points to the sky, and Roger nods. Walter has no need to convince Roger.".
+
+
+
+
 Before giving the comic-book to Jimmy:
 	now Jimmy is tense;
 	say "'Oh Gee-Wilakers! thanks Mister! This here comic is great! It's about Buck Rogers fightin off an alien threat! Aliens are really scary huh?' says Jimmy";
@@ -608,7 +623,7 @@ Inside from the Farm Field is the Alien Ship.
 [Farm and Alien Ship Characters]
 Farmer Zeke is a unconvinced man in Betty's Farm. "Farmer Zeke is a strange and nervous fellow. Believes that something is going on in his field but too afraid to take a look.[if the invasion has not happened][otherwise] He'll surely believe Walter if he shows him the alien photo.[end if]".
 
-table of Farmer Zeke Replies
+Table of Farmer Zeke Replies
 Topic			Matter
 "what's the matter"			"Somethin weird is happening out in my feilds...somethin...unnatural."
 "whats the matter"			"Somethin weird is happening out in my feilds...somethin...unnatural."
@@ -622,6 +637,7 @@ Topic			Matter
 "hot story"			"oh I danno Walt...The corns been really yellow this year...A few new cows been born..."
 "news"			"oh I danno Walt...The corns been really yellow this year...A few new cows been born..."
 
+After asking Farmer Zeke about a topic listed in the Table of Farmer Zeke Replies, say "[matter entry]".
 
 Before showing Alien Photograph to Farmer Zeke: 
 	if Farmer Zeke is not convinced:
@@ -633,9 +649,51 @@ Before showing Alien Photograph to Farmer Zeke:
 		say "'we gatta get help Walter! Try asking the Mayor! Maybe he will listen.";
 		rule succeeds;
 
+
 Arbit is a man in Alien Ship. The description is " Arbit is the Audio Invaders commander. A mean chap who plans to take over the world, stealing all of it's sound."
+
+Table of Arbit's Replies
+Topic					Matter
+"who are you"					"We are the Audio Invaders. We come from the planet C-MPS 183. We have come to your defenseless planet to steal and devour all the sounds on your planet. You have already had your sound taken so you really don't matter to us anymore. Now be gone!! We have planning to do."
+"what are you"					"We are the Audio Invaders. We come from the planet C-MPS 183. We have come to your defenseless planet to steal and devour all the sounds on your planet. You have already had your sound taken so you really don't matter to us anymore. Now be gone!! We have planning to do."
+"what do you want"					"We are the Audio Invaders. We come from the planet C-MPS 183. We have come to your defenseless planet to steal and devour all the sounds on your planet. You have already had your sound taken so you really don't matter to us anymore. Now be gone!! We have planning to do."
+"plan"					"We are the Audio Invaders. We come from the planet C-MPS 183. We have come to your defenseless planet to steal and devour all the sounds on your planet. You have already had your sound taken so you really don't matter to us anymore. Now be gone!! We have planning to do."
+"invasion"					"We are the Audio Invaders. We come from the planet C-MPS 183. We have come to your defenseless planet to steal and devour all the sounds on your planet. You have already had your sound taken so you really don't matter to us anymore. Now be gone!! We have planning to do."
+"stories"					"Here is an article to run: the Audio Invaders have come to take over the world!!!!! When asked about it, Audio Invader Commander Arbit said 'We will take everyone's voices! I think the plan is... sound?'"
+"hot stories"					"Here is an article to run: the Audio Invaders have come to take over the world!!!!! When asked about it, Audio Invader Commander Arbit said 'We will take everyone's voices! I think the plan is... sound?'"
+"news"					"Here is an article to run: the Audio Invaders have come to take over the world!!!!! When asked about it, Audio Invader Commander Arbit said 'We will take everyone's voices! I think the plan is... sound?'"
+
+After asking Arbit about a topic listed in the Table of Arbit's Replies, say "[matter entry]".
+
 Zig is a man in Farm Field. The description is "Zig is a heavily armed guard of the Audio Invader's ship."
+
+Table of Zig's Replies
+Topic 					Matter
+"who are you"					"We are the Audio Invaders. We have come from far away to take over every planet to completely devour every sound in the universe!"
+"what are you"					"We are the Audio Invaders. We have come from far away to take over every planet to completely devour every sound in the universe!"
+"what do you want"					"We are the Audio Invaders. We have come from far away to take over every planet to completely devour every sound in the universe!"
+"plan"					"We are the Audio Invaders. We have come from far away to take over every planet to completely devour every sound in the universe!"
+"invasion"					"We are the Audio Invaders. We have come from far away to take over every planet to completely devour every sound in the universe!"
+"stories"					"I hear talk that on planet C-MPS 170-2, there is a terrible war over some silly piece of glass that let's you look to other worlds. I would use that to steal sound from those worlds too! Then nothing could stop us."
+"hot stories"					"I hear talk that on planet C-MPS 170-2, there is a terrible war over some silly piece of glass that let's you look to other worlds. I would use that to steal sound from those worlds too! Then nothing could stop us."
+"news"					"I hear talk that on planet C-MPS 170-2, there is a terrible war over some silly piece of glass that let's you look to other worlds. I would use that to steal sound from those worlds too! Then nothing could stop us."
+
+After asking Zig about a topic listed in the Table of Zig's Replies, say "[matter entry]".
+
 Zag is a man in Farm Field. The description is "Zag is a heavily armed guard of the Audio Invader's ship."
+
+Table of Zag's Replies
+Topic 					Matter
+"who are you"					"lkjdfljahdfkjahdflakjdhfaijdjhfa sound aojnavpepa =a steal aluhajnvpiuha eat' are"
+"what are you"					"lkjdfljahdfkjahdflakjdhfaijdjhfa sound aojnavpepa =a steal aluhajnvpiuha eat' are"
+"what do you want"					"lkjdfljahdfkjahdflakjdhfaijdjhfa sound aojnavpepa =a steal aluhajnvpiuha eat' are"
+"plan"					"lkjdfljahdfkjahdflakjdhfaijdjhfa sound aojnavpepa =a steal aluhajnvpiuha eat' are"
+"invasion"					"lkjdfljahdfkjahdflakjdhfaijdjhfa sound aojnavpepa =a steal aluhajnvpiuha eat' are"
+"stories"					"adolanav aoihdan;vja ladoaava aldnacpajjcna aona;v aalkhdavp akmnadp avp ad"
+"hot stories"					"adolanav aoihdan;vja ladoaava aldnacpajjcna aona;v aalkhdavp akmnadp avp ad"
+"news"					"adolanav aoihdan;vja ladoaava aldnacpajjcna aona;v aalkhdavp akmnadp avp ad"
+
+After asking Zag about a topic listed in the Table of Zag's Replies, say "[matter entry]".
 
 [Betty's Farm things]
 The barn is a backdrop. The barn is in Betty's Farm. The description is "An old barn. There is a [if invasion has not happened]a cow by it. 'Moo,' exclaims the cow.[otherwise]an odd looking cow by it. It opens it's mouth as if to moo, but no sound is heard.[end if]".
