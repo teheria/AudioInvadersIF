@@ -21,7 +21,7 @@ A person can be mute. A person is usually not mute.
 Mayor Calahan is a unconvinced man. The description is "A proud politician. He is known to take forever to do anything however and usually will only take action when the townsfolk are behind something."
 Understand "mayor" as Mayor Calahan.
 
-The goal counter is a number variable. The goal counter is 4.
+The goal counter is a number variable. The goal counter is 0.
 [Carry out adding [or whatever action]: increase goal counter by 1.]
 Every turn when goal counter is at least 5:
 	now Mayor Calahan is convinced.
@@ -262,12 +262,25 @@ Topic			Matter
 "Kiwis"			"'...I don't like birds says officer Smith."
 "Kiwi's"			"'...I don't like birds says officer Smith."
 
+After asking Officer Smith about a topic listed in the Table of Officer Smith Replies, say "[matter entry]".
+
+Before giving the alien article to Officer Smith:
+	if Officer Smith is unconvinced:
+		now Officer Smith is convinced;
+		increase goal counter by 1;
+		say "'Great Scott! It's in the paper...IT MUST BE TRUE! We have to act quickly Walter! ' says Officer Smith. [paragraph break]Walter has now convinced [goal counter] people about the alien invasion. He must convince [5 - goal counter] more.".
+
+
 
 After telling Officer Smith about "aliens" during the invasion:
 	if Officer Smith is unconvinced:
 		say "Walter tries to tell Officer Smith about the aliens, but he can't speak. How can he convince him? If only he had something offical and trustworthy to show him";
 	otherwise:
 		say "Walter points to the sky, and Roger nods. Walter has no need to convince Roger.".
+		
+		
+		
+		
 [First Street things]
 
 [Break Room rules]
@@ -392,8 +405,8 @@ After giving the Diary to Mary Sue:
 Whistlebarry Ave is a room. "A quiet neighborhood of Littleburg, USA.[paragraph break]To the north is Main Street, to the west is Mary Sue's house, to the south is Littleburg High and to the east is Betty's Farm."
 Mary Sues' House is a room. "Mary Sue's House. The picture perfect house for the modern family. It doesn't look like anyone is here."
 
-Stinky Garbage is a container in Whistlebarry Ave. "A small garbage can sits idly next to a bench".
-The Buck Rogers #55 comic-book is in stinky Garbage.
+stinky garbage is a container in Whistlebarry Ave. ["A stinky garbage can sits idly next to a bench".]
+The comic-book is an object inside the stinky Garbage.
 
 Mary Sue's Bedroom is a room. "Mary Sue's Bedroom. Walter is overcome from the sight of all the pictures of Chuck Rogers."
 [The Bomb Shelter is a room. "Can never be too careful."]
@@ -420,19 +433,26 @@ Topic			Matter
 "baseball"			"'Kiwi's are the best, just go ask Chuck,' replies Jimmy."
 
 After asking Jimmy about a topic listed in the Table of Jimmy's Replies, say "[matter entry]".
-
-After giving the Buck Rogers #55 comic-book to Jimmy:
+Before giving the comic-book to Jimmy:
 	now Jimmy is tense;
-	say "'Oh Gee-Wilakers! thanks Mister! This here comic is great! It's about Buck Rogers fightin off an alien threat! Aliens are really scary huh?' says Jimmy".
+	say "'Oh Gee-Wilakers! thanks Mister! This here comic is great! It's about Buck Rogers fightin off an alien threat! Aliens are really scary huh?' says Jimmy";
+	rule succeeds.
+
+
 	
-After showing Alien Photograph to Jimmy:
+	
+	
+Before showing Alien Photograph to Jimmy:
 	if Jimmy is tense:
 		if Jimmy is not convinced:
 			now Jimmy is convinced;
 			increase goal counter by 1;
-			say "'Oh no! Mr.FlintLock It's aliens! Just like in the comic book! We gatta stop em!'says Jimmy ";
+			say "'Oh no! Mr.FlintLock It's aliens! Just like in the comic book! We gatta stop em!'says Jimmy .  [goal counter] people about the alien invasion. He must convince [5 - goal counter] more.";
+			rule succeeds;
 		otherwise:
 			say "'I got my bee-bee gun at the ready Mr.Flintlock. Just say when!'says Jimmy".
+
+
 
 [Old Man Magoo Rules]
 Old Man Magoo is a unconvinced man in Whistlebarry Ave. The description is "An elderly man. Easily startled and impressionable.".
@@ -550,14 +570,15 @@ Topic			Matter
 "news"			"oh I danno Walt...The corns been really yellow this year...A few new cows been born..."
 
 
-After showing Alien Photograph to Farmer Zeke: 
+Before showing Alien Photograph to Farmer Zeke: 
 	if Farmer Zeke is not convinced:
 		now Farmer Zeke is convinced;
 		increase goal counter by 1;
-		say "I knew it! I knew something strange was going on!";
+		say "I knew it! I knew something strange was going on! [paragraph break]Walter has now convinced [goal counter] people about the alien invasion. He must convince [5 - goal counter] more." ;
+		rule succeeds;
 	otherwise:
-		say "'we gatta get help Walter! Try asking the Mayor! Maybe he will listen."
-
+		say "'we gatta get help Walter! Try asking the Mayor! Maybe he will listen.";
+		rule succeeds;
 
 Arbit is a man in Alien Ship. The description is " Arbit is the Audio Invaders commander. A mean chap who plans to take over the world, stealing all of it's sound."
 Zig is a man in Farm Field. The description is "Zig is a heavily armed guard of the Audio Invader's ship."
