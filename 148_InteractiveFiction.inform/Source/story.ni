@@ -1,10 +1,11 @@
-"Audio Invaders" by Adam Magleby, Drew Facchiano, Jason Judd Roth
-
-Release along with an interpreter.
+The story title is "Audio Invaders".
+The story author is "Adam Magleby, Drew Facchiano, Jason Judd Roth".
 The story genre is "Science Fiction".
 The release number is 1.
 The story description is "When a small town journalist has his voice stolen by some invading aliens, he must knowledge of the other townsfolk to warn them of the coming invasion.".
 The story creation year is 2013.
+
+Release along with an interpreter.
 
 Use no scoring.
 [giving]
